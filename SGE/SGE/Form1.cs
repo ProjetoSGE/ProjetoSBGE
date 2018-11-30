@@ -21,6 +21,7 @@ namespace SGE
         {
             SGEEntities db = new SGEEntities();
 
+
             tb_empresas tb = new tb_empresas();
             tb.nm_empresa = txtnomefan.Text;
             tb.nm_razaoSocial = txtrazao.Text;
