@@ -23,7 +23,7 @@ namespace SGE.Telas.Cadastros
 
             tb_alunos tb = new tb_alunos();
             tb.ds_anoEstudo = cboAnoEstudou.Text;
-            tb.ds_areaPreferencia = txtPreferencia.Text;
+            tb.ds_areaPreferencial = txtPreferencia.Text;
             tb.ds_bairro = txtBairro.Text;
             tb.ds_cep = mskCEP.Text;
             tb.ds_endereco = txtEndereco.Text;
@@ -32,10 +32,10 @@ namespace SGE.Telas.Cadastros
             tb.ds_numero = Convert.ToInt32(txtNumero.Text);
             tb.ds_qualCurso = cboCurso.Text;
             tb.ds_seEstuda = null;
-            tb.ds_turno = null;
+            tb.ds_turno = cboTurno.Text;
             tb.dt_nascimento = dtpDataNasc.Value;
             tb.nm_aluno = txtNome.Text;
-            tb.nm_curso = null; // repete duas vezes?
+            tb.nm_curso = cboSerie.Text;
             tb.nr_celular = mskRecado.Text;
             tb.nr_fixo = mskRes.Text ;
             tb.tb_candidato = null; // o que é isso?

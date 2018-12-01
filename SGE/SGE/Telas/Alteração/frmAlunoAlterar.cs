@@ -16,5 +16,10 @@ namespace SGE.Telas.Alteração
         {
             InitializeComponent();
         }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

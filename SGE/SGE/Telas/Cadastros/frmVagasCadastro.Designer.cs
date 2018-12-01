@@ -46,11 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.mtkInicio = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.mtkAlmoco = new System.Windows.Forms.MaskedTextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.mtkFim = new System.Windows.Forms.MaskedTextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.mtkVolta = new System.Windows.Forms.MaskedTextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.mtkIntervalo = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -85,7 +81,7 @@
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(660, 459);
+            this.btnCancelar.Location = new System.Drawing.Point(637, 459);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 32);
             this.btnCancelar.TabIndex = 75;
@@ -164,6 +160,9 @@
             // cboSexo
             // 
             this.cboSexo.FormattingEnabled = true;
+            this.cboSexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
             this.cboSexo.Location = new System.Drawing.Point(314, 45);
             this.cboSexo.Name = "cboSexo";
             this.cboSexo.Size = new System.Drawing.Size(91, 25);
@@ -212,7 +211,7 @@
             // 
             this.btnsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalvar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalvar.Location = new System.Drawing.Point(512, 459);
+            this.btnsalvar.Location = new System.Drawing.Point(552, 459);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(75, 32);
             this.btnsalvar.TabIndex = 73;
@@ -226,11 +225,7 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.mtkInicio);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.mtkAlmoco);
-            this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.mtkFim);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.mtkVolta);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.mtkIntervalo);
             this.groupBox3.Controls.Add(this.label9);
@@ -281,61 +276,21 @@
             this.label7.TabIndex = 27;
             this.label7.Text = "Horário Inicio:";
             // 
-            // mtkAlmoco
-            // 
-            this.mtkAlmoco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mtkAlmoco.Location = new System.Drawing.Point(218, 61);
-            this.mtkAlmoco.Mask = "00:00";
-            this.mtkAlmoco.Name = "mtkAlmoco";
-            this.mtkAlmoco.Size = new System.Drawing.Size(33, 25);
-            this.mtkAlmoco.TabIndex = 51;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(152, 58);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(66, 21);
-            this.label13.TabIndex = 52;
-            this.label13.Text = "Almoço:";
-            // 
             // mtkFim
             // 
             this.mtkFim.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mtkFim.Location = new System.Drawing.Point(411, 62);
+            this.mtkFim.Location = new System.Drawing.Point(204, 60);
             this.mtkFim.Mask = "00:00";
             this.mtkFim.Name = "mtkFim";
             this.mtkFim.Size = new System.Drawing.Size(33, 25);
             this.mtkFim.TabIndex = 55;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(275, 59);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(49, 21);
-            this.label15.TabIndex = 53;
-            this.label15.Text = "Volta:";
-            // 
-            // mtkVolta
-            // 
-            this.mtkVolta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mtkVolta.Location = new System.Drawing.Point(326, 62);
-            this.mtkVolta.Mask = "00:00";
-            this.mtkVolta.Name = "mtkVolta";
-            this.mtkVolta.Size = new System.Drawing.Size(33, 25);
-            this.mtkVolta.TabIndex = 54;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(365, 59);
+            this.label16.Location = new System.Drawing.Point(158, 57);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(39, 21);
             this.label16.TabIndex = 56;
@@ -344,7 +299,7 @@
             // mtkIntervalo
             // 
             this.mtkIntervalo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mtkIntervalo.Location = new System.Drawing.Point(530, 63);
+            this.mtkIntervalo.Location = new System.Drawing.Point(323, 61);
             this.mtkIntervalo.Mask = "00:00";
             this.mtkIntervalo.Name = "mtkIntervalo";
             this.mtkIntervalo.Size = new System.Drawing.Size(33, 25);
@@ -355,7 +310,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(450, 58);
+            this.label9.Location = new System.Drawing.Point(247, 57);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(74, 21);
             this.label9.TabIndex = 29;
@@ -558,7 +513,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(70, 369);
+            this.label11.Location = new System.Drawing.Point(65, 362);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(60, 21);
             this.label11.TabIndex = 72;
@@ -569,7 +524,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(376, 369);
+            this.label8.Location = new System.Drawing.Point(372, 366);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 21);
             this.label8.TabIndex = 70;
@@ -580,7 +535,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(25, 395);
+            this.label10.Location = new System.Drawing.Point(32, 392);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 21);
             this.label10.TabIndex = 71;
@@ -639,11 +594,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox mtkInicio;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox mtkAlmoco;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.MaskedTextBox mtkFim;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.MaskedTextBox mtkVolta;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.MaskedTextBox mtkIntervalo;
         private System.Windows.Forms.Label label9;

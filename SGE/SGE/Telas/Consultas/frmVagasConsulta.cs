@@ -12,6 +12,7 @@ namespace SGE.Telas.Consultas
 {
     public partial class frmVagasConsulta : UserControl
     {
+        SGEEntities db = new SGEEntities();
         public frmVagasConsulta()
         {
             InitializeComponent();
@@ -25,7 +26,6 @@ namespace SGE.Telas.Consultas
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SGEEntities db = new SGEEntities();
             List<vw_vagas> candidato = db.vw_vagas.Where(a => a.nm_empresa.Contains(textBox1.Text)).ToList();
         }
 
@@ -36,7 +36,7 @@ namespace SGE.Telas.Consultas
                 vw_vagas vagas = dgvVaga.Rows[e.RowIndex].DataBoundItem as vw_vagas;
 
 
-                frmAlunoAlterar tela = new frmAlunoAlterar();
+                Alteração.frmAlunoAlterar tela = new Alteração.frmAlunoAlterar();
                 tela.LoadScreen(vagas);
                 tela.ShowDialog();
                 this.Hide();
@@ -47,7 +47,7 @@ namespace SGE.Telas.Consultas
             {
                 vw_vagas vagas = dgvVaga.CurrentRow.DataBoundItem as vw_vagas;
 
-                DialogResult r = MessageBox.Show("Deseja excluir a vaga ?", "Instituto Nossa Senhora de Fatima",
+                DialogResult r = MessageBox.Show("Deseja excluir a vaga?", "Instituto Nossa Senhora de Fatima",
                                     MessageBoxButtons.YesNo,
                                     MessageBoxIcon.Question);
 

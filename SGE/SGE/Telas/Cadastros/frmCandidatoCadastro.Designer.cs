@@ -33,23 +33,23 @@
             this.cboTipo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblArea = new System.Windows.Forms.Label();
             this.cboVaga = new System.Windows.Forms.ComboBox();
+            this.lblQuantidade = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.lblNomeEmpresa = new System.Windows.Forms.Label();
+            this.lblTipo = new System.Windows.Forms.Label();
             this.cboCurso = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.lblIdade = new System.Windows.Forms.Label();
+            this.lblNomeCompleto = new System.Windows.Forms.Label();
             this.cboAluno = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnCadatrar = new System.Windows.Forms.Button();
-            this.lblNomeCompleto = new System.Windows.Forms.Label();
-            this.lblIdade = new System.Windows.Forms.Label();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.lblTelefone = new System.Windows.Forms.Label();
-            this.lblArea = new System.Windows.Forms.Label();
-            this.lblQuantidade = new System.Windows.Forms.Label();
-            this.lblNomeEmpresa = new System.Windows.Forms.Label();
-            this.lblTipo = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +75,7 @@
             // cboTipo
             // 
             this.cboTipo.FormattingEnabled = true;
-            this.cboTipo.Location = new System.Drawing.Point(449, 90);
+            this.cboTipo.Location = new System.Drawing.Point(438, 90);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(98, 21);
             this.cboTipo.TabIndex = 60;
@@ -84,7 +84,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(403, 89);
+            this.label5.Location = new System.Drawing.Point(392, 89);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 21);
             this.label5.TabIndex = 61;
@@ -104,6 +104,16 @@
             this.groupBox2.TabIndex = 62;
             this.groupBox2.TabStop = false;
             // 
+            // lblArea
+            // 
+            this.lblArea.AutoSize = true;
+            this.lblArea.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArea.Location = new System.Drawing.Point(145, 187);
+            this.lblArea.Name = "lblArea";
+            this.lblArea.Size = new System.Drawing.Size(16, 21);
+            this.lblArea.TabIndex = 79;
+            this.lblArea.Text = "-";
+            // 
             // cboVaga
             // 
             this.cboVaga.FormattingEnabled = true;
@@ -111,6 +121,16 @@
             this.cboVaga.Name = "cboVaga";
             this.cboVaga.Size = new System.Drawing.Size(179, 21);
             this.cboVaga.TabIndex = 0;
+            // 
+            // lblQuantidade
+            // 
+            this.lblQuantidade.AutoSize = true;
+            this.lblQuantidade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantidade.Location = new System.Drawing.Point(145, 148);
+            this.lblQuantidade.Name = "lblQuantidade";
+            this.lblQuantidade.Size = new System.Drawing.Size(16, 21);
+            this.lblQuantidade.TabIndex = 78;
+            this.lblQuantidade.Text = "-";
             // 
             // label6
             // 
@@ -121,6 +141,26 @@
             this.label6.Size = new System.Drawing.Size(45, 21);
             this.label6.TabIndex = 44;
             this.label6.Text = "Vaga";
+            // 
+            // lblNomeEmpresa
+            // 
+            this.lblNomeEmpresa.AutoSize = true;
+            this.lblNomeEmpresa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeEmpresa.Location = new System.Drawing.Point(145, 112);
+            this.lblNomeEmpresa.Name = "lblNomeEmpresa";
+            this.lblNomeEmpresa.Size = new System.Drawing.Size(16, 21);
+            this.lblNomeEmpresa.TabIndex = 77;
+            this.lblNomeEmpresa.Text = "-";
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Location = new System.Drawing.Point(145, 74);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(16, 21);
+            this.lblTipo.TabIndex = 76;
+            this.lblTipo.Text = "-";
             // 
             // cboCurso
             // 
@@ -153,6 +193,46 @@
             this.groupBox1.Size = new System.Drawing.Size(313, 261);
             this.groupBox1.TabIndex = 59;
             this.groupBox1.TabStop = false;
+            // 
+            // lblTelefone
+            // 
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Location = new System.Drawing.Point(143, 187);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(16, 21);
+            this.lblTelefone.TabIndex = 75;
+            this.lblTelefone.Text = "-";
+            // 
+            // lblNumero
+            // 
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(143, 148);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(16, 21);
+            this.lblNumero.TabIndex = 74;
+            this.lblNumero.Text = "-";
+            // 
+            // lblIdade
+            // 
+            this.lblIdade.AutoSize = true;
+            this.lblIdade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdade.Location = new System.Drawing.Point(143, 112);
+            this.lblIdade.Name = "lblIdade";
+            this.lblIdade.Size = new System.Drawing.Size(16, 21);
+            this.lblIdade.TabIndex = 73;
+            this.lblIdade.Text = "-";
+            // 
+            // lblNomeCompleto
+            // 
+            this.lblNomeCompleto.AutoSize = true;
+            this.lblNomeCompleto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeCompleto.Location = new System.Drawing.Point(143, 74);
+            this.lblNomeCompleto.Name = "lblNomeCompleto";
+            this.lblNomeCompleto.Size = new System.Drawing.Size(16, 21);
+            this.lblNomeCompleto.TabIndex = 72;
+            this.lblNomeCompleto.Text = "-";
             // 
             // cboAluno
             // 
@@ -194,86 +274,6 @@
             this.btnCadatrar.Text = "Cadastrar";
             this.btnCadatrar.UseVisualStyleBackColor = true;
             this.btnCadatrar.Click += new System.EventHandler(this.btnCadatrar_Click);
-            // 
-            // lblNomeCompleto
-            // 
-            this.lblNomeCompleto.AutoSize = true;
-            this.lblNomeCompleto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeCompleto.Location = new System.Drawing.Point(143, 74);
-            this.lblNomeCompleto.Name = "lblNomeCompleto";
-            this.lblNomeCompleto.Size = new System.Drawing.Size(16, 21);
-            this.lblNomeCompleto.TabIndex = 72;
-            this.lblNomeCompleto.Text = "-";
-            // 
-            // lblIdade
-            // 
-            this.lblIdade.AutoSize = true;
-            this.lblIdade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdade.Location = new System.Drawing.Point(143, 112);
-            this.lblIdade.Name = "lblIdade";
-            this.lblIdade.Size = new System.Drawing.Size(16, 21);
-            this.lblIdade.TabIndex = 73;
-            this.lblIdade.Text = "-";
-            // 
-            // lblNumero
-            // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(143, 148);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(16, 21);
-            this.lblNumero.TabIndex = 74;
-            this.lblNumero.Text = "-";
-            // 
-            // lblTelefone
-            // 
-            this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(143, 187);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(16, 21);
-            this.lblTelefone.TabIndex = 75;
-            this.lblTelefone.Text = "-";
-            // 
-            // lblArea
-            // 
-            this.lblArea.AutoSize = true;
-            this.lblArea.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArea.Location = new System.Drawing.Point(145, 187);
-            this.lblArea.Name = "lblArea";
-            this.lblArea.Size = new System.Drawing.Size(16, 21);
-            this.lblArea.TabIndex = 79;
-            this.lblArea.Text = "-";
-            // 
-            // lblQuantidade
-            // 
-            this.lblQuantidade.AutoSize = true;
-            this.lblQuantidade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantidade.Location = new System.Drawing.Point(145, 148);
-            this.lblQuantidade.Name = "lblQuantidade";
-            this.lblQuantidade.Size = new System.Drawing.Size(16, 21);
-            this.lblQuantidade.TabIndex = 78;
-            this.lblQuantidade.Text = "-";
-            // 
-            // lblNomeEmpresa
-            // 
-            this.lblNomeEmpresa.AutoSize = true;
-            this.lblNomeEmpresa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeEmpresa.Location = new System.Drawing.Point(145, 112);
-            this.lblNomeEmpresa.Name = "lblNomeEmpresa";
-            this.lblNomeEmpresa.Size = new System.Drawing.Size(16, 21);
-            this.lblNomeEmpresa.TabIndex = 77;
-            this.lblNomeEmpresa.Text = "-";
-            // 
-            // lblTipo
-            // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(145, 74);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(16, 21);
-            this.lblTipo.TabIndex = 76;
-            this.lblTipo.Text = "-";
             // 
             // frmCandidatoCadastro
             // 

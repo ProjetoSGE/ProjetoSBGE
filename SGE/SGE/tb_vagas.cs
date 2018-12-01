@@ -27,9 +27,9 @@ namespace SGE
         public System.DateTime dt_inicioEstagio { get; set; }
         public string ds_sexo { get; set; }
         public int id_empresa { get; set; }
-        public System.TimeSpan ds_horarioEntrada { get; set; }
-        public System.TimeSpan ds_horarioSaida { get; set; }
-        public System.TimeSpan ds_intervalo { get; set; }
+        public System.DateTime ds_horarioEntrada { get; set; }
+        public System.DateTime ds_horarioSaida { get; set; }
+        public System.DateTime ds_intervalo { get; set; }
         public bool op_seguroDeVida { get; set; }
         public bool op_auxTransporte { get; set; }
         public bool op_recRemunerado { get; set; }
