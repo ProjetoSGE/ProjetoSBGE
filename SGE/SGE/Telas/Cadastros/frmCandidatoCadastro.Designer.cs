@@ -37,11 +37,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cboCurso = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnsalvar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboAluno = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -106,7 +106,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 21);
+            this.label6.Size = new System.Drawing.Size(44, 21);
             this.label6.TabIndex = 44;
             this.label6.Text = "Vaga";
             // 
@@ -127,28 +127,6 @@
             this.label2.Size = new System.Drawing.Size(51, 21);
             this.label2.TabIndex = 58;
             this.label2.Text = "Curso";
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(405, 386);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 32);
-            this.btnCancelar.TabIndex = 56;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnsalvar
-            // 
-            this.btnsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsalvar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalvar.Location = new System.Drawing.Point(257, 386);
-            this.btnsalvar.Name = "btnsalvar";
-            this.btnsalvar.Size = new System.Drawing.Size(75, 32);
-            this.btnsalvar.TabIndex = 55;
-            this.btnsalvar.Text = "Cadastrar";
-            this.btnsalvar.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -178,10 +156,34 @@
             this.label1.TabIndex = 44;
             this.label1.Text = "Aluno";
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(396, 395);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 46);
+            this.button1.TabIndex = 71;
+            this.button1.Text = "Cancelar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(266, 395);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 46);
+            this.button2.TabIndex = 70;
+            this.button2.Text = "Cadastrar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // frmCandidatoCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.cboTurma);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cboTipo);
@@ -189,8 +191,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.cboCurso);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnsalvar);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCandidatoCadastro";
             this.Size = new System.Drawing.Size(755, 507);
@@ -214,10 +214,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cboCurso;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnsalvar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cboAluno;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

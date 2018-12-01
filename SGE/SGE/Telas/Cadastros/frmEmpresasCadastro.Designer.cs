@@ -51,17 +51,19 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.mktTelefone = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox2.Controls.Add(this.txtEmail);
             this.groupBox2.Controls.Add(this.mtkCNPJ);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.mktTelefone);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.mktRegistroEstadual);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label1);
@@ -69,9 +71,9 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.txtNomeFantasi);
             this.groupBox2.Controls.Add(this.txtRazaoSocial);
-            this.groupBox2.Location = new System.Drawing.Point(31, 68);
+            this.groupBox2.Location = new System.Drawing.Point(136, 117);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(268, 147);
+            this.groupBox2.Size = new System.Drawing.Size(249, 203);
             this.groupBox2.TabIndex = 35;
             this.groupBox2.TabStop = false;
             // 
@@ -122,7 +124,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(80, 16);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 21);
+            this.label9.Size = new System.Drawing.Size(49, 21);
             this.label9.TabIndex = 22;
             this.label9.Text = "CNPJ:";
             // 
@@ -133,7 +135,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(13, 46);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 21);
+            this.label10.Size = new System.Drawing.Size(116, 21);
             this.label10.TabIndex = 0;
             this.label10.Text = "Nome Fantasia:";
             // 
@@ -156,7 +158,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 44);
+            this.label2.Location = new System.Drawing.Point(72, 167);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 21);
             this.label2.TabIndex = 1;
@@ -164,7 +166,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(84, 47);
+            this.txtEmail.Location = new System.Drawing.Point(135, 171);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
             this.txtEmail.TabIndex = 13;
@@ -180,19 +182,19 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtEndereco);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(305, 82);
+            this.groupBox1.Location = new System.Drawing.Point(419, 117);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(372, 118);
+            this.groupBox1.Size = new System.Drawing.Size(249, 203);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtPontoRef
             // 
-            this.txtPontoRef.Location = new System.Drawing.Point(215, 43);
+            this.txtPontoRef.Location = new System.Drawing.Point(14, 125);
             this.txtPontoRef.Multiline = true;
             this.txtPontoRef.Name = "txtPontoRef";
-            this.txtPontoRef.Size = new System.Drawing.Size(138, 52);
+            this.txtPontoRef.Size = new System.Drawing.Size(138, 63);
             this.txtPontoRef.TabIndex = 38;
             // 
             // label8
@@ -200,9 +202,9 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(211, 19);
+            this.label8.Location = new System.Drawing.Point(10, 101);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(152, 21);
+            this.label8.Size = new System.Drawing.Size(151, 21);
             this.label8.TabIndex = 37;
             this.label8.Text = "Ponto de referencia: ";
             // 
@@ -265,7 +267,7 @@
             // 
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(293, 412);
+            this.btnCadastrar.Location = new System.Drawing.Point(281, 407);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(104, 45);
             this.btnCadastrar.TabIndex = 33;
@@ -275,7 +277,7 @@
             // 
             // mktTelefone
             // 
-            this.mktTelefone.Location = new System.Drawing.Point(84, 23);
+            this.mktTelefone.Location = new System.Drawing.Point(135, 145);
             this.mktTelefone.Mask = "0000-0000";
             this.mktTelefone.Name = "mktTelefone";
             this.mktTelefone.Size = new System.Drawing.Size(59, 20);
@@ -286,30 +288,17 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(8, 19);
+            this.label5.Location = new System.Drawing.Point(59, 142);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 21);
+            this.label5.Size = new System.Drawing.Size(70, 21);
             this.label5.TabIndex = 27;
             this.label5.Text = "Telefone:";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBox3.Controls.Add(this.txtEmail);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.mktTelefone);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Location = new System.Drawing.Point(31, 232);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(203, 82);
-            this.groupBox3.TabIndex = 39;
-            this.groupBox3.TabStop = false;
             // 
             // btnCancelar
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(414, 412);
+            this.btnCancelar.Location = new System.Drawing.Point(419, 407);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(104, 45);
             this.btnCancelar.TabIndex = 40;
@@ -321,7 +310,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCadastrar);
@@ -331,8 +319,6 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -360,7 +346,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.MaskedTextBox mktRegistroEstadual;
         private System.Windows.Forms.MaskedTextBox mtkCNPJ;
