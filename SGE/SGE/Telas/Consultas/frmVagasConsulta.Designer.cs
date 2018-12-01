@@ -53,7 +53,7 @@
             this.Pesquisar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pesquisar.Location = new System.Drawing.Point(32, 76);
             this.Pesquisar.Name = "Pesquisar";
-            this.Pesquisar.Size = new System.Drawing.Size(44, 21);
+            this.Pesquisar.Size = new System.Drawing.Size(45, 21);
             this.Pesquisar.TabIndex = 5;
             this.Pesquisar.Text = "Vaga";
             // 
@@ -64,6 +64,7 @@
             this.dgvVaga.Name = "dgvVaga";
             this.dgvVaga.Size = new System.Drawing.Size(723, 408);
             this.dgvVaga.TabIndex = 4;
+            this.dgvVaga.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVaga_CellContentClick);
             // 
             // pictureBox1
             // 

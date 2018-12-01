@@ -50,6 +50,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -75,6 +76,7 @@
             this.dgvCandidato.Name = "dgvCandidato";
             this.dgvCandidato.Size = new System.Drawing.Size(723, 408);
             this.dgvCandidato.TabIndex = 8;
+            this.dgvCandidato.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCandidato_CellContentClick);
             // 
             // pictureBox1
             // 

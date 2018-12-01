@@ -93,6 +93,7 @@
             this.dgvEmpresa.RowHeadersWidth = 4;
             this.dgvEmpresa.Size = new System.Drawing.Size(723, 408);
             this.dgvEmpresa.TabIndex = 8;
+            this.dgvEmpresa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpresa_CellContentClick);
             // 
             // Column1
             // 
@@ -172,6 +173,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Pesquisar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
