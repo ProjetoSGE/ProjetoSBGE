@@ -122,7 +122,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(80, 16);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 21);
+            this.label9.Size = new System.Drawing.Size(50, 21);
             this.label9.TabIndex = 22;
             this.label9.Text = "CNPJ:";
             // 
@@ -133,7 +133,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(13, 46);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 21);
+            this.label10.Size = new System.Drawing.Size(117, 21);
             this.label10.TabIndex = 0;
             this.label10.Text = "Nome Fantasia:";
             // 
@@ -202,7 +202,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(211, 19);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 21);
+            this.label8.Size = new System.Drawing.Size(152, 21);
             this.label8.TabIndex = 37;
             this.label8.Text = "Ponto de referencia: ";
             // 
@@ -271,6 +271,7 @@
             this.btnCadastrar.TabIndex = 33;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // mktTelefone
             // 
@@ -287,7 +288,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(8, 19);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 21);
+            this.label5.Size = new System.Drawing.Size(72, 21);
             this.label5.TabIndex = 27;
             this.label5.Text = "Telefone:";
             // 

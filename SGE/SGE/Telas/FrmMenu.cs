@@ -86,5 +86,10 @@ namespace SGE.TelasDF
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

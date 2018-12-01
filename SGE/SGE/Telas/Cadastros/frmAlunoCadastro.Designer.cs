@@ -120,6 +120,7 @@
             this.btnsalvar.TabIndex = 63;
             this.btnsalvar.Text = "Cadastrar";
             this.btnsalvar.UseVisualStyleBackColor = true;
+            this.btnsalvar.Click += new System.EventHandler(this.btnsalvar_Click);
             // 
             // mskRecado
             // 
@@ -204,7 +205,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(58, 211);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(107, 21);
+            this.label14.Size = new System.Drawing.Size(109, 21);
             this.label14.TabIndex = 52;
             this.label14.Text = "Telefone(RES):";
             // 
@@ -224,7 +225,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(394, 242);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(141, 21);
+            this.label11.Size = new System.Drawing.Size(143, 21);
             this.label11.TabIndex = 50;
             this.label11.Text = "Telefone(RECADO):";
             // 

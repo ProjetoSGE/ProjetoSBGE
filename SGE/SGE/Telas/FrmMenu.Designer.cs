@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pbxMinimize = new System.Windows.Forms.PictureBox();
+            this.pbxClose = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -49,13 +51,11 @@
             this.empreSAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vagasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlCentro = new System.Windows.Forms.Panel();
-            this.pbxMinimize = new System.Windows.Forms.PictureBox();
-            this.pbxClose = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxClose)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,6 +68,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(775, 25);
             this.panel1.TabIndex = 0;
+            // 
+            // pbxMinimize
+            // 
+            this.pbxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pbxMinimize.Image")));
+            this.pbxMinimize.Location = new System.Drawing.Point(720, 3);
+            this.pbxMinimize.Name = "pbxMinimize";
+            this.pbxMinimize.Size = new System.Drawing.Size(23, 22);
+            this.pbxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxMinimize.TabIndex = 4;
+            this.pbxMinimize.TabStop = false;
+            this.pbxMinimize.Click += new System.EventHandler(this.pbxMinimize_Click);
+            // 
+            // pbxClose
+            // 
+            this.pbxClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxClose.Image = ((System.Drawing.Image)(resources.GetObject("pbxClose.Image")));
+            this.pbxClose.Location = new System.Drawing.Point(749, 3);
+            this.pbxClose.Name = "pbxClose";
+            this.pbxClose.Size = new System.Drawing.Size(23, 22);
+            this.pbxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxClose.TabIndex = 3;
+            this.pbxClose.TabStop = false;
+            this.pbxClose.Click += new System.EventHandler(this.pbxClose_Click);
             // 
             // panel2
             // 
@@ -133,13 +157,14 @@
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.homeToolStripMenuItem.Text = "Home";
+            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // cadastrosToolStripMenuItem
@@ -195,28 +220,28 @@
             // alunoToolStripMenuItem1
             // 
             this.alunoToolStripMenuItem1.Name = "alunoToolStripMenuItem1";
-            this.alunoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.alunoToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
             this.alunoToolStripMenuItem1.Text = "Aluno";
             this.alunoToolStripMenuItem1.Click += new System.EventHandler(this.alunoToolStripMenuItem1_Click);
             // 
             // candidatoToolStripMenuItem1
             // 
             this.candidatoToolStripMenuItem1.Name = "candidatoToolStripMenuItem1";
-            this.candidatoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.candidatoToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
             this.candidatoToolStripMenuItem1.Text = "Candidato";
             this.candidatoToolStripMenuItem1.Click += new System.EventHandler(this.candidatoToolStripMenuItem1_Click);
             // 
             // empreSAToolStripMenuItem
             // 
             this.empreSAToolStripMenuItem.Name = "empreSAToolStripMenuItem";
-            this.empreSAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empreSAToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.empreSAToolStripMenuItem.Text = "Empresa";
             this.empreSAToolStripMenuItem.Click += new System.EventHandler(this.empreSAToolStripMenuItem_Click);
             // 
             // vagasToolStripMenuItem1
             // 
             this.vagasToolStripMenuItem1.Name = "vagasToolStripMenuItem1";
-            this.vagasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.vagasToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
             this.vagasToolStripMenuItem1.Text = "Vagas";
             this.vagasToolStripMenuItem1.Click += new System.EventHandler(this.vagasToolStripMenuItem1_Click);
             // 
@@ -226,30 +251,6 @@
             this.pnlCentro.Name = "pnlCentro";
             this.pnlCentro.Size = new System.Drawing.Size(755, 507);
             this.pnlCentro.TabIndex = 2;
-            // 
-            // pbxMinimize
-            // 
-            this.pbxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pbxMinimize.Image")));
-            this.pbxMinimize.Location = new System.Drawing.Point(720, 3);
-            this.pbxMinimize.Name = "pbxMinimize";
-            this.pbxMinimize.Size = new System.Drawing.Size(23, 22);
-            this.pbxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxMinimize.TabIndex = 4;
-            this.pbxMinimize.TabStop = false;
-            this.pbxMinimize.Click += new System.EventHandler(this.pbxMinimize_Click);
-            // 
-            // pbxClose
-            // 
-            this.pbxClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbxClose.Image = ((System.Drawing.Image)(resources.GetObject("pbxClose.Image")));
-            this.pbxClose.Location = new System.Drawing.Point(749, 3);
-            this.pbxClose.Name = "pbxClose";
-            this.pbxClose.Size = new System.Drawing.Size(23, 22);
-            this.pbxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxClose.TabIndex = 3;
-            this.pbxClose.TabStop = false;
-            this.pbxClose.Click += new System.EventHandler(this.pbxClose_Click);
             // 
             // FrmMenu
             // 
@@ -267,12 +268,12 @@
             this.Name = "FrmMenu";
             this.Text = "FrmMenu";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxClose)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxClose)).EndInit();
             this.ResumeLayout(false);
 
         }
