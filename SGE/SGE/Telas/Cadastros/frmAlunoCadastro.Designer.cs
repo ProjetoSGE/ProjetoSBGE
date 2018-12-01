@@ -56,16 +56,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.cboTurno = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.rdbNao = new System.Windows.Forms.RadioButton();
+            this.cboSerie = new System.Windows.Forms.ComboBox();
+            this.rdbSim = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cboAnoEstudou = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.rdbSim = new System.Windows.Forms.RadioButton();
-            this.rdbNao = new System.Windows.Forms.RadioButton();
-            this.label13 = new System.Windows.Forms.Label();
-            this.cboSerie = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.cboTurno = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -331,110 +331,7 @@
             this.groupBox2.Size = new System.Drawing.Size(324, 106);
             this.groupBox2.TabIndex = 71;
             this.groupBox2.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.txtNumero);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.txtEndereco);
-            this.groupBox3.Controls.Add(this.txtBairro);
-            this.groupBox3.Controls.Add(this.mskCEP);
-            this.groupBox3.Location = new System.Drawing.Point(388, 21);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(324, 140);
-            this.groupBox3.TabIndex = 71;
-            this.groupBox3.TabStop = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.mskRecado);
-            this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Controls.Add(this.dtpDataNasc);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.cboCurso);
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.cboAnoEstudou);
-            this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.txtNome);
-            this.groupBox4.Controls.Add(this.txtIdade);
-            this.groupBox4.Controls.Add(this.mskRes);
-            this.groupBox4.Location = new System.Drawing.Point(43, 23);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(324, 245);
-            this.groupBox4.TabIndex = 71;
-            this.groupBox4.TabStop = false;
-            // 
-            // cboAnoEstudou
-            // 
-            this.cboAnoEstudou.FormattingEnabled = true;
-            this.cboAnoEstudou.Location = new System.Drawing.Point(170, 84);
-            this.cboAnoEstudou.Name = "cboAnoEstudou";
-            this.cboAnoEstudou.Size = new System.Drawing.Size(124, 21);
-            this.cboAnoEstudou.TabIndex = 66;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(87, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 21);
-            this.label7.TabIndex = 69;
-            this.label7.Text = "Estuda:";
-            // 
-            // rdbSim
-            // 
-            this.rdbSim.AutoSize = true;
-            this.rdbSim.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbSim.Location = new System.Drawing.Point(153, 15);
-            this.rdbSim.Name = "rdbSim";
-            this.rdbSim.Size = new System.Drawing.Size(52, 24);
-            this.rdbSim.TabIndex = 70;
-            this.rdbSim.TabStop = true;
-            this.rdbSim.Text = "Sim";
-            this.rdbSim.UseVisualStyleBackColor = true;
-            // 
-            // rdbNao
-            // 
-            this.rdbNao.AutoSize = true;
-            this.rdbNao.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbNao.Location = new System.Drawing.Point(211, 15);
-            this.rdbNao.Name = "rdbNao";
-            this.rdbNao.Size = new System.Drawing.Size(55, 24);
-            this.rdbNao.TabIndex = 71;
-            this.rdbNao.TabStop = true;
-            this.rdbNao.Text = "Não";
-            this.rdbNao.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(51, 42);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(95, 21);
-            this.label13.TabIndex = 69;
-            this.label13.Text = "Curso/Serie:";
-            // 
-            // cboSerie
-            // 
-            this.cboSerie.FormattingEnabled = true;
-            this.cboSerie.Items.AddRange(new object[] {
-            "Ensino Superior ",
-            "1°Serie Ensino Medio",
-            "2°Serie Ensino Medio",
-            "3°Serie Ensino Medio"});
-            this.cboSerie.Location = new System.Drawing.Point(153, 42);
-            this.cboSerie.Name = "cboSerie";
-            this.cboSerie.Size = new System.Drawing.Size(124, 21);
-            this.cboSerie.TabIndex = 70;
-            this.cboSerie.Text = "....";
+            this.groupBox2.Text = "Estudo";
             // 
             // label16
             // 
@@ -459,6 +356,112 @@
             this.cboTurno.TabIndex = 73;
             this.cboTurno.Text = ".....";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(51, 42);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(95, 21);
+            this.label13.TabIndex = 69;
+            this.label13.Text = "Curso/Serie:";
+            // 
+            // rdbNao
+            // 
+            this.rdbNao.AutoSize = true;
+            this.rdbNao.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbNao.Location = new System.Drawing.Point(211, 15);
+            this.rdbNao.Name = "rdbNao";
+            this.rdbNao.Size = new System.Drawing.Size(55, 24);
+            this.rdbNao.TabIndex = 71;
+            this.rdbNao.TabStop = true;
+            this.rdbNao.Text = "Não";
+            this.rdbNao.UseVisualStyleBackColor = true;
+            // 
+            // cboSerie
+            // 
+            this.cboSerie.FormattingEnabled = true;
+            this.cboSerie.Items.AddRange(new object[] {
+            "Ensino Superior ",
+            "1°Serie Ensino Medio",
+            "2°Serie Ensino Medio",
+            "3°Serie Ensino Medio"});
+            this.cboSerie.Location = new System.Drawing.Point(153, 42);
+            this.cboSerie.Name = "cboSerie";
+            this.cboSerie.Size = new System.Drawing.Size(124, 21);
+            this.cboSerie.TabIndex = 70;
+            this.cboSerie.Text = "....";
+            // 
+            // rdbSim
+            // 
+            this.rdbSim.AutoSize = true;
+            this.rdbSim.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbSim.Location = new System.Drawing.Point(153, 15);
+            this.rdbSim.Name = "rdbSim";
+            this.rdbSim.Size = new System.Drawing.Size(52, 24);
+            this.rdbSim.TabIndex = 70;
+            this.rdbSim.TabStop = true;
+            this.rdbSim.Text = "Sim";
+            this.rdbSim.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(87, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 21);
+            this.label7.TabIndex = 69;
+            this.label7.Text = "Estuda:";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtNumero);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.txtEndereco);
+            this.groupBox3.Controls.Add(this.txtBairro);
+            this.groupBox3.Controls.Add(this.mskCEP);
+            this.groupBox3.Location = new System.Drawing.Point(388, 21);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(324, 140);
+            this.groupBox3.TabIndex = 71;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Endereço";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.mskRecado);
+            this.groupBox4.Controls.Add(this.label1);
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.dtpDataNasc);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.cboCurso);
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Controls.Add(this.cboAnoEstudou);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.txtNome);
+            this.groupBox4.Controls.Add(this.txtIdade);
+            this.groupBox4.Controls.Add(this.mskRes);
+            this.groupBox4.Location = new System.Drawing.Point(43, 23);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(324, 245);
+            this.groupBox4.TabIndex = 71;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Aluno";
+            // 
+            // cboAnoEstudou
+            // 
+            this.cboAnoEstudou.FormattingEnabled = true;
+            this.cboAnoEstudou.Location = new System.Drawing.Point(170, 84);
+            this.cboAnoEstudou.Name = "cboAnoEstudou";
+            this.cboAnoEstudou.Size = new System.Drawing.Size(124, 21);
+            this.cboAnoEstudou.TabIndex = 66;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtPreferencia);
@@ -470,6 +473,7 @@
             this.groupBox1.Size = new System.Drawing.Size(669, 140);
             this.groupBox1.TabIndex = 72;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Area profissional";
             // 
             // frmAlunoCadastro
             // 
