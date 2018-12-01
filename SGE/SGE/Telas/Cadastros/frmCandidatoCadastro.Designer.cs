@@ -42,6 +42,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnCadatrar = new System.Windows.Forms.Button();
+            this.lblNomeCompleto = new System.Windows.Forms.Label();
+            this.lblIdade = new System.Windows.Forms.Label();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.lblArea = new System.Windows.Forms.Label();
+            this.lblQuantidade = new System.Windows.Forms.Label();
+            this.lblNomeEmpresa = new System.Windows.Forms.Label();
+            this.lblTipo = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -84,8 +92,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lblArea);
             this.groupBox2.Controls.Add(this.cboVaga);
+            this.groupBox2.Controls.Add(this.lblQuantidade);
             this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.lblNomeEmpresa);
+            this.groupBox2.Controls.Add(this.lblTipo);
             this.groupBox2.Location = new System.Drawing.Point(396, 115);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(313, 261);
@@ -106,7 +118,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 21);
+            this.label6.Size = new System.Drawing.Size(45, 21);
             this.label6.TabIndex = 44;
             this.label6.Text = "Vaga";
             // 
@@ -130,6 +142,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblTelefone);
+            this.groupBox1.Controls.Add(this.lblNumero);
+            this.groupBox1.Controls.Add(this.lblIdade);
+            this.groupBox1.Controls.Add(this.lblNomeCompleto);
             this.groupBox1.Controls.Add(this.cboAluno);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(45, 115);
@@ -177,11 +193,93 @@
             this.btnCadatrar.TabIndex = 70;
             this.btnCadatrar.Text = "Cadastrar";
             this.btnCadatrar.UseVisualStyleBackColor = true;
+            this.btnCadatrar.Click += new System.EventHandler(this.btnCadatrar_Click);
+            // 
+            // lblNomeCompleto
+            // 
+            this.lblNomeCompleto.AutoSize = true;
+            this.lblNomeCompleto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeCompleto.Location = new System.Drawing.Point(143, 74);
+            this.lblNomeCompleto.Name = "lblNomeCompleto";
+            this.lblNomeCompleto.Size = new System.Drawing.Size(16, 21);
+            this.lblNomeCompleto.TabIndex = 72;
+            this.lblNomeCompleto.Text = "-";
+            // 
+            // lblIdade
+            // 
+            this.lblIdade.AutoSize = true;
+            this.lblIdade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdade.Location = new System.Drawing.Point(143, 112);
+            this.lblIdade.Name = "lblIdade";
+            this.lblIdade.Size = new System.Drawing.Size(16, 21);
+            this.lblIdade.TabIndex = 73;
+            this.lblIdade.Text = "-";
+            // 
+            // lblNumero
+            // 
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(143, 148);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(16, 21);
+            this.lblNumero.TabIndex = 74;
+            this.lblNumero.Text = "-";
+            // 
+            // lblTelefone
+            // 
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Location = new System.Drawing.Point(143, 187);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(16, 21);
+            this.lblTelefone.TabIndex = 75;
+            this.lblTelefone.Text = "-";
+            // 
+            // lblArea
+            // 
+            this.lblArea.AutoSize = true;
+            this.lblArea.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArea.Location = new System.Drawing.Point(145, 187);
+            this.lblArea.Name = "lblArea";
+            this.lblArea.Size = new System.Drawing.Size(16, 21);
+            this.lblArea.TabIndex = 79;
+            this.lblArea.Text = "-";
+            // 
+            // lblQuantidade
+            // 
+            this.lblQuantidade.AutoSize = true;
+            this.lblQuantidade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantidade.Location = new System.Drawing.Point(145, 148);
+            this.lblQuantidade.Name = "lblQuantidade";
+            this.lblQuantidade.Size = new System.Drawing.Size(16, 21);
+            this.lblQuantidade.TabIndex = 78;
+            this.lblQuantidade.Text = "-";
+            // 
+            // lblNomeEmpresa
+            // 
+            this.lblNomeEmpresa.AutoSize = true;
+            this.lblNomeEmpresa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeEmpresa.Location = new System.Drawing.Point(145, 112);
+            this.lblNomeEmpresa.Name = "lblNomeEmpresa";
+            this.lblNomeEmpresa.Size = new System.Drawing.Size(16, 21);
+            this.lblNomeEmpresa.TabIndex = 77;
+            this.lblNomeEmpresa.Text = "-";
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.Location = new System.Drawing.Point(145, 74);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(16, 21);
+            this.lblTipo.TabIndex = 76;
+            this.lblTipo.Text = "-";
             // 
             // frmCandidatoCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCadatrar);
             this.Controls.Add(this.cboTurma);
@@ -219,5 +317,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCadatrar;
+        private System.Windows.Forms.Label lblArea;
+        private System.Windows.Forms.Label lblQuantidade;
+        private System.Windows.Forms.Label lblNomeEmpresa;
+        private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.Label lblTelefone;
+        private System.Windows.Forms.Label lblNumero;
+        private System.Windows.Forms.Label lblIdade;
+        private System.Windows.Forms.Label lblNomeCompleto;
     }
 }
