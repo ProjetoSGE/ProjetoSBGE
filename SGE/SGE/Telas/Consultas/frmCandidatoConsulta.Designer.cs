@@ -28,18 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Pesquisar = new System.Windows.Forms.Label();
+            this.dgvCandidato = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCandidato)).BeginInit();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(644, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 33);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Pesquisar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(90, 31);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(553, 20);
+            this.textBox1.TabIndex = 10;
+            // 
+            // Pesquisar
+            // 
+            this.Pesquisar.AutoSize = true;
+            this.Pesquisar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pesquisar.Location = new System.Drawing.Point(26, 28);
+            this.Pesquisar.Name = "Pesquisar";
+            this.Pesquisar.Size = new System.Drawing.Size(53, 21);
+            this.Pesquisar.TabIndex = 9;
+            this.Pesquisar.Text = "Nome";
+            // 
+            // dgvCandidato
+            // 
+            this.dgvCandidato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCandidato.Location = new System.Drawing.Point(34, 73);
+            this.dgvCandidato.Name = "dgvCandidato";
+            this.dgvCandidato.Size = new System.Drawing.Size(690, 411);
+            this.dgvCandidato.TabIndex = 8;
             // 
             // frmCandidatoConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Pesquisar);
+            this.Controls.Add(this.dgvCandidato);
             this.Name = "frmCandidatoConsulta";
             this.Size = new System.Drawing.Size(755, 507);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCandidato)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label Pesquisar;
+        private System.Windows.Forms.DataGridView dgvCandidato;
     }
 }
