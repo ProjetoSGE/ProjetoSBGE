@@ -218,6 +218,7 @@
             this.btnsalvar.TabIndex = 73;
             this.btnsalvar.Text = "Cadastrar";
             this.btnsalvar.UseVisualStyleBackColor = true;
+            this.btnsalvar.Click += new System.EventHandler(this.btnsalvar_Click);
             // 
             // groupBox3
             // 
@@ -506,13 +507,14 @@
             // chkRefeitorioLocal
             // 
             this.chkRefeitorioLocal.AutoSize = true;
+            this.chkRefeitorioLocal.BackColor = System.Drawing.Color.Transparent;
             this.chkRefeitorioLocal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkRefeitorioLocal.Location = new System.Drawing.Point(185, 82);
             this.chkRefeitorioLocal.Name = "chkRefeitorioLocal";
             this.chkRefeitorioLocal.Size = new System.Drawing.Size(159, 25);
             this.chkRefeitorioLocal.TabIndex = 40;
             this.chkRefeitorioLocal.Text = "Refeitório no Local";
-            this.chkRefeitorioLocal.UseVisualStyleBackColor = true;
+            this.chkRefeitorioLocal.UseVisualStyleBackColor = false;
             // 
             // chkCestaBasica
             // 
@@ -588,6 +590,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnsalvar);

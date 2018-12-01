@@ -21,5 +21,10 @@ namespace SGE.Telas.Cadastros
         {
 
         }
+
+        private void btnsalvar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
