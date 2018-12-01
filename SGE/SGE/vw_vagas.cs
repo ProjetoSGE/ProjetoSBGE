@@ -20,8 +20,9 @@ namespace SGE
         public int qtd_vaga { get; set; }
         public System.DateTime dt_inicioEstagio { get; set; }
         public string ds_sexo { get; set; }
-        public string nm_empresa { get; set; }
-        public System.TimeSpan ds_horario { get; set; }
+        public string nm_fantasia { get; set; }
+        public System.TimeSpan ds_horarioEntrada { get; set; }
+        public System.TimeSpan ds_horarioSaida { get; set; }
         public System.TimeSpan ds_intervalo { get; set; }
         public bool op_seguroDeVida { get; set; }
         public bool op_auxTransporte { get; set; }
@@ -36,7 +37,7 @@ namespace SGE
         public bool op_infoCorel { get; set; }
         public bool op_infoPhotoShop { get; set; }
         public bool op_infoProgramacao { get; set; }
-        public string op_outros { get; set; }
+        public string ds_outros { get; set; }
         public string ds_observacao { get; set; }
         public string ds_compPessoal { get; set; }
         public string ds_tarefas { get; set; }

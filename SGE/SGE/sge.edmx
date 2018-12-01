@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SGEdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="SGEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tb_alunos">
           <Key>
             <PropertyRef Name="id_aluno" />
@@ -12,20 +12,21 @@
           <Property Name="id_aluno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nm_aluno" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="nm_curso" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ds_rg" Type="varchar" MaxLength="15" Nullable="false" />
           <Property Name="ds_anoEstudo" Type="varchar" MaxLength="4" Nullable="false" />
           <Property Name="dt_nascimento" Type="date" Nullable="false" />
           <Property Name="ds_idade" Type="int" Nullable="false" />
           <Property Name="ds_endereco" Type="varchar" MaxLength="150" Nullable="false" />
-          <Property Name="ds_numero" Type="int" Nullable="false" />
+          <Property Name="ds_numero" Type="int" />
           <Property Name="ds_bairro" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="ds_cep" Type="varchar" MaxLength="9" Nullable="false" />
-          <Property Name="nr_fixo" Type="varchar" MaxLength="13" Nullable="false" />
+          <Property Name="nr_fixo" Type="varchar" MaxLength="13" />
           <Property Name="nr_celular" Type="varchar" MaxLength="14" Nullable="false" />
           <Property Name="ds_seEstuda" Type="varchar" MaxLength="3" Nullable="false" />
-          <Property Name="ds_qualCurso" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="ds_turno" Type="varchar" MaxLength="7" Nullable="false" />
-          <Property Name="ds_expProfissional" Type="text" Nullable="false" />
-          <Property Name="ds_areaPreferencia" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ds_qualCurso" Type="varchar" MaxLength="50" />
+          <Property Name="ds_turno" Type="varchar" MaxLength="7" />
+          <Property Name="ds_expProfissional" Type="text" />
+          <Property Name="ds_areaPreferencial" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_candidato">
           <Key>
@@ -41,16 +42,16 @@
             <PropertyRef Name="id_empresa" />
           </Key>
           <Property Name="id_empresa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nm_empresa" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="nm_razaoSocial" Type="varchar" MaxLength="200" />
+          <Property Name="nm_fantasia" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="nm_razaoSocial" Type="varchar" MaxLength="300" />
+          <Property Name="ds_cnpj" Type="varchar" MaxLength="20" />
+          <Property Name="nr_codEstadual" Type="int" />
           <Property Name="nr_telefone" Type="varchar" MaxLength="14" Nullable="false" />
           <Property Name="ds_email" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="ds_cnpj" Type="varchar" MaxLength="15" Nullable="false" />
-          <Property Name="ds_codigoEstadual" Type="int" />
           <Property Name="ds_cep" Type="varchar" MaxLength="9" Nullable="false" />
           <Property Name="ds_bairro" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="ds_endereco" Type="varchar" MaxLength="150" Nullable="false" />
-          <Property Name="ds_pontoReferencial" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ds_pontoReferencia" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="tb_vagas">
           <Key>
@@ -63,7 +64,8 @@
           <Property Name="dt_inicioEstagio" Type="date" Nullable="false" />
           <Property Name="ds_sexo" Type="varchar" MaxLength="9" Nullable="false" />
           <Property Name="id_empresa" Type="int" Nullable="false" />
-          <Property Name="ds_horario" Type="time" Precision="7" Nullable="false" />
+          <Property Name="ds_horarioEntrada" Type="time" Precision="7" Nullable="false" />
+          <Property Name="ds_horarioSaida" Type="time" Precision="7" Nullable="false" />
           <Property Name="ds_intervalo" Type="time" Precision="7" Nullable="false" />
           <Property Name="op_seguroDeVida" Type="bit" Nullable="false" />
           <Property Name="op_auxTransporte" Type="bit" Nullable="false" />
@@ -78,27 +80,29 @@
           <Property Name="op_infoCorel" Type="bit" Nullable="false" />
           <Property Name="op_infoPhotoShop" Type="bit" Nullable="false" />
           <Property Name="op_infoProgramacao" Type="bit" Nullable="false" />
-          <Property Name="op_outros" Type="varchar" MaxLength="150" Nullable="false" />
-          <Property Name="ds_observacao" Type="varchar" MaxLength="150" Nullable="false" />
-          <Property Name="ds_compPessoal" Type="text" Nullable="false" />
-          <Property Name="ds_tarefas" Type="text" Nullable="false" />
+          <Property Name="ds_outros" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="ds_observacao" Type="varchar" MaxLength="150" />
+          <Property Name="ds_compPessoal" Type="text" />
+          <Property Name="ds_tarefas" Type="text" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'SGEdb.dbo.vw_candidato' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'SGE2018.dbo.vw_candidato' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="vw_candidato">
           <Key>
             <PropertyRef Name="id_candidato" />
             <PropertyRef Name="nm_aluno" />
+            <PropertyRef Name="nm_curso" />
             <PropertyRef Name="nm_vaga" />
             <PropertyRef Name="ds_status" />
           </Key>
           <Property Name="id_candidato" Type="int" Nullable="false" />
           <Property Name="nm_aluno" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="nm_curso" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="nm_vaga" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="ds_status" Type="varchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'SGE2018.dbo.vw_vagas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="vw_vagas">
           <Key>
             <PropertyRef Name="id_vaga" />
@@ -107,8 +111,9 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             <PropertyRef Name="qtd_vaga" />
             <PropertyRef Name="dt_inicioEstagio" />
             <PropertyRef Name="ds_sexo" />
-            <PropertyRef Name="nm_empresa" />
-            <PropertyRef Name="ds_horario" />
+            <PropertyRef Name="nm_fantasia" />
+            <PropertyRef Name="ds_horarioEntrada" />
+            <PropertyRef Name="ds_horarioSaida" />
             <PropertyRef Name="ds_intervalo" />
             <PropertyRef Name="op_seguroDeVida" />
             <PropertyRef Name="op_auxTransporte" />
@@ -123,10 +128,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             <PropertyRef Name="op_infoCorel" />
             <PropertyRef Name="op_infoPhotoShop" />
             <PropertyRef Name="op_infoProgramacao" />
-            <PropertyRef Name="op_outros" />
-            <PropertyRef Name="ds_observacao" />
-            <PropertyRef Name="ds_compPessoal" />
-            <PropertyRef Name="ds_tarefas" />
+            <PropertyRef Name="ds_outros" />
           </Key>
           <Property Name="id_vaga" Type="int" Nullable="false" />
           <Property Name="nm_vaga" Type="varchar" MaxLength="50" Nullable="false" />
@@ -134,8 +136,9 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
           <Property Name="qtd_vaga" Type="int" Nullable="false" />
           <Property Name="dt_inicioEstagio" Type="date" Nullable="false" />
           <Property Name="ds_sexo" Type="varchar" MaxLength="9" Nullable="false" />
-          <Property Name="nm_empresa" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="ds_horario" Type="time" Precision="7" Nullable="false" />
+          <Property Name="nm_fantasia" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ds_horarioEntrada" Type="time" Precision="7" Nullable="false" />
+          <Property Name="ds_horarioSaida" Type="time" Precision="7" Nullable="false" />
           <Property Name="ds_intervalo" Type="time" Precision="7" Nullable="false" />
           <Property Name="op_seguroDeVida" Type="bit" Nullable="false" />
           <Property Name="op_auxTransporte" Type="bit" Nullable="false" />
@@ -150,12 +153,12 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
           <Property Name="op_infoCorel" Type="bit" Nullable="false" />
           <Property Name="op_infoPhotoShop" Type="bit" Nullable="false" />
           <Property Name="op_infoProgramacao" Type="bit" Nullable="false" />
-          <Property Name="op_outros" Type="varchar" MaxLength="150" Nullable="false" />
-          <Property Name="ds_observacao" Type="varchar" MaxLength="150" Nullable="false" />
-          <Property Name="ds_compPessoal" Type="text" Nullable="false" />
-          <Property Name="ds_tarefas" Type="text" Nullable="false" />
+          <Property Name="ds_outros" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="ds_observacao" Type="varchar" MaxLength="150" />
+          <Property Name="ds_compPessoal" Type="text" />
+          <Property Name="ds_tarefas" Type="text" />
         </EntityType>
-        <Association Name="FK__tb_candid__id_al__5070F446">
+        <Association Name="FK__tb_candid__id_al__412EB0B6">
           <End Role="tb_alunos" Type="Self.tb_alunos" Multiplicity="1" />
           <End Role="tb_candidato" Type="Self.tb_candidato" Multiplicity="*" />
           <ReferentialConstraint>
@@ -167,7 +170,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__tb_candid__id_va__5165187F">
+        <Association Name="FK__tb_candid__id_va__4222D4EF">
           <End Role="tb_vagas" Type="Self.tb_vagas" Multiplicity="1" />
           <End Role="tb_candidato" Type="Self.tb_candidato" Multiplicity="*" />
           <ReferentialConstraint>
@@ -179,7 +182,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__tb_vagas__id_emp__4D94879B">
+        <Association Name="FK__tb_vagas__id_emp__3E52440B">
           <End Role="tb_empresas" Type="Self.tb_empresas" Multiplicity="1" />
           <End Role="tb_vagas" Type="Self.tb_vagas" Multiplicity="*" />
           <ReferentialConstraint>
@@ -191,7 +194,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SGEdbModelStoreContainer">
+        <EntityContainer Name="SGEModelStoreContainer">
           <EntitySet Name="tb_alunos" EntityType="Self.tb_alunos" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tb_candidato" EntityType="Self.tb_candidato" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tb_empresas" EntityType="Self.tb_empresas" Schema="dbo" store:Type="Tables" />
@@ -200,6 +203,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             <DefiningQuery>SELECT 
     [vw_candidato].[id_candidato] AS [id_candidato], 
     [vw_candidato].[nm_aluno] AS [nm_aluno], 
+    [vw_candidato].[nm_curso] AS [nm_curso], 
     [vw_candidato].[nm_vaga] AS [nm_vaga], 
     [vw_candidato].[ds_status] AS [ds_status]
     FROM [dbo].[vw_candidato] AS [vw_candidato]</DefiningQuery>
@@ -212,8 +216,9 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
     [vw_vagas].[qtd_vaga] AS [qtd_vaga], 
     [vw_vagas].[dt_inicioEstagio] AS [dt_inicioEstagio], 
     [vw_vagas].[ds_sexo] AS [ds_sexo], 
-    [vw_vagas].[nm_empresa] AS [nm_empresa], 
-    [vw_vagas].[ds_horario] AS [ds_horario], 
+    [vw_vagas].[nm_fantasia] AS [nm_fantasia], 
+    [vw_vagas].[ds_horarioEntrada] AS [ds_horarioEntrada], 
+    [vw_vagas].[ds_horarioSaida] AS [ds_horarioSaida], 
     [vw_vagas].[ds_intervalo] AS [ds_intervalo], 
     [vw_vagas].[op_seguroDeVida] AS [op_seguroDeVida], 
     [vw_vagas].[op_auxTransporte] AS [op_auxTransporte], 
@@ -228,21 +233,21 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
     [vw_vagas].[op_infoCorel] AS [op_infoCorel], 
     [vw_vagas].[op_infoPhotoShop] AS [op_infoPhotoShop], 
     [vw_vagas].[op_infoProgramacao] AS [op_infoProgramacao], 
-    [vw_vagas].[op_outros] AS [op_outros], 
+    [vw_vagas].[ds_outros] AS [ds_outros], 
     [vw_vagas].[ds_observacao] AS [ds_observacao], 
     [vw_vagas].[ds_compPessoal] AS [ds_compPessoal], 
     [vw_vagas].[ds_tarefas] AS [ds_tarefas]
     FROM [dbo].[vw_vagas] AS [vw_vagas]</DefiningQuery>
           </EntitySet>
-          <AssociationSet Name="FK__tb_candid__id_al__5070F446" Association="Self.FK__tb_candid__id_al__5070F446">
+          <AssociationSet Name="FK__tb_candid__id_al__412EB0B6" Association="Self.FK__tb_candid__id_al__412EB0B6">
             <End Role="tb_alunos" EntitySet="tb_alunos" />
             <End Role="tb_candidato" EntitySet="tb_candidato" />
           </AssociationSet>
-          <AssociationSet Name="FK__tb_candid__id_va__5165187F" Association="Self.FK__tb_candid__id_va__5165187F">
+          <AssociationSet Name="FK__tb_candid__id_va__4222D4EF" Association="Self.FK__tb_candid__id_va__4222D4EF">
             <End Role="tb_vagas" EntitySet="tb_vagas" />
             <End Role="tb_candidato" EntitySet="tb_candidato" />
           </AssociationSet>
-          <AssociationSet Name="FK__tb_vagas__id_emp__4D94879B" Association="Self.FK__tb_vagas__id_emp__4D94879B">
+          <AssociationSet Name="FK__tb_vagas__id_emp__3E52440B" Association="Self.FK__tb_vagas__id_emp__3E52440B">
             <End Role="tb_empresas" EntitySet="tb_empresas" />
             <End Role="tb_vagas" EntitySet="tb_vagas" />
           </AssociationSet>
@@ -251,7 +256,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="SGEdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="SGEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="tb_alunos">
           <Key>
             <PropertyRef Name="id_aluno" />
@@ -259,21 +264,22 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
           <Property Name="id_aluno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nm_aluno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nm_curso" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_rg" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_anoEstudo" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_nascimento" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="ds_idade" Type="Int32" Nullable="false" />
           <Property Name="ds_endereco" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_numero" Type="Int32" Nullable="false" />
+          <Property Name="ds_numero" Type="Int32" />
           <Property Name="ds_bairro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="nr_fixo" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nr_fixo" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
           <Property Name="nr_celular" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_seEstuda" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_qualCurso" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_turno" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_expProfissional" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_areaPreferencia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tb_candidato" Relationship="Self.FK__tb_candid__id_al__5070F446" FromRole="tb_alunos" ToRole="tb_candidato" />
+          <Property Name="ds_qualCurso" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ds_turno" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="ds_expProfissional" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ds_areaPreferencial" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tb_candidato" Relationship="Self.FK__tb_candid__id_al__412EB0B6" FromRole="tb_alunos" ToRole="tb_candidato" />
         </EntityType>
         <EntityType Name="tb_candidato">
           <Key>
@@ -283,25 +289,25 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
           <Property Name="id_aluno" Type="Int32" Nullable="false" />
           <Property Name="id_vaga" Type="Int32" Nullable="false" />
           <Property Name="ds_status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tb_alunos" Relationship="Self.FK__tb_candid__id_al__5070F446" FromRole="tb_candidato" ToRole="tb_alunos" />
-          <NavigationProperty Name="tb_vagas" Relationship="Self.FK__tb_candid__id_va__5165187F" FromRole="tb_candidato" ToRole="tb_vagas" />
+          <NavigationProperty Name="tb_alunos" Relationship="Self.FK__tb_candid__id_al__412EB0B6" FromRole="tb_candidato" ToRole="tb_alunos" />
+          <NavigationProperty Name="tb_vagas" Relationship="Self.FK__tb_candid__id_va__4222D4EF" FromRole="tb_candidato" ToRole="tb_vagas" />
         </EntityType>
         <EntityType Name="tb_empresas">
           <Key>
             <PropertyRef Name="id_empresa" />
           </Key>
           <Property Name="id_empresa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_empresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="nm_razaoSocial" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="nm_fantasia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nm_razaoSocial" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="ds_cnpj" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="nr_codEstadual" Type="Int32" />
           <Property Name="nr_telefone" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_cnpj" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_codigoEstadual" Type="Int32" />
           <Property Name="ds_cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_bairro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_endereco" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_pontoReferencial" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tb_vagas" Relationship="Self.FK__tb_vagas__id_emp__4D94879B" FromRole="tb_empresas" ToRole="tb_vagas" />
+          <Property Name="ds_pontoReferencia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tb_vagas" Relationship="Self.FK__tb_vagas__id_emp__3E52440B" FromRole="tb_empresas" ToRole="tb_vagas" />
         </EntityType>
         <EntityType Name="tb_vagas">
           <Key>
@@ -314,7 +320,8 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
           <Property Name="dt_inicioEstagio" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="ds_sexo" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="id_empresa" Type="Int32" Nullable="false" />
-          <Property Name="ds_horario" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="ds_horarioEntrada" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="ds_horarioSaida" Type="Time" Nullable="false" Precision="7" />
           <Property Name="ds_intervalo" Type="Time" Nullable="false" Precision="7" />
           <Property Name="op_seguroDeVida" Type="Boolean" Nullable="false" />
           <Property Name="op_auxTransporte" Type="Boolean" Nullable="false" />
@@ -329,22 +336,24 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
           <Property Name="op_infoCorel" Type="Boolean" Nullable="false" />
           <Property Name="op_infoPhotoShop" Type="Boolean" Nullable="false" />
           <Property Name="op_infoProgramacao" Type="Boolean" Nullable="false" />
-          <Property Name="op_outros" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_observacao" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_compPessoal" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_tarefas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tb_candidato" Relationship="Self.FK__tb_candid__id_va__5165187F" FromRole="tb_vagas" ToRole="tb_candidato" />
-          <NavigationProperty Name="tb_empresas" Relationship="Self.FK__tb_vagas__id_emp__4D94879B" FromRole="tb_vagas" ToRole="tb_empresas" />
+          <Property Name="ds_outros" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_observacao" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="ds_compPessoal" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ds_tarefas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tb_candidato" Relationship="Self.FK__tb_candid__id_va__4222D4EF" FromRole="tb_vagas" ToRole="tb_candidato" />
+          <NavigationProperty Name="tb_empresas" Relationship="Self.FK__tb_vagas__id_emp__3E52440B" FromRole="tb_vagas" ToRole="tb_empresas" />
         </EntityType>
         <EntityType Name="vw_candidato">
           <Key>
             <PropertyRef Name="id_candidato" />
             <PropertyRef Name="nm_aluno" />
+            <PropertyRef Name="nm_curso" />
             <PropertyRef Name="nm_vaga" />
             <PropertyRef Name="ds_status" />
           </Key>
           <Property Name="id_candidato" Type="Int32" Nullable="false" />
           <Property Name="nm_aluno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nm_curso" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nm_vaga" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
@@ -356,8 +365,9 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             <PropertyRef Name="qtd_vaga" />
             <PropertyRef Name="dt_inicioEstagio" />
             <PropertyRef Name="ds_sexo" />
-            <PropertyRef Name="nm_empresa" />
-            <PropertyRef Name="ds_horario" />
+            <PropertyRef Name="nm_fantasia" />
+            <PropertyRef Name="ds_horarioEntrada" />
+            <PropertyRef Name="ds_horarioSaida" />
             <PropertyRef Name="ds_intervalo" />
             <PropertyRef Name="op_seguroDeVida" />
             <PropertyRef Name="op_auxTransporte" />
@@ -372,10 +382,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             <PropertyRef Name="op_infoCorel" />
             <PropertyRef Name="op_infoPhotoShop" />
             <PropertyRef Name="op_infoProgramacao" />
-            <PropertyRef Name="op_outros" />
-            <PropertyRef Name="ds_observacao" />
-            <PropertyRef Name="ds_compPessoal" />
-            <PropertyRef Name="ds_tarefas" />
+            <PropertyRef Name="ds_outros" />
           </Key>
           <Property Name="id_vaga" Type="Int32" Nullable="false" />
           <Property Name="nm_vaga" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
@@ -383,8 +390,9 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
           <Property Name="qtd_vaga" Type="Int32" Nullable="false" />
           <Property Name="dt_inicioEstagio" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="ds_sexo" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="nm_empresa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_horario" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="nm_fantasia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_horarioEntrada" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="ds_horarioSaida" Type="Time" Nullable="false" Precision="7" />
           <Property Name="ds_intervalo" Type="Time" Nullable="false" Precision="7" />
           <Property Name="op_seguroDeVida" Type="Boolean" Nullable="false" />
           <Property Name="op_auxTransporte" Type="Boolean" Nullable="false" />
@@ -399,12 +407,12 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
           <Property Name="op_infoCorel" Type="Boolean" Nullable="false" />
           <Property Name="op_infoPhotoShop" Type="Boolean" Nullable="false" />
           <Property Name="op_infoProgramacao" Type="Boolean" Nullable="false" />
-          <Property Name="op_outros" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_observacao" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_compPessoal" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ds_tarefas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_outros" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_observacao" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="ds_compPessoal" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ds_tarefas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
-        <Association Name="FK__tb_candid__id_al__5070F446">
+        <Association Name="FK__tb_candid__id_al__412EB0B6">
           <End Role="tb_alunos" Type="Self.tb_alunos" Multiplicity="1" />
           <End Role="tb_candidato" Type="Self.tb_candidato" Multiplicity="*" />
           <ReferentialConstraint>
@@ -416,7 +424,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__tb_candid__id_va__5165187F">
+        <Association Name="FK__tb_candid__id_va__4222D4EF">
           <End Role="tb_vagas" Type="Self.tb_vagas" Multiplicity="1" />
           <End Role="tb_candidato" Type="Self.tb_candidato" Multiplicity="*" />
           <ReferentialConstraint>
@@ -428,7 +436,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__tb_vagas__id_emp__4D94879B">
+        <Association Name="FK__tb_vagas__id_emp__3E52440B">
           <End Role="tb_empresas" Type="Self.tb_empresas" Multiplicity="1" />
           <End Role="tb_vagas" Type="Self.tb_vagas" Multiplicity="*" />
           <ReferentialConstraint>
@@ -447,15 +455,15 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
           <EntitySet Name="tb_vagas" EntityType="Self.tb_vagas" />
           <EntitySet Name="vw_candidato" EntityType="Self.vw_candidato" />
           <EntitySet Name="vw_vagas" EntityType="Self.vw_vagas" />
-          <AssociationSet Name="FK__tb_candid__id_al__5070F446" Association="Self.FK__tb_candid__id_al__5070F446">
+          <AssociationSet Name="FK__tb_candid__id_al__412EB0B6" Association="Self.FK__tb_candid__id_al__412EB0B6">
             <End Role="tb_alunos" EntitySet="tb_alunos" />
             <End Role="tb_candidato" EntitySet="tb_candidato" />
           </AssociationSet>
-          <AssociationSet Name="FK__tb_candid__id_va__5165187F" Association="Self.FK__tb_candid__id_va__5165187F">
+          <AssociationSet Name="FK__tb_candid__id_va__4222D4EF" Association="Self.FK__tb_candid__id_va__4222D4EF">
             <End Role="tb_vagas" EntitySet="tb_vagas" />
             <End Role="tb_candidato" EntitySet="tb_candidato" />
           </AssociationSet>
-          <AssociationSet Name="FK__tb_vagas__id_emp__4D94879B" Association="Self.FK__tb_vagas__id_emp__4D94879B">
+          <AssociationSet Name="FK__tb_vagas__id_emp__3E52440B" Association="Self.FK__tb_vagas__id_emp__3E52440B">
             <End Role="tb_empresas" EntitySet="tb_empresas" />
             <End Role="tb_vagas" EntitySet="tb_vagas" />
           </AssociationSet>
@@ -465,13 +473,14 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="SGEdbModelStoreContainer" CdmEntityContainer="SGEEntities">
+        <EntityContainerMapping StorageEntityContainer="SGEModelStoreContainer" CdmEntityContainer="SGEEntities">
           <EntitySetMapping Name="tb_alunos">
-            <EntityTypeMapping TypeName="SGEdbModel.tb_alunos">
+            <EntityTypeMapping TypeName="SGEModel.tb_alunos">
               <MappingFragment StoreEntitySet="tb_alunos">
                 <ScalarProperty Name="id_aluno" ColumnName="id_aluno" />
                 <ScalarProperty Name="nm_aluno" ColumnName="nm_aluno" />
                 <ScalarProperty Name="nm_curso" ColumnName="nm_curso" />
+                <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
                 <ScalarProperty Name="ds_anoEstudo" ColumnName="ds_anoEstudo" />
                 <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
                 <ScalarProperty Name="ds_idade" ColumnName="ds_idade" />
@@ -485,12 +494,12 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
                 <ScalarProperty Name="ds_qualCurso" ColumnName="ds_qualCurso" />
                 <ScalarProperty Name="ds_turno" ColumnName="ds_turno" />
                 <ScalarProperty Name="ds_expProfissional" ColumnName="ds_expProfissional" />
-                <ScalarProperty Name="ds_areaPreferencia" ColumnName="ds_areaPreferencia" />
+                <ScalarProperty Name="ds_areaPreferencial" ColumnName="ds_areaPreferencial" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_candidato">
-            <EntityTypeMapping TypeName="SGEdbModel.tb_candidato">
+            <EntityTypeMapping TypeName="SGEModel.tb_candidato">
               <MappingFragment StoreEntitySet="tb_candidato">
                 <ScalarProperty Name="id_candidato" ColumnName="id_candidato" />
                 <ScalarProperty Name="id_aluno" ColumnName="id_aluno" />
@@ -500,24 +509,24 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_empresas">
-            <EntityTypeMapping TypeName="SGEdbModel.tb_empresas">
+            <EntityTypeMapping TypeName="SGEModel.tb_empresas">
               <MappingFragment StoreEntitySet="tb_empresas">
                 <ScalarProperty Name="id_empresa" ColumnName="id_empresa" />
-                <ScalarProperty Name="nm_empresa" ColumnName="nm_empresa" />
+                <ScalarProperty Name="nm_fantasia" ColumnName="nm_fantasia" />
                 <ScalarProperty Name="nm_razaoSocial" ColumnName="nm_razaoSocial" />
+                <ScalarProperty Name="ds_cnpj" ColumnName="ds_cnpj" />
+                <ScalarProperty Name="nr_codEstadual" ColumnName="nr_codEstadual" />
                 <ScalarProperty Name="nr_telefone" ColumnName="nr_telefone" />
                 <ScalarProperty Name="ds_email" ColumnName="ds_email" />
-                <ScalarProperty Name="ds_cnpj" ColumnName="ds_cnpj" />
-                <ScalarProperty Name="ds_codigoEstadual" ColumnName="ds_codigoEstadual" />
                 <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
                 <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
                 <ScalarProperty Name="ds_endereco" ColumnName="ds_endereco" />
-                <ScalarProperty Name="ds_pontoReferencial" ColumnName="ds_pontoReferencial" />
+                <ScalarProperty Name="ds_pontoReferencia" ColumnName="ds_pontoReferencia" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_vagas">
-            <EntityTypeMapping TypeName="SGEdbModel.tb_vagas">
+            <EntityTypeMapping TypeName="SGEModel.tb_vagas">
               <MappingFragment StoreEntitySet="tb_vagas">
                 <ScalarProperty Name="id_vaga" ColumnName="id_vaga" />
                 <ScalarProperty Name="nm_vaga" ColumnName="nm_vaga" />
@@ -526,7 +535,8 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
                 <ScalarProperty Name="dt_inicioEstagio" ColumnName="dt_inicioEstagio" />
                 <ScalarProperty Name="ds_sexo" ColumnName="ds_sexo" />
                 <ScalarProperty Name="id_empresa" ColumnName="id_empresa" />
-                <ScalarProperty Name="ds_horario" ColumnName="ds_horario" />
+                <ScalarProperty Name="ds_horarioEntrada" ColumnName="ds_horarioEntrada" />
+                <ScalarProperty Name="ds_horarioSaida" ColumnName="ds_horarioSaida" />
                 <ScalarProperty Name="ds_intervalo" ColumnName="ds_intervalo" />
                 <ScalarProperty Name="op_seguroDeVida" ColumnName="op_seguroDeVida" />
                 <ScalarProperty Name="op_auxTransporte" ColumnName="op_auxTransporte" />
@@ -541,7 +551,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
                 <ScalarProperty Name="op_infoCorel" ColumnName="op_infoCorel" />
                 <ScalarProperty Name="op_infoPhotoShop" ColumnName="op_infoPhotoShop" />
                 <ScalarProperty Name="op_infoProgramacao" ColumnName="op_infoProgramacao" />
-                <ScalarProperty Name="op_outros" ColumnName="op_outros" />
+                <ScalarProperty Name="ds_outros" ColumnName="ds_outros" />
                 <ScalarProperty Name="ds_observacao" ColumnName="ds_observacao" />
                 <ScalarProperty Name="ds_compPessoal" ColumnName="ds_compPessoal" />
                 <ScalarProperty Name="ds_tarefas" ColumnName="ds_tarefas" />
@@ -549,17 +559,18 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vw_candidato">
-            <EntityTypeMapping TypeName="SGEdbModel.vw_candidato">
+            <EntityTypeMapping TypeName="SGEModel.vw_candidato">
               <MappingFragment StoreEntitySet="vw_candidato">
                 <ScalarProperty Name="id_candidato" ColumnName="id_candidato" />
                 <ScalarProperty Name="nm_aluno" ColumnName="nm_aluno" />
+                <ScalarProperty Name="nm_curso" ColumnName="nm_curso" />
                 <ScalarProperty Name="nm_vaga" ColumnName="nm_vaga" />
                 <ScalarProperty Name="ds_status" ColumnName="ds_status" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vw_vagas">
-            <EntityTypeMapping TypeName="SGEdbModel.vw_vagas">
+            <EntityTypeMapping TypeName="SGEModel.vw_vagas">
               <MappingFragment StoreEntitySet="vw_vagas">
                 <ScalarProperty Name="id_vaga" ColumnName="id_vaga" />
                 <ScalarProperty Name="nm_vaga" ColumnName="nm_vaga" />
@@ -567,8 +578,9 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
                 <ScalarProperty Name="qtd_vaga" ColumnName="qtd_vaga" />
                 <ScalarProperty Name="dt_inicioEstagio" ColumnName="dt_inicioEstagio" />
                 <ScalarProperty Name="ds_sexo" ColumnName="ds_sexo" />
-                <ScalarProperty Name="nm_empresa" ColumnName="nm_empresa" />
-                <ScalarProperty Name="ds_horario" ColumnName="ds_horario" />
+                <ScalarProperty Name="nm_fantasia" ColumnName="nm_fantasia" />
+                <ScalarProperty Name="ds_horarioEntrada" ColumnName="ds_horarioEntrada" />
+                <ScalarProperty Name="ds_horarioSaida" ColumnName="ds_horarioSaida" />
                 <ScalarProperty Name="ds_intervalo" ColumnName="ds_intervalo" />
                 <ScalarProperty Name="op_seguroDeVida" ColumnName="op_seguroDeVida" />
                 <ScalarProperty Name="op_auxTransporte" ColumnName="op_auxTransporte" />
@@ -583,7 +595,7 @@ warning 6002: The table/view 'SGEdb.dbo.vw_vagas' does not have a primary key de
                 <ScalarProperty Name="op_infoCorel" ColumnName="op_infoCorel" />
                 <ScalarProperty Name="op_infoPhotoShop" ColumnName="op_infoPhotoShop" />
                 <ScalarProperty Name="op_infoProgramacao" ColumnName="op_infoProgramacao" />
-                <ScalarProperty Name="op_outros" ColumnName="op_outros" />
+                <ScalarProperty Name="ds_outros" ColumnName="ds_outros" />
                 <ScalarProperty Name="ds_observacao" ColumnName="ds_observacao" />
                 <ScalarProperty Name="ds_compPessoal" ColumnName="ds_compPessoal" />
                 <ScalarProperty Name="ds_tarefas" ColumnName="ds_tarefas" />

@@ -16,7 +16,9 @@ namespace SGE.Telas.Consultas
         {
             InitializeComponent();
         }
+
         SGEEntities db = new SGEEntities();
+
         private void button1_Click(object sender, EventArgs e)
         {
            
@@ -39,7 +41,7 @@ namespace SGE.Telas.Consultas
 
             if (e.ColumnIndex == 5)
             {
-                vw_candidato alunos = dgvCandidato.CurrentRow.DataBoundItem as vw_candidato;
+                vw_candidato alunoss = dgvCandidato.CurrentRow.DataBoundItem as vw_candidato;
 
                 DialogResult r = MessageBox.Show("Deseja excluir o aluno ?", "Instituto Nossa Senhora de Fatima",
                                     MessageBoxButtons.YesNo,
@@ -47,7 +49,7 @@ namespace SGE.Telas.Consultas
 
                 if (r == DialogResult.Yes)
                 {
-                    db.tb_alunos.Remove(alunos);
+                    db.vw_candidato.Remove(alunoss);
                     db.SaveChanges();
                 }
             }

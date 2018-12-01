@@ -23,11 +23,12 @@ namespace SGE
         public int id_aluno { get; set; }
         public string nm_aluno { get; set; }
         public string nm_curso { get; set; }
+        public string ds_rg { get; set; }
         public string ds_anoEstudo { get; set; }
         public System.DateTime dt_nascimento { get; set; }
         public int ds_idade { get; set; }
         public string ds_endereco { get; set; }
-        public int ds_numero { get; set; }
+        public Nullable<int> ds_numero { get; set; }
         public string ds_bairro { get; set; }
         public string ds_cep { get; set; }
         public string nr_fixo { get; set; }
@@ -36,7 +37,7 @@ namespace SGE
         public string ds_qualCurso { get; set; }
         public string ds_turno { get; set; }
         public string ds_expProfissional { get; set; }
-        public string ds_areaPreferencia { get; set; }
+        public string ds_areaPreferencial { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_candidato> tb_candidato { get; set; }

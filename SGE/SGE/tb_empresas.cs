@@ -21,16 +21,16 @@ namespace SGE
         }
     
         public int id_empresa { get; set; }
-        public string nm_empresa { get; set; }
+        public string nm_fantasia { get; set; }
         public string nm_razaoSocial { get; set; }
+        public string ds_cnpj { get; set; }
+        public Nullable<int> nr_codEstadual { get; set; }
         public string nr_telefone { get; set; }
         public string ds_email { get; set; }
-        public string ds_cnpj { get; set; }
-        public Nullable<int> ds_codigoEstadual { get; set; }
         public string ds_cep { get; set; }
         public string ds_bairro { get; set; }
         public string ds_endereco { get; set; }
-        public string ds_pontoReferencial { get; set; }
+        public string ds_pontoReferencia { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_vagas> tb_vagas { get; set; }

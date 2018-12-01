@@ -16,6 +16,7 @@ namespace SGE
     {
         public int id_candidato { get; set; }
         public string nm_aluno { get; set; }
+        public string nm_curso { get; set; }
         public string nm_vaga { get; set; }
         public string ds_status { get; set; }
     }
