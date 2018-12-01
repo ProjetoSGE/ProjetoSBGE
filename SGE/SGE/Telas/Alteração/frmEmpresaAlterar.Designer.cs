@@ -1,16 +1,16 @@
-﻿namespace SGE.Telas.Cadastros
+﻿namespace SGE.Telas.Alteração
 {
-    partial class frmEmpresasCadastro
+    partial class frmEmpresaAlterar
     {
-        /// <summary> 
-        /// Variável de designer necessária.
+        /// <summary>
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Limpar os recursos que estão sendo usados.
+        /// <summary>
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true se for necessário descartar os recursos gerenciados; caso contrário, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,16 +20,21 @@
             base.Dispose(disposing);
         }
 
-        #region Código gerado pelo Designer de Componentes
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Método necessário para suporte ao Designer - não modifique 
-        /// o conteúdo deste método com o editor de código.
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.mtkCNPJ = new System.Windows.Forms.MaskedTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.mktTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.mktRegistroEstadual = new System.Windows.Forms.MaskedTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,8 +42,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtNomeFantasi = new System.Windows.Forms.TextBox();
             this.txtRazaoSocial = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtPontoRef = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,12 +52,20 @@
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAlterar = new System.Windows.Forms.Button();
-            this.mktTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(371, 375);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(104, 45);
+            this.btnCancelar.TabIndex = 44;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -71,11 +82,18 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.txtNomeFantasi);
             this.groupBox2.Controls.Add(this.txtRazaoSocial);
-            this.groupBox2.Location = new System.Drawing.Point(123, 117);
+            this.groupBox2.Location = new System.Drawing.Point(88, 85);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(249, 203);
-            this.groupBox2.TabIndex = 35;
+            this.groupBox2.TabIndex = 43;
             this.groupBox2.TabStop = false;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(135, 171);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 13;
             // 
             // mtkCNPJ
             // 
@@ -85,6 +103,36 @@
             this.mtkCNPJ.Size = new System.Drawing.Size(100, 20);
             this.mtkCNPJ.TabIndex = 33;
             this.mtkCNPJ.ValidatingType = typeof(int);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(59, 142);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 21);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Telefone:";
+            // 
+            // mktTelefone
+            // 
+            this.mktTelefone.Location = new System.Drawing.Point(135, 145);
+            this.mktTelefone.Mask = "0000-0000";
+            this.mktTelefone.Name = "mktTelefone";
+            this.mktTelefone.Size = new System.Drawing.Size(59, 20);
+            this.mktTelefone.TabIndex = 31;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(72, 167);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "E-mail:";
             // 
             // mktRegistroEstadual
             // 
@@ -153,24 +201,6 @@
             this.txtRazaoSocial.Size = new System.Drawing.Size(100, 20);
             this.txtRazaoSocial.TabIndex = 7;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(72, 167);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "E-mail:";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(135, 171);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 20);
-            this.txtEmail.TabIndex = 13;
-            // 
             // groupBox1
             // 
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -182,12 +212,11 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtEndereco);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(406, 117);
+            this.groupBox1.Location = new System.Drawing.Point(371, 85);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(249, 203);
-            this.groupBox1.TabIndex = 34;
+            this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtPontoRef
             // 
@@ -267,54 +296,25 @@
             // 
             this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlterar.Location = new System.Drawing.Point(268, 407);
+            this.btnAlterar.Location = new System.Drawing.Point(233, 375);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(104, 45);
-            this.btnAlterar.TabIndex = 33;
-            this.btnAlterar.Text = "Cadastrar";
+            this.btnAlterar.TabIndex = 41;
+            this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
-            this.btnAlterar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // mktTelefone
-            // 
-            this.mktTelefone.Location = new System.Drawing.Point(135, 145);
-            this.mktTelefone.Mask = "0000-0000";
-            this.mktTelefone.Name = "mktTelefone";
-            this.mktTelefone.Size = new System.Drawing.Size(59, 20);
-            this.mktTelefone.TabIndex = 31;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(59, 142);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 21);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "Telefone:";
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(406, 407);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(104, 45);
-            this.btnCancelar.TabIndex = 40;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // frmEmpresasCadastro
+            // frmEmpresaAlterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(708, 504);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnAlterar);
-            this.Name = "frmEmpresasCadastro";
-            this.Size = new System.Drawing.Size(755, 507);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmEmpresaAlterar";
+            this.Text = "frmEmpresaAlterar";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -325,29 +325,29 @@
 
         #endregion
 
+        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.MaskedTextBox mtkCNPJ;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.MaskedTextBox mktTelefone;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MaskedTextBox mktRegistroEstadual;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtNomeFantasi;
         private System.Windows.Forms.TextBox txtRazaoSocial;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblBairro;
-        private System.Windows.Forms.MaskedTextBox mktCep;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.MaskedTextBox mktTelefone;
-        private System.Windows.Forms.TextBox txtEndereco;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtPontoRef;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtBairro;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.MaskedTextBox mktRegistroEstadual;
-        private System.Windows.Forms.MaskedTextBox mtkCNPJ;
+        private System.Windows.Forms.Label lblBairro;
+        private System.Windows.Forms.MaskedTextBox mktCep;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnAlterar;
     }
 }

@@ -90,6 +90,12 @@
     <Compile Include="Telas\Alteração\frmAlunoAlterar.Designer.cs">
       <DependentUpon>frmAlunoAlterar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Alteração\frmEmpresaAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Alteração\frmEmpresaAlterar.Designer.cs">
+      <DependentUpon>frmEmpresaAlterar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Cadastros\frmAlunoCadastro.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </Compile>
     <EmbeddedResource Include="Telas\Alteração\frmAlunoAlterar.resx">
       <DependentUpon>frmAlunoAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Alteração\frmEmpresaAlterar.resx">
+      <DependentUpon>frmEmpresaAlterar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Cadastros\frmAlunoCadastro.resx">
       <DependentUpon>frmAlunoCadastro.cs</DependentUpon>

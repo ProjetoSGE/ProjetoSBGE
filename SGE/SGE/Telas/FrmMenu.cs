@@ -1,4 +1,5 @@
-﻿using SGE.Telas.Cadastros;
+﻿using SGE.Telas;
+using SGE.Telas.Cadastros;
 using SGE.Telas.Consultas;
 using System;
 using System.Collections.Generic;
@@ -89,7 +90,13 @@ namespace SGE.TelasDF
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmHome frm = new frmHome();
+            tela(frm);
+        }
 
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
