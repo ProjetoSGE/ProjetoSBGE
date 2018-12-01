@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboTurma = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cboTipo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cboVaga = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboCurso = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnsalvar = new System.Windows.Forms.Button();
@@ -46,13 +46,13 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox2
+            // cboTurma
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(260, 89);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(98, 21);
-            this.comboBox2.TabIndex = 63;
+            this.cboTurma.FormattingEnabled = true;
+            this.cboTurma.Location = new System.Drawing.Point(260, 89);
+            this.cboTurma.Name = "cboTurma";
+            this.cboTurma.Size = new System.Drawing.Size(98, 21);
+            this.cboTurma.TabIndex = 63;
             // 
             // label3
             // 
@@ -64,13 +64,13 @@
             this.label3.TabIndex = 64;
             this.label3.Text = "Turma";
             // 
-            // comboBox4
+            // cboTipo
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(449, 90);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(98, 21);
-            this.comboBox4.TabIndex = 60;
+            this.cboTipo.FormattingEnabled = true;
+            this.cboTipo.Location = new System.Drawing.Point(449, 90);
+            this.cboTipo.Name = "cboTipo";
+            this.cboTipo.Size = new System.Drawing.Size(98, 21);
+            this.cboTipo.TabIndex = 60;
             // 
             // label5
             // 
@@ -84,7 +84,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox5);
+            this.groupBox2.Controls.Add(this.cboVaga);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(396, 115);
             this.groupBox2.Name = "groupBox2";
@@ -92,13 +92,13 @@
             this.groupBox2.TabIndex = 62;
             this.groupBox2.TabStop = false;
             // 
-            // comboBox5
+            // cboVaga
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(71, 19);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(179, 21);
-            this.comboBox5.TabIndex = 0;
+            this.cboVaga.FormattingEnabled = true;
+            this.cboVaga.Location = new System.Drawing.Point(71, 19);
+            this.cboVaga.Name = "cboVaga";
+            this.cboVaga.Size = new System.Drawing.Size(179, 21);
+            this.cboVaga.TabIndex = 0;
             // 
             // label6
             // 
@@ -106,17 +106,17 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 21);
+            this.label6.Size = new System.Drawing.Size(45, 21);
             this.label6.TabIndex = 44;
             this.label6.Text = "Vaga";
             // 
-            // comboBox1
+            // cboCurso
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(106, 88);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(98, 21);
-            this.comboBox1.TabIndex = 57;
+            this.cboCurso.FormattingEnabled = true;
+            this.cboCurso.Location = new System.Drawing.Point(106, 88);
+            this.cboCurso.Name = "cboCurso";
+            this.cboCurso.Size = new System.Drawing.Size(98, 21);
+            this.cboCurso.TabIndex = 57;
             // 
             // label2
             // 
@@ -182,12 +182,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cboTurma);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboCurso);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnsalvar);
@@ -205,14 +205,14 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboTurma;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cboTipo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cboVaga;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboCurso;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnsalvar;
