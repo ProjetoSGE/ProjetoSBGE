@@ -22,18 +22,18 @@ namespace SGE.Telas.Cadastros
             SGEEntities db = new SGEEntities();
 
             tb_alunos tb = new tb_alunos();
-            tb.ds_anoEstudo = comboBox2.Text;
+            tb.ds_anoEstudo = cboAnoEstudou.Text;
             tb.ds_areaPreferencia = txtPreferencia.Text;
             tb.ds_bairro = txtBairro.Text;
             tb.ds_cep = mskCEP.Text;
             tb.ds_endereco = txtEndereco.Text;
             tb.ds_expProfissional = txtExperiencia.Text;
             tb.ds_idade =Convert.ToInt32(txtIdade.Text);
-            tb.ds_numero = Convert.ToInt32(txtN.Text);
-            tb.ds_qualCurso = comboBox1.Text;
+            tb.ds_numero = Convert.ToInt32(txtNumero.Text);
+            tb.ds_qualCurso = cboCurso.Text;
             tb.ds_seEstuda = null;
             tb.ds_turno = null;
-            tb.dt_nascimento = dateTimePicker1.Value;
+            tb.dt_nascimento = dtpDataNasc.Value;
             tb.nm_aluno = txtNome.Text;
             tb.nm_curso = null; // repete duas vezes?
             tb.nr_celular = mskRecado.Text;
@@ -46,6 +46,16 @@ namespace SGE.Telas.Cadastros
 
 
             
+        }
+
+        private void frmAlunoCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
