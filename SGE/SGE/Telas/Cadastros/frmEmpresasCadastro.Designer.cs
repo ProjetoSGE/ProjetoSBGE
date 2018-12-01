@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.mtkCNPJ = new System.Windows.Forms.MaskedTextBox();
+            this.mktRegistroEstadual = new System.Windows.Forms.MaskedTextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtNomeFantasi = new System.Windows.Forms.TextBox();
             this.txtRazaoSocial = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtPontoRef = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
             this.lblBairro = new System.Windows.Forms.Label();
             this.mktCep = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.mktTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.mktTelefone = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtBairro = new System.Windows.Forms.TextBox();
-            this.txtPontoRef = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.mktRegistroEstadual = new System.Windows.Forms.MaskedTextBox();
-            this.mtkCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -75,6 +75,35 @@
             this.groupBox2.TabIndex = 35;
             this.groupBox2.TabStop = false;
             // 
+            // mtkCNPJ
+            // 
+            this.mtkCNPJ.Location = new System.Drawing.Point(136, 16);
+            this.mtkCNPJ.Mask = "99.999.999/9999-99";
+            this.mtkCNPJ.Name = "mtkCNPJ";
+            this.mtkCNPJ.Size = new System.Drawing.Size(100, 20);
+            this.mtkCNPJ.TabIndex = 33;
+            this.mtkCNPJ.ValidatingType = typeof(int);
+            // 
+            // mktRegistroEstadual
+            // 
+            this.mktRegistroEstadual.Location = new System.Drawing.Point(136, 112);
+            this.mktRegistroEstadual.Mask = "00000";
+            this.mktRegistroEstadual.Name = "mktRegistroEstadual";
+            this.mktRegistroEstadual.Size = new System.Drawing.Size(32, 20);
+            this.mktRegistroEstadual.TabIndex = 32;
+            this.mktRegistroEstadual.ValidatingType = typeof(int);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(4, 112);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(125, 21);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Codigo Estadual:";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -85,17 +114,6 @@
             this.label1.Size = new System.Drawing.Size(100, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Razão Social:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "E-mail:";
             // 
             // label9
             // 
@@ -133,6 +151,17 @@
             this.txtRazaoSocial.Size = new System.Drawing.Size(100, 20);
             this.txtRazaoSocial.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "E-mail:";
+            // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(84, 47);
@@ -157,6 +186,32 @@
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtPontoRef
+            // 
+            this.txtPontoRef.Location = new System.Drawing.Point(215, 43);
+            this.txtPontoRef.Multiline = true;
+            this.txtPontoRef.Name = "txtPontoRef";
+            this.txtPontoRef.Size = new System.Drawing.Size(138, 52);
+            this.txtPontoRef.TabIndex = 38;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(211, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(151, 21);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Ponto de referencia: ";
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Location = new System.Drawing.Point(93, 48);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(100, 20);
+            this.txtBairro.TabIndex = 36;
             // 
             // lblBairro
             // 
@@ -188,6 +243,24 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "CEP:";
             // 
+            // txtEndereco
+            // 
+            this.txtEndereco.Location = new System.Drawing.Point(93, 75);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(100, 20);
+            this.txtEndereco.TabIndex = 30;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(10, 72);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 21);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Endereço:";
+            // 
             // btnCadastrar
             // 
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -207,24 +280,6 @@
             this.mktTelefone.Size = new System.Drawing.Size(59, 20);
             this.mktTelefone.TabIndex = 31;
             // 
-            // txtEndereco
-            // 
-            this.txtEndereco.Location = new System.Drawing.Point(93, 75);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(100, 20);
-            this.txtEndereco.TabIndex = 30;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 72);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 21);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Endereço:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -235,32 +290,6 @@
             this.label5.Size = new System.Drawing.Size(70, 21);
             this.label5.TabIndex = 27;
             this.label5.Text = "Telefone:";
-            // 
-            // txtBairro
-            // 
-            this.txtBairro.Location = new System.Drawing.Point(93, 48);
-            this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(100, 20);
-            this.txtBairro.TabIndex = 36;
-            // 
-            // txtPontoRef
-            // 
-            this.txtPontoRef.Location = new System.Drawing.Point(215, 43);
-            this.txtPontoRef.Multiline = true;
-            this.txtPontoRef.Name = "txtPontoRef";
-            this.txtPontoRef.Size = new System.Drawing.Size(138, 52);
-            this.txtPontoRef.TabIndex = 38;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(211, 19);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 21);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "Ponto de referencia: ";
             // 
             // groupBox3
             // 
@@ -275,17 +304,6 @@
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(4, 112);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(125, 21);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "Codigo Estadual:";
-            // 
             // btnCancelar
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -296,24 +314,6 @@
             this.btnCancelar.TabIndex = 40;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // mktRegistroEstadual
-            // 
-            this.mktRegistroEstadual.Location = new System.Drawing.Point(136, 112);
-            this.mktRegistroEstadual.Mask = "00000";
-            this.mktRegistroEstadual.Name = "mktRegistroEstadual";
-            this.mktRegistroEstadual.Size = new System.Drawing.Size(32, 20);
-            this.mktRegistroEstadual.TabIndex = 32;
-            this.mktRegistroEstadual.ValidatingType = typeof(int);
-            // 
-            // mtkCNPJ
-            // 
-            this.mtkCNPJ.Location = new System.Drawing.Point(136, 16);
-            this.mtkCNPJ.Mask = "99.999.999/9999-99";
-            this.mtkCNPJ.Name = "mtkCNPJ";
-            this.mtkCNPJ.Size = new System.Drawing.Size(100, 20);
-            this.mtkCNPJ.TabIndex = 33;
-            this.mtkCNPJ.ValidatingType = typeof(int);
             // 
             // frmEmpresasCadastro
             // 
