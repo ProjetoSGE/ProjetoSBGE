@@ -90,6 +90,66 @@
     <Compile Include="tb_vagas.cs">
       <DependentUpon>sbe.tt</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Cadastros\frmAlunoCadastro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Cadastros\frmAlunoCadastro.Designer.cs">
+      <DependentUpon>frmAlunoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Cadastros\frmCandidatoCadastro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Cadastros\frmCandidatoCadastro.Designer.cs">
+      <DependentUpon>frmCandidatoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Cadastros\frmEmpresasCadastro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Cadastros\frmEmpresasCadastro.Designer.cs">
+      <DependentUpon>frmEmpresasCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Cadastros\frmVagasCadastro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Cadastros\frmVagasCadastro.Designer.cs">
+      <DependentUpon>frmVagasCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Consultas\frmAlunoConsulta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Consultas\frmAlunoConsulta.Designer.cs">
+      <DependentUpon>frmAlunoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Consultas\frmCandidatoConsulta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Consultas\frmCandidatoConsulta.Designer.cs">
+      <DependentUpon>frmCandidatoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Consultas\frmEmpresaConsulta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Consultas\frmEmpresaConsulta.Designer.cs">
+      <DependentUpon>frmEmpresaConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Consultas\frmVagasConsulta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Consultas\frmVagasConsulta.Designer.cs">
+      <DependentUpon>frmVagasConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="vw_candidato.cs">
       <DependentUpon>sbe.tt</DependentUpon>
     </Compile>
@@ -108,6 +168,36 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Cadastros\frmAlunoCadastro.resx">
+      <DependentUpon>frmAlunoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Cadastros\frmCandidatoCadastro.resx">
+      <DependentUpon>frmCandidatoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Cadastros\frmEmpresasCadastro.resx">
+      <DependentUpon>frmEmpresasCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Cadastros\frmVagasCadastro.resx">
+      <DependentUpon>frmVagasCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Consultas\frmAlunoConsulta.resx">
+      <DependentUpon>frmAlunoConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Consultas\frmCandidatoConsulta.resx">
+      <DependentUpon>frmCandidatoConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Consultas\frmEmpresaConsulta.resx">
+      <DependentUpon>frmEmpresaConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Consultas\frmVagasConsulta.resx">
+      <DependentUpon>frmVagasConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -144,5 +234,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

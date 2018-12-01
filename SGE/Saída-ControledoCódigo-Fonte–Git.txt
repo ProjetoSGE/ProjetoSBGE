@@ -1,0 +1,10 @@
+﻿Abrindo repositórios:
+C:\Users\Raian\Source\Repos\ProjetoSBGE2
+Confirmar 4555930a criado localmente no repositório C:\Users\Raian\Source\Repos\ProjetoSBGE2
+refs/heads/master verificado
+Confirmar dfa1f64d criado localmente no repositório C:\Users\Raian\Source\Repos\ProjetoSBGE2
+Remote: Permission to ProjetoSGE/ProjetoSBGE.git denied to NerdT21.
+Erro encontrado durante a publicação para o repositório remoto: Git failed with a fatal error.
+unable to access 'https://github.com/ProjetoSGE/ProjetoSBGE.git/': The requested URL returned error: 403
+Pushing to https://github.com/ProjetoSGE/ProjetoSBGE.git
+
