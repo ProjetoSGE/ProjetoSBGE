@@ -42,7 +42,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 76);
+            this.textBox1.Location = new System.Drawing.Point(71, 77);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(553, 20);
             this.textBox1.TabIndex = 6;
@@ -51,9 +51,9 @@
             // 
             this.Pesquisar.AutoSize = true;
             this.Pesquisar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pesquisar.Location = new System.Drawing.Point(32, 76);
+            this.Pesquisar.Location = new System.Drawing.Point(20, 74);
             this.Pesquisar.Name = "Pesquisar";
-            this.Pesquisar.Size = new System.Drawing.Size(44, 21);
+            this.Pesquisar.Size = new System.Drawing.Size(45, 21);
             this.Pesquisar.TabIndex = 5;
             this.Pesquisar.Text = "Vaga";
             // 
@@ -62,7 +62,7 @@
             this.dgvVaga.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvVaga.Location = new System.Drawing.Point(16, 108);
             this.dgvVaga.Name = "dgvVaga";
-            this.dgvVaga.Size = new System.Drawing.Size(723, 408);
+            this.dgvVaga.Size = new System.Drawing.Size(711, 391);
             this.dgvVaga.TabIndex = 4;
             this.dgvVaga.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVaga_CellContentClick);
             // 
@@ -79,7 +79,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(655, 68);
+            this.button1.Location = new System.Drawing.Point(630, 67);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 34);
             this.button1.TabIndex = 16;
@@ -120,7 +120,7 @@
             this.Controls.Add(this.Pesquisar);
             this.Controls.Add(this.dgvVaga);
             this.Name = "frmVagasConsulta";
-            this.Size = new System.Drawing.Size(755, 536);
+            this.Size = new System.Drawing.Size(747, 521);
             this.Load += new System.EventHandler(this.frmVagasConsulta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVaga)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

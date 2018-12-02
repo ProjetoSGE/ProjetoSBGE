@@ -82,7 +82,7 @@
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(392, 498);
+            this.btnCancelar.Location = new System.Drawing.Point(386, 491);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(92, 27);
             this.btnCancelar.TabIndex = 69;
@@ -116,7 +116,7 @@
             // 
             // txtPreferencia
             // 
-            this.txtPreferencia.Location = new System.Drawing.Point(228, 16);
+            this.txtPreferencia.Location = new System.Drawing.Point(228, 19);
             this.txtPreferencia.Name = "txtPreferencia";
             this.txtPreferencia.Size = new System.Drawing.Size(403, 20);
             this.txtPreferencia.TabIndex = 65;
@@ -135,7 +135,7 @@
             // 
             this.btnsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalvar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalvar.Location = new System.Drawing.Point(279, 498);
+            this.btnsalvar.Location = new System.Drawing.Point(273, 491);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(92, 27);
             this.btnsalvar.TabIndex = 63;
@@ -339,7 +339,7 @@
             this.groupBox2.Controls.Add(this.cboSerie);
             this.groupBox2.Controls.Add(this.rdnSim);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Location = new System.Drawing.Point(392, 222);
+            this.groupBox2.Location = new System.Drawing.Point(386, 215);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(324, 106);
             this.groupBox2.TabIndex = 71;
@@ -437,7 +437,7 @@
             this.groupBox3.Controls.Add(this.txtEndereco);
             this.groupBox3.Controls.Add(this.txtBairro);
             this.groupBox3.Controls.Add(this.mskCEP);
-            this.groupBox3.Location = new System.Drawing.Point(392, 81);
+            this.groupBox3.Location = new System.Drawing.Point(386, 74);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(324, 140);
             this.groupBox3.TabIndex = 71;
@@ -460,7 +460,7 @@
             this.groupBox4.Controls.Add(this.txtNome);
             this.groupBox4.Controls.Add(this.txtIdade);
             this.groupBox4.Controls.Add(this.mskRes);
-            this.groupBox4.Location = new System.Drawing.Point(47, 83);
+            this.groupBox4.Location = new System.Drawing.Point(41, 76);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(324, 245);
             this.groupBox4.TabIndex = 71;
@@ -492,7 +492,7 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtExperiencia);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(47, 349);
+            this.groupBox1.Location = new System.Drawing.Point(41, 342);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(669, 140);
             this.groupBox1.TabIndex = 72;
@@ -504,11 +504,11 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.SteelBlue;
             this.label17.Font = new System.Drawing.Font("Segoe Print", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(218, -8);
+            this.label17.Location = new System.Drawing.Point(199, -5);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(325, 64);
+            this.label17.Size = new System.Drawing.Size(339, 64);
             this.label17.TabIndex = 75;
-            this.label17.Text = "Consultar aluno";
+            this.label17.Text = "Cadastrar Aluno";
             // 
             // pictureBox2
             // 
@@ -543,7 +543,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnsalvar);
             this.Name = "frmAlunoCadastro";
-            this.Size = new System.Drawing.Size(755, 559);
+            this.Size = new System.Drawing.Size(747, 521);
             this.Load += new System.EventHandler(this.frmAlunoCadastro_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

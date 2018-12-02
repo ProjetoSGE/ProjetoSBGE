@@ -50,7 +50,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(644, 67);
+            this.button1.Location = new System.Drawing.Point(634, 67);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 34);
             this.button1.TabIndex = 11;
@@ -60,7 +60,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(85, 74);
+            this.textBox1.Location = new System.Drawing.Point(75, 74);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(553, 20);
             this.textBox1.TabIndex = 10;
@@ -69,7 +69,7 @@
             // 
             this.Pesquisar.AutoSize = true;
             this.Pesquisar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pesquisar.Location = new System.Drawing.Point(26, 72);
+            this.Pesquisar.Location = new System.Drawing.Point(16, 72);
             this.Pesquisar.Name = "Pesquisar";
             this.Pesquisar.Size = new System.Drawing.Size(53, 21);
             this.Pesquisar.TabIndex = 9;
@@ -87,10 +87,10 @@
             this.Column3,
             this.Column5,
             this.Column6});
-            this.dgvAluno.Location = new System.Drawing.Point(16, 108);
+            this.dgvAluno.Location = new System.Drawing.Point(20, 107);
             this.dgvAluno.Name = "dgvAluno";
             this.dgvAluno.ReadOnly = true;
-            this.dgvAluno.Size = new System.Drawing.Size(723, 408);
+            this.dgvAluno.Size = new System.Drawing.Size(709, 400);
             this.dgvAluno.TabIndex = 8;
             this.dgvAluno.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAluno_CellContentClick);
             // 
@@ -181,7 +181,7 @@
             this.Controls.Add(this.Pesquisar);
             this.Controls.Add(this.dgvAluno);
             this.Name = "frmAlunoConsulta";
-            this.Size = new System.Drawing.Size(755, 536);
+            this.Size = new System.Drawing.Size(747, 521);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAluno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

@@ -62,7 +62,7 @@
             // cboTurma
             // 
             this.cboTurma.FormattingEnabled = true;
-            this.cboTurma.Location = new System.Drawing.Point(364, 80);
+            this.cboTurma.Location = new System.Drawing.Point(349, 80);
             this.cboTurma.Name = "cboTurma";
             this.cboTurma.Size = new System.Drawing.Size(98, 21);
             this.cboTurma.TabIndex = 63;
@@ -71,7 +71,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(310, 81);
+            this.label3.Location = new System.Drawing.Point(295, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 21);
             this.label3.TabIndex = 64;
@@ -80,7 +80,7 @@
             // cboTipo
             // 
             this.cboTipo.FormattingEnabled = true;
-            this.cboTipo.Location = new System.Drawing.Point(570, 81);
+            this.cboTipo.Location = new System.Drawing.Point(555, 81);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(98, 21);
             this.cboTipo.TabIndex = 60;
@@ -89,7 +89,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(524, 80);
+            this.label5.Location = new System.Drawing.Point(509, 80);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 21);
             this.label5.TabIndex = 61;
@@ -178,7 +178,7 @@
             "Informática",
             "Inglês",
             "Secretariado"});
-            this.cboCurso.Location = new System.Drawing.Point(152, 81);
+            this.cboCurso.Location = new System.Drawing.Point(137, 81);
             this.cboCurso.Name = "cboCurso";
             this.cboCurso.Size = new System.Drawing.Size(98, 21);
             this.cboCurso.TabIndex = 57;
@@ -187,7 +187,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(98, 82);
+            this.label2.Location = new System.Drawing.Point(83, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 21);
             this.label2.TabIndex = 58;
@@ -293,11 +293,11 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.SteelBlue;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(218, -8);
+            this.label4.Location = new System.Drawing.Point(159, -5);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(325, 64);
+            this.label4.Size = new System.Drawing.Size(422, 64);
             this.label4.TabIndex = 74;
-            this.label4.Text = "Consultar aluno";
+            this.label4.Text = "Cadastrar Candidato";
             // 
             // pictureBox2
             // 
@@ -336,7 +336,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCandidatoCadastro";
-            this.Size = new System.Drawing.Size(755, 484);
+            this.Size = new System.Drawing.Size(747, 521);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

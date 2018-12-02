@@ -91,7 +91,7 @@
             // 
             // mtkCNPJ
             // 
-            this.mtkCNPJ.Location = new System.Drawing.Point(136, 16);
+            this.mtkCNPJ.Location = new System.Drawing.Point(136, 19);
             this.mtkCNPJ.Mask = "99.999.999/9999-99";
             this.mtkCNPJ.Name = "mtkCNPJ";
             this.mtkCNPJ.Size = new System.Drawing.Size(100, 20);
@@ -105,7 +105,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(59, 142);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 21);
+            this.label5.Size = new System.Drawing.Size(72, 21);
             this.label5.TabIndex = 27;
             this.label5.Text = "Telefone:";
             // 
@@ -166,7 +166,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(80, 16);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 21);
+            this.label9.Size = new System.Drawing.Size(50, 21);
             this.label9.TabIndex = 22;
             this.label9.Text = "CNPJ:";
             // 
@@ -177,7 +177,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(13, 46);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 21);
+            this.label10.Size = new System.Drawing.Size(117, 21);
             this.label10.TabIndex = 0;
             this.label10.Text = "Nome Fantasia:";
             // 
@@ -228,7 +228,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(10, 101);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 21);
+            this.label8.Size = new System.Drawing.Size(152, 21);
             this.label8.TabIndex = 37;
             this.label8.Text = "Ponto de referencia: ";
             // 
@@ -317,11 +317,11 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.SteelBlue;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(218, -8);
+            this.label4.Location = new System.Drawing.Point(180, -5);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(325, 64);
+            this.label4.Size = new System.Drawing.Size(393, 64);
             this.label4.TabIndex = 77;
-            this.label4.Text = "Consultar aluno";
+            this.label4.Text = "Cadastrar Empresa";
             // 
             // pictureBox2
             // 
@@ -354,7 +354,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnAlterar);
             this.Name = "frmEmpresasCadastro";
-            this.Size = new System.Drawing.Size(755, 476);
+            this.Size = new System.Drawing.Size(747, 521);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

@@ -44,7 +44,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(642, 69);
+            this.button1.Location = new System.Drawing.Point(632, 69);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 33);
             this.button1.TabIndex = 11;
@@ -54,7 +54,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(88, 77);
+            this.textBox1.Location = new System.Drawing.Point(78, 77);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(553, 20);
             this.textBox1.TabIndex = 10;
@@ -63,7 +63,7 @@
             // 
             this.Pesquisar.AutoSize = true;
             this.Pesquisar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pesquisar.Location = new System.Drawing.Point(24, 74);
+            this.Pesquisar.Location = new System.Drawing.Point(14, 74);
             this.Pesquisar.Name = "Pesquisar";
             this.Pesquisar.Size = new System.Drawing.Size(53, 21);
             this.Pesquisar.TabIndex = 9;
@@ -74,7 +74,7 @@
             this.dgvCandidato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCandidato.Location = new System.Drawing.Point(16, 108);
             this.dgvCandidato.Name = "dgvCandidato";
-            this.dgvCandidato.Size = new System.Drawing.Size(723, 408);
+            this.dgvCandidato.Size = new System.Drawing.Size(713, 399);
             this.dgvCandidato.TabIndex = 8;
             this.dgvCandidato.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCandidato_CellContentClick);
             // 
@@ -120,7 +120,7 @@
             this.Controls.Add(this.Pesquisar);
             this.Controls.Add(this.dgvCandidato);
             this.Name = "frmCandidatoConsulta";
-            this.Size = new System.Drawing.Size(755, 536);
+            this.Size = new System.Drawing.Size(747, 521);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCandidato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
