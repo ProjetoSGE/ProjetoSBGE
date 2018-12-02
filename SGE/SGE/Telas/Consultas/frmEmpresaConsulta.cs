@@ -32,10 +32,10 @@ namespace SGE.Telas.Consultas
                 tb_empresas funcionarios = dgvEmpresa.Rows[e.RowIndex].DataBoundItem as tb_empresas;
 
 
-                frmEmpresaAlterar tela = new frmEmpresaAlterar();
-                tela.LoadScreen(funcionarios);
-                tela.ShowDialog();
-                this.Hide();
+                //frmEmpresaAlterar tela = new frmEmpresaAlterar();
+                //tela.LoadScreen(funcionarios);
+                //tela.ShowDialog();
+                //this.Hide();
 
             }
 

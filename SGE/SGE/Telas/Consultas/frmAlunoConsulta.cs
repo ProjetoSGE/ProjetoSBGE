@@ -34,10 +34,10 @@ namespace SGE.Telas.Consultas
                 tb_alunos alunos = dgvAluno.Rows[e.RowIndex].DataBoundItem as tb_alunos;
 
 
-                frmAlunoAlterar tela = new frmAlunoAlterar();
-                tela.LoadScreen(alunos);
-                tela.ShowDialog();
-                this.Hide();
+                //frmAlunoAlterar tela = new frmAlunoAlterar();
+                //tela.LoadScreen(alunos);
+                //tela.ShowDialog();
+                //this.Hide();
 
             }
 

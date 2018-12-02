@@ -65,7 +65,7 @@ namespace SGE.Telas.Cadastros
             vagas.ds_observacao = txtObs.Text;
             vagas.ds_compPessoal = txtTarefa.Text;
 
-            db.tb_vagas.Add(db);
+            db.tb_vagas.Add(vagas);
             db.SaveChanges();
 
         }

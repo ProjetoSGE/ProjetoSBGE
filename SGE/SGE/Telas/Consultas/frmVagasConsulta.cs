@@ -26,7 +26,7 @@ namespace SGE.Telas.Consultas
         private void button1_Click(object sender, EventArgs e)
         {
 
-            List<vw_vagas> candidato = db.vw_vagas.Where(a => a.nm_empresa.Contains(textBox1.Text)).ToList();
+            List<vw_vagas> candidato = db.vw_vagas.Where(a => a.nm_fantasia.Contains(textBox1.Text)).ToList();
         }
 
         private void dgvVaga_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -53,7 +53,7 @@ namespace SGE.Telas.Consultas
 
                 if (r == DialogResult.Yes)
                 {
-                    db.tb_alunos.Remove(vagas);
+                    db.vw_vagas.Remove(vagas);
                     db.SaveChanges();
                 }
             }
