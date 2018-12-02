@@ -22,10 +22,10 @@ namespace SGE.TelasDF
 
         public void tela(UserControl control)
         {
-            if (pnlCentro.Controls.Count == 1)
-                pnlCentro.Controls.RemoveAt(0);
+            if (pnlcentru.Controls.Count == 1)
+                pnlcentru.Controls.RemoveAt(0);
 
-            pnlCentro.Controls.Add(control);
+            pnlcentru.Controls.Add(control);
 
         }
         

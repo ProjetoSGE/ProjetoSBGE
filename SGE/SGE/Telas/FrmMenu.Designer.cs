@@ -55,6 +55,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pnlcentru = new System.Windows.Forms.Panel();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -72,7 +73,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 574);
+            this.panel2.Size = new System.Drawing.Size(10, 576);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -81,14 +82,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(765, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 574);
+            this.panel3.Size = new System.Drawing.Size(10, 576);
             this.panel3.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(10, 556);
+            this.panel4.Location = new System.Drawing.Point(10, 558);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(755, 18);
             this.panel4.TabIndex = 1;
@@ -176,7 +177,7 @@
             // 
             this.homeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("homeToolStripMenuItem.Image")));
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
@@ -184,7 +185,7 @@
             // 
             this.sairToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sairToolStripMenuItem.Image")));
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -315,12 +316,20 @@
             this.pictureBox7.TabIndex = 9;
             this.pictureBox7.TabStop = false;
             // 
+            // pnlcentru
+            // 
+            this.pnlcentru.Location = new System.Drawing.Point(16, 27);
+            this.pnlcentru.Name = "pnlcentru";
+            this.pnlcentru.Size = new System.Drawing.Size(746, 530);
+            this.pnlcentru.TabIndex = 10;
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(775, 574);
+            this.ClientSize = new System.Drawing.Size(775, 576);
+            this.Controls.Add(this.pnlcentru);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -375,5 +384,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Panel pnlcentru;
     }
 }
