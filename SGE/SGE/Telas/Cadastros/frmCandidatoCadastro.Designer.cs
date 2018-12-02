@@ -50,14 +50,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnCadatrar = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cboTurma
             // 
             this.cboTurma.FormattingEnabled = true;
-            this.cboTurma.Location = new System.Drawing.Point(260, 89);
+            this.cboTurma.Location = new System.Drawing.Point(364, 80);
             this.cboTurma.Name = "cboTurma";
             this.cboTurma.Size = new System.Drawing.Size(98, 21);
             this.cboTurma.TabIndex = 63;
@@ -66,7 +71,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(206, 90);
+            this.label3.Location = new System.Drawing.Point(310, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 21);
             this.label3.TabIndex = 64;
@@ -75,7 +80,7 @@
             // cboTipo
             // 
             this.cboTipo.FormattingEnabled = true;
-            this.cboTipo.Location = new System.Drawing.Point(438, 90);
+            this.cboTipo.Location = new System.Drawing.Point(570, 81);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(98, 21);
             this.cboTipo.TabIndex = 60;
@@ -84,7 +89,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(392, 89);
+            this.label5.Location = new System.Drawing.Point(524, 80);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 21);
             this.label5.TabIndex = 61;
@@ -98,7 +103,7 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.lblNomeEmpresa);
             this.groupBox2.Controls.Add(this.lblTipo);
-            this.groupBox2.Location = new System.Drawing.Point(396, 115);
+            this.groupBox2.Location = new System.Drawing.Point(403, 126);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(313, 261);
             this.groupBox2.TabIndex = 62;
@@ -138,7 +143,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 21);
+            this.label6.Size = new System.Drawing.Size(44, 21);
             this.label6.TabIndex = 44;
             this.label6.Text = "Vaga";
             // 
@@ -165,7 +170,7 @@
             // cboCurso
             // 
             this.cboCurso.FormattingEnabled = true;
-            this.cboCurso.Location = new System.Drawing.Point(106, 88);
+            this.cboCurso.Location = new System.Drawing.Point(152, 81);
             this.cboCurso.Name = "cboCurso";
             this.cboCurso.Size = new System.Drawing.Size(98, 21);
             this.cboCurso.TabIndex = 57;
@@ -174,7 +179,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(52, 89);
+            this.label2.Location = new System.Drawing.Point(98, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 21);
             this.label2.TabIndex = 58;
@@ -188,7 +193,7 @@
             this.groupBox1.Controls.Add(this.lblNomeCompleto);
             this.groupBox1.Controls.Add(this.cboAluno);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(45, 115);
+            this.groupBox1.Location = new System.Drawing.Point(52, 126);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(313, 261);
             this.groupBox1.TabIndex = 59;
@@ -256,9 +261,9 @@
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(396, 395);
+            this.btnCancelar.Location = new System.Drawing.Point(403, 424);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(92, 46);
+            this.btnCancelar.Size = new System.Drawing.Size(92, 28);
             this.btnCancelar.TabIndex = 71;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -267,19 +272,51 @@
             // 
             this.btnCadatrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadatrar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadatrar.Location = new System.Drawing.Point(266, 395);
+            this.btnCadatrar.Location = new System.Drawing.Point(273, 424);
             this.btnCadatrar.Name = "btnCadatrar";
-            this.btnCadatrar.Size = new System.Drawing.Size(92, 46);
+            this.btnCadatrar.Size = new System.Drawing.Size(92, 28);
             this.btnCadatrar.TabIndex = 70;
             this.btnCadatrar.Text = "Cadastrar";
             this.btnCadatrar.UseVisualStyleBackColor = true;
             this.btnCadatrar.Click += new System.EventHandler(this.btnCadatrar_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.SteelBlue;
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(218, -8);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(325, 64);
+            this.label4.TabIndex = 74;
+            this.label4.Text = "Consultar aluno";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.SteelBlue;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(786, 59);
+            this.pictureBox2.TabIndex = 73;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(756, 5);
+            this.pictureBox1.TabIndex = 72;
+            this.pictureBox1.TabStop = false;
             // 
             // frmCandidatoCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCadatrar);
             this.Controls.Add(this.cboTurma);
@@ -291,11 +328,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCandidatoCadastro";
-            this.Size = new System.Drawing.Size(755, 507);
+            this.Size = new System.Drawing.Size(755, 484);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,5 +364,8 @@
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.Label lblIdade;
         private System.Windows.Forms.Label lblNomeCompleto;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

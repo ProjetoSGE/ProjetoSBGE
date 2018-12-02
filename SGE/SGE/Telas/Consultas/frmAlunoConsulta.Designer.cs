@@ -142,7 +142,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 54);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 58);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(756, 5);
             this.pictureBox1.TabIndex = 13;
@@ -151,9 +151,9 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.SteelBlue;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(0, -8);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(786, 54);
+            this.pictureBox2.Size = new System.Drawing.Size(786, 67);
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
@@ -162,7 +162,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.SteelBlue;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(218, -10);
+            this.label1.Location = new System.Drawing.Point(218, -8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(325, 64);
             this.label1.TabIndex = 15;

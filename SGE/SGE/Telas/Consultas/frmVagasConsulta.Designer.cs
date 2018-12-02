@@ -53,7 +53,7 @@
             this.Pesquisar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pesquisar.Location = new System.Drawing.Point(32, 76);
             this.Pesquisar.Name = "Pesquisar";
-            this.Pesquisar.Size = new System.Drawing.Size(45, 21);
+            this.Pesquisar.Size = new System.Drawing.Size(44, 21);
             this.Pesquisar.TabIndex = 5;
             this.Pesquisar.Text = "Vaga";
             // 
@@ -101,9 +101,9 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.SteelBlue;
-            this.pictureBox2.Location = new System.Drawing.Point(-30, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(-30, -8);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(786, 57);
+            this.pictureBox2.Size = new System.Drawing.Size(786, 68);
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
