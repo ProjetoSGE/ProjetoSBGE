@@ -37,7 +37,7 @@ namespace SGE.Telas.Consultas
 
 
                 Alteração.frmAlunoAlterar tela = new Alteração.frmAlunoAlterar();
-                tela.LoadScreen(vagas);
+               // tela.LoadScreen(vagas);
                 tela.ShowDialog();
                 this.Hide();
 

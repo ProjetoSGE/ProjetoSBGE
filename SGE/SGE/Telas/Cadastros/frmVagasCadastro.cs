@@ -16,10 +16,15 @@ namespace SGE.Telas.Cadastros
         public frmVagasCadastro()
         {
             InitializeComponent();
+            CarregarCombos();
         }
         void CarregarCombos()
         {
+            List<tb_empresas> lista = db.tb_empresas.ToList();
 
+            cboEmpresa.DisplayMember = nameof(tb_empresas.nm_fantasia);
+            cboEmpresa.ValueMember = nameof(tb_empresas.id_empresa);
+            cboEmpresa.DataSource = lista;
         }
 
 
@@ -32,6 +37,10 @@ namespace SGE.Telas.Cadastros
         {
  
             tb_vagas vagas = new tb_vagas();
+
+            tb_empresas dto2 = cboEmpresa.SelectedItem as tb_empresas;
+            vagas.id_empresa = dto2.id_empresa;
+
             vagas.dt_inicioEstagio = dtInicioEstagio.Value;
             vagas.ds_horarioEntrada = Convert.ToDateTime(mtkInicio.Text);
             vagas.ds_horarioSaida = Convert.ToDateTime(mtkFim.Text);
@@ -49,7 +58,6 @@ namespace SGE.Telas.Cadastros
             vagas.op_cestaBasica = chkCestaBasica.Checked;
             vagas.op_refLocal = chkRefeitorioLocal.Checked;
             vagas.nm_vaga = txtNome.Text;
-            // falta programar o comboBox da empresa
             vagas.qtd_vaga = Convert.ToInt32(nudQtd.Value);
             vagas.ds_sexo = cboSexo.Text;
             vagas.nm_area = txtArea.Text;

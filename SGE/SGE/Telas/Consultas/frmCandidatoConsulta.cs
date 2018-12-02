@@ -32,7 +32,7 @@ namespace SGE.Telas.Consultas
                 vw_candidato alunos = dgvCandidato.Rows[e.RowIndex].DataBoundItem as vw_candidato;
 
 
-                frmAlunoAlterar tela = new frmAlunoAlterar();
+                Alteração.frmAlunoAlterar tela = new Alteração.frmAlunoAlterar();
                 tela.LoadScreen(alunos);
                 tela.ShowDialog();
                 this.Hide();

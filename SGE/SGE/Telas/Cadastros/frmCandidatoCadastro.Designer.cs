@@ -143,7 +143,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 21);
+            this.label6.Size = new System.Drawing.Size(45, 21);
             this.label6.TabIndex = 44;
             this.label6.Text = "Vaga";
             // 
@@ -170,6 +170,14 @@
             // cboCurso
             // 
             this.cboCurso.FormattingEnabled = true;
+            this.cboCurso.Items.AddRange(new object[] {
+            "Administração",
+            "Comunicação Visual",
+            "Eletromecânica",
+            "Eletrotécnica",
+            "Informática",
+            "Inglês",
+            "Secretariado"});
             this.cboCurso.Location = new System.Drawing.Point(152, 81);
             this.cboCurso.Name = "cboCurso";
             this.cboCurso.Size = new System.Drawing.Size(98, 21);
@@ -244,7 +252,7 @@
             this.cboAluno.FormattingEnabled = true;
             this.cboAluno.Location = new System.Drawing.Point(71, 19);
             this.cboAluno.Name = "cboAluno";
-            this.cboAluno.Size = new System.Drawing.Size(179, 21);
+            this.cboAluno.Size = new System.Drawing.Size(199, 21);
             this.cboAluno.TabIndex = 0;
             // 
             // label1

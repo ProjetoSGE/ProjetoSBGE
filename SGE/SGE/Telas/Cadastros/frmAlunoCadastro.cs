@@ -31,7 +31,8 @@ namespace SGE.Telas.Cadastros
             tb.ds_idade =Convert.ToInt32(txtIdade.Text);
             tb.ds_numero = Convert.ToInt32(txtNumero.Text);
             tb.ds_qualCurso = cboCurso.Text;
-            tb.ds_seEstuda = null;
+            tb.ds_seEstuda = Convert.ToString(rdnSim.Checked);
+            tb.ds_seEstuda = Convert.ToString(rdbNao.Checked);
             tb.ds_turno = cboTurno.Text;
             tb.dt_nascimento = dtpDataNasc.Value;
             tb.nm_aluno = txtNome.Text;

@@ -61,7 +61,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.rdbNao = new System.Windows.Forms.RadioButton();
             this.cboSerie = new System.Windows.Forms.ComboBox();
-            this.rdbSim = new System.Windows.Forms.RadioButton();
+            this.rdnSim = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -95,22 +95,30 @@
             this.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDataNasc.Location = new System.Drawing.Point(169, 118);
             this.dtpDataNasc.Name = "dtpDataNasc";
-            this.dtpDataNasc.Size = new System.Drawing.Size(125, 20);
+            this.dtpDataNasc.Size = new System.Drawing.Size(133, 20);
             this.dtpDataNasc.TabIndex = 68;
             // 
             // cboCurso
             // 
             this.cboCurso.FormattingEnabled = true;
+            this.cboCurso.Items.AddRange(new object[] {
+            "Administração",
+            "Comunicação Visual",
+            "Eletromecânica",
+            "Eletrotécnica",
+            "Informática",
+            "Inglês",
+            "Secretariado"});
             this.cboCurso.Location = new System.Drawing.Point(169, 53);
             this.cboCurso.Name = "cboCurso";
-            this.cboCurso.Size = new System.Drawing.Size(132, 21);
+            this.cboCurso.Size = new System.Drawing.Size(133, 21);
             this.cboCurso.TabIndex = 67;
             // 
             // txtPreferencia
             // 
             this.txtPreferencia.Location = new System.Drawing.Point(228, 16);
             this.txtPreferencia.Name = "txtPreferencia";
-            this.txtPreferencia.Size = new System.Drawing.Size(132, 20);
+            this.txtPreferencia.Size = new System.Drawing.Size(403, 20);
             this.txtPreferencia.TabIndex = 65;
             // 
             // label9
@@ -171,14 +179,14 @@
             // 
             this.txtNumero.Location = new System.Drawing.Point(161, 115);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(124, 20);
+            this.txtNumero.Size = new System.Drawing.Size(132, 20);
             this.txtNumero.TabIndex = 58;
             // 
             // txtBairro
             // 
             this.txtBairro.Location = new System.Drawing.Point(161, 87);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(124, 20);
+            this.txtBairro.Size = new System.Drawing.Size(132, 20);
             this.txtBairro.TabIndex = 57;
             // 
             // txtEndereco
@@ -192,7 +200,7 @@
             // 
             this.txtIdade.Location = new System.Drawing.Point(169, 144);
             this.txtIdade.Name = "txtIdade";
-            this.txtIdade.Size = new System.Drawing.Size(124, 20);
+            this.txtIdade.Size = new System.Drawing.Size(133, 20);
             this.txtIdade.TabIndex = 55;
             // 
             // txtNome
@@ -218,7 +226,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(52, 170);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(107, 21);
+            this.label14.Size = new System.Drawing.Size(109, 21);
             this.label14.TabIndex = 52;
             this.label14.Text = "Telefone(RES):";
             // 
@@ -236,9 +244,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(12, 194);
+            this.label11.Location = new System.Drawing.Point(18, 194);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(141, 21);
+            this.label11.Size = new System.Drawing.Size(143, 21);
             this.label11.TabIndex = 50;
             this.label11.Text = "Telefone(RECADO):";
             // 
@@ -329,7 +337,7 @@
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.rdbNao);
             this.groupBox2.Controls.Add(this.cboSerie);
-            this.groupBox2.Controls.Add(this.rdbSim);
+            this.groupBox2.Controls.Add(this.rdnSim);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Location = new System.Drawing.Point(392, 222);
             this.groupBox2.Name = "groupBox2";
@@ -397,17 +405,17 @@
             this.cboSerie.TabIndex = 70;
             this.cboSerie.Text = "....";
             // 
-            // rdbSim
+            // rdnSim
             // 
-            this.rdbSim.AutoSize = true;
-            this.rdbSim.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbSim.Location = new System.Drawing.Point(153, 15);
-            this.rdbSim.Name = "rdbSim";
-            this.rdbSim.Size = new System.Drawing.Size(52, 24);
-            this.rdbSim.TabIndex = 70;
-            this.rdbSim.TabStop = true;
-            this.rdbSim.Text = "Sim";
-            this.rdbSim.UseVisualStyleBackColor = true;
+            this.rdnSim.AutoSize = true;
+            this.rdnSim.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdnSim.Location = new System.Drawing.Point(153, 15);
+            this.rdnSim.Name = "rdnSim";
+            this.rdnSim.Size = new System.Drawing.Size(52, 24);
+            this.rdnSim.TabIndex = 70;
+            this.rdnSim.TabStop = true;
+            this.rdnSim.Text = "Sim";
+            this.rdnSim.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -462,9 +470,20 @@
             // cboAnoEstudou
             // 
             this.cboAnoEstudou.FormattingEnabled = true;
+            this.cboAnoEstudou.Items.AddRange(new object[] {
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010"});
             this.cboAnoEstudou.Location = new System.Drawing.Point(170, 84);
             this.cboAnoEstudou.Name = "cboAnoEstudou";
-            this.cboAnoEstudou.Size = new System.Drawing.Size(124, 21);
+            this.cboAnoEstudou.Size = new System.Drawing.Size(132, 21);
             this.cboAnoEstudou.TabIndex = 66;
             // 
             // groupBox1
@@ -578,7 +597,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.RadioButton rdbNao;
         private System.Windows.Forms.ComboBox cboSerie;
-        private System.Windows.Forms.RadioButton rdbSim;
+        private System.Windows.Forms.RadioButton rdnSim;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cboAnoEstudou;
         private System.Windows.Forms.GroupBox groupBox1;
