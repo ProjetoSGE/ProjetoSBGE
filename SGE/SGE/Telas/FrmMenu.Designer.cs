@@ -163,6 +163,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(755, 31);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // menuToolStripMenuItem
             // 
@@ -318,9 +319,9 @@
             // 
             // pnlcentru
             // 
-            this.pnlcentru.Location = new System.Drawing.Point(16, 27);
+            this.pnlcentru.Location = new System.Drawing.Point(15, 31);
             this.pnlcentru.Name = "pnlcentru";
-            this.pnlcentru.Size = new System.Drawing.Size(746, 530);
+            this.pnlcentru.Size = new System.Drawing.Size(747, 521);
             this.pnlcentru.TabIndex = 10;
             // 
             // FrmMenu

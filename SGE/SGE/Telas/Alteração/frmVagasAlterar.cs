@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SGE.Telas.Alteração
 {
-    public partial class frmEmpresaAlterar : Form
+    public partial class frmVagasAlterar : UserControl
     {
-        public frmEmpresaAlterar()
+        public frmVagasAlterar()
         {
             InitializeComponent();
-        }
-
-        private void btnAlterar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
