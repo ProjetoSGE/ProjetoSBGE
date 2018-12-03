@@ -35,16 +35,18 @@ namespace SGE.Telas.Cadastros
 
         private void btnsalvar_Click(object sender, EventArgs e)
         {
- 
+            var time = TimeSpan.Parse(mtkInicio.Text);
+            var time1 = TimeSpan.Parse(mtkInicio.Text);
+            var time2 = TimeSpan.Parse(mtkInicio.Text);
             tb_vagas vagas = new tb_vagas();
 
             tb_empresas dto2 = cboEmpresa.SelectedItem as tb_empresas;
             vagas.id_empresa = dto2.id_empresa;
 
             vagas.dt_inicioEstagio = dtInicioEstagio.Value;
-            vagas.ds_horarioEntrada = Convert.ToDateTime(mtkInicio.Text);
-            vagas.ds_horarioSaida = Convert.ToDateTime(mtkFim.Text);
-            vagas.ds_intervalo = Convert.ToDateTime(mtkIntervalo.Text);
+            vagas.ds_horarioEntrada = time;
+            vagas.ds_horarioSaida = time1;
+            vagas.ds_intervalo = time2;
             vagas.op_infoAutoCAD = chkAutoCad.Checked;
             vagas.op_infoPhotoShop = chkPhotoshop.Checked;
             vagas.op_infoProgramacao = chkProgramacao.Checked;

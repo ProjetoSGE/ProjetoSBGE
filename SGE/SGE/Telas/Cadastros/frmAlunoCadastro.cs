@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity.Validation;
 
 namespace SGE.Telas.Cadastros
 {
@@ -19,34 +20,52 @@ namespace SGE.Telas.Cadastros
 
         private void btnsalvar_Click(object sender, EventArgs e)
         {
-            SGEEntities db = new SGEEntities();
+            try
+            {
 
-            tb_alunos tb = new tb_alunos();
-            tb.ds_anoEstudo = cboAnoEstudou.Text;
-            tb.ds_areaPreferencial = txtPreferencia.Text;
-            tb.ds_bairro = txtBairro.Text;
-            tb.ds_cep = mskCEP.Text;
-            tb.ds_endereco = txtEndereco.Text;
-            tb.ds_expProfissional = txtExperiencia.Text;
-            tb.ds_idade =Convert.ToInt32(txtIdade.Text);
-            tb.ds_numero = Convert.ToInt32(txtNumero.Text);
-            tb.ds_qualCurso = cboCurso.Text;
-            tb.ds_seEstuda = Convert.ToString(rdnSim.Checked);
-            tb.ds_seEstuda = Convert.ToString(rdbNao.Checked);
-            tb.ds_turno = cboTurno.Text;
-            tb.dt_nascimento = dtpDataNasc.Value;
-            tb.nm_aluno = txtNome.Text;
-            tb.nm_curso = cboSerie.Text;
-            tb.nr_celular = mskRecado.Text;
-            tb.nr_fixo = mskRes.Text ;
-            tb.tb_candidato = null; // o que é isso?
+                SGEEntities db = new SGEEntities();
 
-
-            db.tb_alunos.Add(tb);
-            db.SaveChanges();
+                tb_alunos tb = new tb_alunos();
+                tb.ds_anoEstudo = cboAnoEstudou.Text;
+                tb.ds_areaPreferencial = txtPreferencia.Text;
+                tb.ds_bairro = txtBairro.Text;
+                tb.ds_cep = mskCEP.Text;
+                tb.ds_endereco = txtEndereco.Text;
+                tb.ds_expProfissional = txtExperiencia.Text;
+                tb.ds_idade = Convert.ToInt32(txtIdade.Text);
+                tb.ds_numero = Convert.ToInt32(txtNumero.Text);
+                tb.ds_qualCurso = cboCurso.Text;
+                tb.ds_seEstuda = Convert.ToString(rdnSim.Checked);
+                tb.ds_seEstuda = Convert.ToString(rdbNao.Checked);
+                tb.ds_turno = cboTurno.Text;
+                tb.dt_nascimento = dtpDataNasc.Value;
+                tb.nm_aluno = txtNome.Text;
+                tb.nm_curso = cboSerie.Text;
+                tb.nr_celular = mskRecado.Text;
+                tb.nr_fixo = mskRes.Text;
 
 
-            
+
+                db.tb_alunos.Add(tb);
+                db.SaveChanges();
+
+            }
+
+            catch (DbEntityValidationException entry)
+            {
+                foreach (var eve in entry.EntityValidationErrors)
+                {
+                    Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
+                            ve.PropertyName, ve.ErrorMessage);
+                    }
+                }
+                throw;
+            }
+
         }
 
         private void frmAlunoCadastro_Load(object sender, EventArgs e)
