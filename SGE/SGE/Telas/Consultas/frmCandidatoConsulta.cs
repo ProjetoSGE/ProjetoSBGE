@@ -54,5 +54,10 @@ namespace SGE.Telas.Consultas
                 }
             }
         }
+
+        private void frmCandidatoConsulta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

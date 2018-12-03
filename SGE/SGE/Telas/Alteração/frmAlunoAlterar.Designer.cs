@@ -67,6 +67,7 @@
             this.mskRes = new System.Windows.Forms.MaskedTextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -79,7 +80,7 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtExperiencia);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(21, 279);
+            this.groupBox1.Location = new System.Drawing.Point(21, 296);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(669, 140);
             this.groupBox1.TabIndex = 78;
@@ -129,7 +130,7 @@
             this.groupBox2.Controls.Add(this.cboSerie);
             this.groupBox2.Controls.Add(this.rdbSim);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Location = new System.Drawing.Point(366, 152);
+            this.groupBox2.Location = new System.Drawing.Point(366, 169);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(324, 106);
             this.groupBox2.TabIndex = 75;
@@ -226,7 +227,7 @@
             this.groupBox3.Controls.Add(this.txtEndereco);
             this.groupBox3.Controls.Add(this.txtBairro);
             this.groupBox3.Controls.Add(this.mskCEP);
-            this.groupBox3.Location = new System.Drawing.Point(366, 11);
+            this.groupBox3.Location = new System.Drawing.Point(366, 28);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(324, 140);
             this.groupBox3.TabIndex = 76;
@@ -317,7 +318,7 @@
             this.groupBox4.Controls.Add(this.txtNome);
             this.groupBox4.Controls.Add(this.txtIdade);
             this.groupBox4.Controls.Add(this.mskRes);
-            this.groupBox4.Location = new System.Drawing.Point(21, 13);
+            this.groupBox4.Location = new System.Drawing.Point(21, 30);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(324, 245);
             this.groupBox4.TabIndex = 77;
@@ -411,7 +412,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(12, 194);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(143, 21);
+            this.label11.Size = new System.Drawing.Size(141, 21);
             this.label11.TabIndex = 50;
             this.label11.Text = "Telefone(RECADO):";
             // 
@@ -421,7 +422,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(52, 170);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 21);
+            this.label14.Size = new System.Drawing.Size(107, 21);
             this.label14.TabIndex = 52;
             this.label14.Text = "Telefone(RES):";
             // 
@@ -451,7 +452,7 @@
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(366, 439);
+            this.btnCancelar.Location = new System.Drawing.Point(366, 456);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(92, 46);
             this.btnCancelar.TabIndex = 74;
@@ -462,7 +463,7 @@
             // 
             this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlterar.Location = new System.Drawing.Point(253, 439);
+            this.btnAlterar.Location = new System.Drawing.Point(253, 456);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(92, 46);
             this.btnAlterar.TabIndex = 73;
@@ -470,12 +471,23 @@
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(4, 2);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(224, 25);
+            this.label17.TabIndex = 69;
+            this.label17.Text = "Alterar Regsitro do Aluno";
+            // 
             // frmAlunoAlterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(747, 521);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
@@ -494,6 +506,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -538,5 +551,6 @@
         private System.Windows.Forms.MaskedTextBox mskRes;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Label label17;
     }
 }

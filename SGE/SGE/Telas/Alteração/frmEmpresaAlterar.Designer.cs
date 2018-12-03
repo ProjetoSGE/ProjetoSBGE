@@ -52,6 +52,7 @@
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAlterar = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -111,7 +112,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(59, 142);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 21);
+            this.label5.Size = new System.Drawing.Size(70, 21);
             this.label5.TabIndex = 27;
             this.label5.Text = "Telefone:";
             // 
@@ -172,7 +173,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(80, 16);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 21);
+            this.label9.Size = new System.Drawing.Size(49, 21);
             this.label9.TabIndex = 22;
             this.label9.Text = "CNPJ:";
             // 
@@ -183,7 +184,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(13, 46);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 21);
+            this.label10.Size = new System.Drawing.Size(116, 21);
             this.label10.TabIndex = 0;
             this.label10.Text = "Nome Fantasia:";
             // 
@@ -233,7 +234,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(10, 101);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(152, 21);
+            this.label8.Size = new System.Drawing.Size(151, 21);
             this.label8.TabIndex = 37;
             this.label8.Text = "Ponto de referencia: ";
             // 
@@ -304,12 +305,24 @@
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(0, -1);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(253, 25);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "Alterar Registros de Empresa";
+            // 
             // frmEmpresaAlterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(747, 521);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -322,6 +335,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -351,5 +365,6 @@
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Label label4;
     }
 }

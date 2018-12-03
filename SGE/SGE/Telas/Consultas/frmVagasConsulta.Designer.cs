@@ -31,55 +31,44 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Pesquisar = new System.Windows.Forms.Label();
             this.dgvVaga = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVaga)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(71, 77);
+            this.textBox1.Location = new System.Drawing.Point(71, 70);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(553, 20);
             this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Pesquisar
             // 
             this.Pesquisar.AutoSize = true;
             this.Pesquisar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pesquisar.Location = new System.Drawing.Point(20, 74);
+            this.Pesquisar.Location = new System.Drawing.Point(20, 67);
             this.Pesquisar.Name = "Pesquisar";
-            this.Pesquisar.Size = new System.Drawing.Size(45, 21);
+            this.Pesquisar.Size = new System.Drawing.Size(44, 21);
             this.Pesquisar.TabIndex = 5;
             this.Pesquisar.Text = "Vaga";
+            this.Pesquisar.Click += new System.EventHandler(this.Pesquisar_Click);
             // 
             // dgvVaga
             // 
             this.dgvVaga.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVaga.Location = new System.Drawing.Point(16, 108);
+            this.dgvVaga.Location = new System.Drawing.Point(16, 101);
             this.dgvVaga.Name = "dgvVaga";
             this.dgvVaga.Size = new System.Drawing.Size(711, 391);
             this.dgvVaga.TabIndex = 4;
             this.dgvVaga.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVaga_CellContentClick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 59);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(756, 5);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(630, 67);
+            this.button1.Location = new System.Drawing.Point(630, 60);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 34);
             this.button1.TabIndex = 16;
@@ -90,32 +79,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.SteelBlue;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(226, -8);
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(2, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(324, 64);
+            this.label1.Size = new System.Drawing.Size(146, 25);
             this.label1.TabIndex = 19;
             this.label1.Text = "Consultar vagas";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.SteelBlue;
-            this.pictureBox2.Location = new System.Drawing.Point(-30, -8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(786, 68);
-            this.pictureBox2.TabIndex = 18;
-            this.pictureBox2.TabStop = false;
             // 
             // frmVagasConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Pesquisar);
             this.Controls.Add(this.dgvVaga);
@@ -123,8 +101,6 @@
             this.Size = new System.Drawing.Size(747, 521);
             this.Load += new System.EventHandler(this.frmVagasConsulta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVaga)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,9 +110,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Pesquisar;
         private System.Windows.Forms.DataGridView dgvVaga;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

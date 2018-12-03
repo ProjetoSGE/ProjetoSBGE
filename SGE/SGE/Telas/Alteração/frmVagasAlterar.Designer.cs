@@ -81,7 +81,7 @@
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(638, 471);
+            this.btnCancelar.Location = new System.Drawing.Point(638, 473);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 32);
             this.btnCancelar.TabIndex = 87;
@@ -101,7 +101,7 @@
             this.groupBox4.Controls.Add(this.nudQtd);
             this.groupBox4.Controls.Add(this.txtArea);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(37, 281);
+            this.groupBox4.Location = new System.Drawing.Point(37, 283);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(675, 78);
             this.groupBox4.TabIndex = 93;
@@ -210,7 +210,7 @@
             // 
             this.btnsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalvar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalvar.Location = new System.Drawing.Point(553, 471);
+            this.btnsalvar.Location = new System.Drawing.Point(553, 473);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(75, 32);
             this.btnsalvar.TabIndex = 85;
@@ -228,7 +228,7 @@
             this.groupBox3.Controls.Add(this.mtkIntervalo);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(37, 18);
+            this.groupBox3.Location = new System.Drawing.Point(37, 20);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(676, 100);
             this.groupBox3.TabIndex = 92;
@@ -323,7 +323,7 @@
             this.groupBox2.Controls.Add(this.chkCorelDraw);
             this.groupBox2.Controls.Add(this.chkOutros);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(37, 133);
+            this.groupBox2.Location = new System.Drawing.Point(37, 135);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(312, 139);
             this.groupBox2.TabIndex = 91;
@@ -370,7 +370,7 @@
             this.chkPacoteOffice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkPacoteOffice.Location = new System.Drawing.Point(134, 29);
             this.chkPacoteOffice.Name = "chkPacoteOffice";
-            this.chkPacoteOffice.Size = new System.Drawing.Size(117, 25);
+            this.chkPacoteOffice.Size = new System.Drawing.Size(116, 25);
             this.chkPacoteOffice.TabIndex = 38;
             this.chkPacoteOffice.Text = "Pacote office";
             this.chkPacoteOffice.UseVisualStyleBackColor = true;
@@ -406,7 +406,7 @@
             this.groupBox1.Controls.Add(this.chkRefeitorioLocal);
             this.groupBox1.Controls.Add(this.chkCestaBasica);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(368, 133);
+            this.groupBox1.Location = new System.Drawing.Point(368, 135);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(345, 139);
             this.groupBox1.TabIndex = 90;
@@ -441,7 +441,7 @@
             this.chkValeRef.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkValeRef.Location = new System.Drawing.Point(6, 81);
             this.chkValeRef.Name = "chkValeRef";
-            this.chkValeRef.Size = new System.Drawing.Size(122, 25);
+            this.chkValeRef.Size = new System.Drawing.Size(121, 25);
             this.chkValeRef.TabIndex = 43;
             this.chkValeRef.Text = "Vale Refeição";
             this.chkValeRef.UseVisualStyleBackColor = true;
@@ -483,7 +483,7 @@
             // txtCompetecias
             // 
             this.txtCompetecias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCompetecias.Location = new System.Drawing.Point(132, 378);
+            this.txtCompetecias.Location = new System.Drawing.Point(132, 380);
             this.txtCompetecias.Name = "txtCompetecias";
             this.txtCompetecias.Size = new System.Drawing.Size(226, 20);
             this.txtCompetecias.TabIndex = 89;
@@ -491,7 +491,7 @@
             // txtTarefa
             // 
             this.txtTarefa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTarefa.Location = new System.Drawing.Point(487, 378);
+            this.txtTarefa.Location = new System.Drawing.Point(487, 380);
             this.txtTarefa.Multiline = true;
             this.txtTarefa.Name = "txtTarefa";
             this.txtTarefa.Size = new System.Drawing.Size(226, 73);
@@ -500,7 +500,7 @@
             // txtObs
             // 
             this.txtObs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObs.Location = new System.Drawing.Point(132, 404);
+            this.txtObs.Location = new System.Drawing.Point(132, 406);
             this.txtObs.Multiline = true;
             this.txtObs.Name = "txtObs";
             this.txtObs.Size = new System.Drawing.Size(226, 47);
@@ -511,9 +511,9 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(66, 374);
+            this.label11.Location = new System.Drawing.Point(66, 376);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 21);
+            this.label11.Size = new System.Drawing.Size(58, 21);
             this.label11.TabIndex = 84;
             this.label11.Text = "Tarefas";
             // 
@@ -522,7 +522,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(373, 378);
+            this.label8.Location = new System.Drawing.Point(373, 380);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 21);
             this.label8.TabIndex = 82;
@@ -533,7 +533,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(33, 404);
+            this.label10.Location = new System.Drawing.Point(33, 406);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 21);
             this.label10.TabIndex = 83;
@@ -543,7 +543,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnsalvar);

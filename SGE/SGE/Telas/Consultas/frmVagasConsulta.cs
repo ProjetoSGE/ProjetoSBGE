@@ -58,5 +58,15 @@ namespace SGE.Telas.Consultas
                 }
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pesquisar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
