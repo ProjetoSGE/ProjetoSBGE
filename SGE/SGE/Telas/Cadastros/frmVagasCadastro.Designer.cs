@@ -573,6 +573,7 @@
             this.Controls.Add(this.label10);
             this.Name = "frmVagasCadastro";
             this.Size = new System.Drawing.Size(747, 521);
+            this.Load += new System.EventHandler(this.frmVagasCadastro_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).EndInit();

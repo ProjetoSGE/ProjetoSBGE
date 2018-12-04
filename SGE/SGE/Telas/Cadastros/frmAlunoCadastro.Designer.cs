@@ -65,11 +65,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtrg = new System.Windows.Forms.Label();
             this.cboAnoEstudou = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.txtrg = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -91,7 +91,7 @@
             // dtpDataNasc
             // 
             this.dtpDataNasc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataNasc.Location = new System.Drawing.Point(169, 118);
+            this.dtpDataNasc.Location = new System.Drawing.Point(169, 109);
             this.dtpDataNasc.Name = "dtpDataNasc";
             this.dtpDataNasc.Size = new System.Drawing.Size(133, 20);
             this.dtpDataNasc.TabIndex = 68;
@@ -107,7 +107,7 @@
             "Informática",
             "Inglês",
             "Secretariado"});
-            this.cboCurso.Location = new System.Drawing.Point(169, 53);
+            this.cboCurso.Location = new System.Drawing.Point(169, 44);
             this.cboCurso.Name = "cboCurso";
             this.cboCurso.Size = new System.Drawing.Size(133, 21);
             this.cboCurso.TabIndex = 67;
@@ -143,7 +143,7 @@
             // 
             // mskRecado
             // 
-            this.mskRecado.Location = new System.Drawing.Point(170, 197);
+            this.mskRecado.Location = new System.Drawing.Point(170, 188);
             this.mskRecado.Mask = "00000-0000";
             this.mskRecado.Name = "mskRecado";
             this.mskRecado.Size = new System.Drawing.Size(57, 20);
@@ -151,7 +151,7 @@
             // 
             // mskRes
             // 
-            this.mskRes.Location = new System.Drawing.Point(170, 171);
+            this.mskRes.Location = new System.Drawing.Point(170, 162);
             this.mskRes.Mask = "0000-0000";
             this.mskRes.Name = "mskRes";
             this.mskRes.Size = new System.Drawing.Size(59, 20);
@@ -196,14 +196,14 @@
             // 
             // txtIdade
             // 
-            this.txtIdade.Location = new System.Drawing.Point(169, 144);
+            this.txtIdade.Location = new System.Drawing.Point(169, 135);
             this.txtIdade.Name = "txtIdade";
             this.txtIdade.Size = new System.Drawing.Size(133, 20);
             this.txtIdade.TabIndex = 55;
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(170, 27);
+            this.txtNome.Location = new System.Drawing.Point(170, 18);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(132, 20);
             this.txtNome.TabIndex = 54;
@@ -222,9 +222,9 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(52, 170);
+            this.label14.Location = new System.Drawing.Point(52, 161);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 21);
+            this.label14.Size = new System.Drawing.Size(107, 21);
             this.label14.TabIndex = 52;
             this.label14.Text = "Telefone(RES):";
             // 
@@ -242,9 +242,9 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(18, 194);
+            this.label11.Location = new System.Drawing.Point(18, 185);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(143, 21);
+            this.label11.Size = new System.Drawing.Size(141, 21);
             this.label11.TabIndex = 50;
             this.label11.Text = "Telefone(RECADO):";
             // 
@@ -272,7 +272,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 116);
+            this.label6.Location = new System.Drawing.Point(7, 107);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(153, 21);
             this.label6.TabIndex = 47;
@@ -282,7 +282,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(103, 143);
+            this.label5.Location = new System.Drawing.Point(103, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 21);
             this.label5.TabIndex = 46;
@@ -302,7 +302,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 84);
+            this.label3.Location = new System.Drawing.Point(24, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 21);
             this.label3.TabIndex = 44;
@@ -312,7 +312,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(104, 26);
+            this.label2.Location = new System.Drawing.Point(104, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 21);
             this.label2.TabIndex = 43;
@@ -322,7 +322,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(106, 53);
+            this.label1.Location = new System.Drawing.Point(106, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 21);
             this.label1.TabIndex = 42;
@@ -470,6 +470,22 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Aluno";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(170, 216);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 70;
+            // 
+            // txtrg
+            // 
+            this.txtrg.AutoSize = true;
+            this.txtrg.Location = new System.Drawing.Point(131, 220);
+            this.txtrg.Name = "txtrg";
+            this.txtrg.Size = new System.Drawing.Size(23, 13);
+            this.txtrg.TabIndex = 69;
+            this.txtrg.Text = "RG";
+            // 
             // cboAnoEstudou
             // 
             this.cboAnoEstudou.FormattingEnabled = true;
@@ -484,7 +500,7 @@
             "2012",
             "2011",
             "2010"});
-            this.cboAnoEstudou.Location = new System.Drawing.Point(170, 84);
+            this.cboAnoEstudou.Location = new System.Drawing.Point(170, 75);
             this.cboAnoEstudou.Name = "cboAnoEstudou";
             this.cboAnoEstudou.Size = new System.Drawing.Size(132, 21);
             this.cboAnoEstudou.TabIndex = 66;
@@ -512,22 +528,6 @@
             this.label17.Size = new System.Drawing.Size(148, 25);
             this.label17.TabIndex = 69;
             this.label17.Text = "Cadastrar Aluno";
-            // 
-            // txtrg
-            // 
-            this.txtrg.AutoSize = true;
-            this.txtrg.Location = new System.Drawing.Point(131, 229);
-            this.txtrg.Name = "txtrg";
-            this.txtrg.Size = new System.Drawing.Size(23, 13);
-            this.txtrg.TabIndex = 69;
-            this.txtrg.Text = "RG";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(170, 225);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 70;
             // 
             // frmAlunoCadastro
             // 

@@ -51,18 +51,18 @@
             this.empreSAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vagasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlcentru = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.pnlcentru.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -71,7 +71,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(760, 0);
             this.panel3.Name = "panel3";
@@ -80,7 +80,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(10, 574);
             this.panel4.Name = "panel4";
@@ -89,7 +89,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel6.Controls.Add(this.pictureBox3);
             this.panel6.Controls.Add(this.pictureBox2);
             this.panel6.Controls.Add(this.pnlCentro);
@@ -101,7 +101,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(699, 1);
@@ -113,7 +113,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(728, 1);
@@ -266,23 +266,21 @@
             // pnlcentru
             // 
             this.pnlcentru.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlcentru.Controls.Add(this.pictureBox7);
+            this.pnlcentru.Controls.Add(this.pictureBox1);
             this.pnlcentru.Location = new System.Drawing.Point(12, 52);
             this.pnlcentru.Name = "pnlcentru";
             this.pnlcentru.Size = new System.Drawing.Size(747, 521);
             this.pnlcentru.TabIndex = 10;
             // 
-            // pictureBox7
+            // pictureBox1
             // 
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(138, 27);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(479, 415);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 9;
-            this.pictureBox7.TabStop = false;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(190, 93);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(349, 304);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmMenu
             // 
@@ -307,7 +305,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.pnlcentru.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,6 +334,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnlcentru;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

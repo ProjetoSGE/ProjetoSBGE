@@ -71,5 +71,10 @@ namespace SGE.Telas.Cadastros
             db.SaveChanges();
 
         }
+
+        private void frmVagasCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

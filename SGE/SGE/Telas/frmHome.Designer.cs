@@ -37,7 +37,7 @@
             // 
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(233, 125);
+            this.pictureBox7.Location = new System.Drawing.Point(216, 102);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(288, 256);
             this.pictureBox7.TabIndex = 10;
