@@ -25,9 +25,10 @@ namespace SGE.Telas.Consultas
         {
             List<tb_alunos> alunos = db.tb_alunos.Where(a => a.nm_aluno.Contains(textBox1.Text)).ToList();
 
-
-            dgvAluno.DataSource(alunos);
+            
             dgvAluno.AutoGenerateColumns = false;
+            dgvAluno.DataSource = alunos;
+           
            
 
 

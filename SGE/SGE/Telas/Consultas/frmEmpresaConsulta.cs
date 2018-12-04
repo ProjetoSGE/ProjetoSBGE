@@ -22,7 +22,11 @@ namespace SGE.Telas.Consultas
         {
 
            
-            List<tb_empresas> candidato = db.tb_empresas.Where(a => a.nm_fantasia.Contains(textBox1.Text)).ToList();
+            List<tb_empresas> empresas = db.tb_empresas.Where(a => a.nm_fantasia.Contains(textBox1.Text)).ToList();
+            dgvEmpresa.AutoGenerateColumns = false;
+            dgvEmpresa.DataSource = empresas;
+
+
         }
 
         private void dgvEmpresa_CellContentClick(object sender, DataGridViewCellEventArgs e)
