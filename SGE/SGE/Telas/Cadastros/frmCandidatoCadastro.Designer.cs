@@ -61,14 +61,14 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(83, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 21);
+            this.label2.Size = new System.Drawing.Size(45, 21);
             this.label2.TabIndex = 58;
-            this.label2.Text = "Curso";
+            this.label2.Text = "Vaga";
             // 
             // cboAluno
             // 
             this.cboAluno.FormattingEnabled = true;
-            this.cboAluno.Location = new System.Drawing.Point(140, 103);
+            this.cboAluno.Location = new System.Drawing.Point(140, 125);
             this.cboAluno.Name = "cboAluno";
             this.cboAluno.Size = new System.Drawing.Size(199, 21);
             this.cboAluno.TabIndex = 0;
@@ -77,7 +77,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(83, 103);
+            this.label1.Location = new System.Drawing.Point(83, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 21);
             this.label1.TabIndex = 44;
@@ -119,7 +119,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(195, 217);
+            this.comboBox1.Location = new System.Drawing.Point(127, 179);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(199, 21);
             this.comboBox1.TabIndex = 73;
@@ -127,7 +127,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(152, 220);
+            this.label3.Location = new System.Drawing.Point(84, 182);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 74;

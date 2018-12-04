@@ -23,6 +23,8 @@ namespace SGE.Telas.Consultas
         {
            
             List<vw_candidato> candidato = db.vw_candidato.Where(a => a.nm_aluno.Contains(textBox1.Text)).ToList();
+            dgvCandidato.AutoGenerateColumns = false;
+            dgvCandidato.DataSource = candidato;
         }
 
         private void dgvCandidato_CellContentClick(object sender, DataGridViewCellEventArgs e)
