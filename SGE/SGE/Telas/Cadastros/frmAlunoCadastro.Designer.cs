@@ -68,6 +68,8 @@
             this.cboAnoEstudou = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.txtrg = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -222,7 +224,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(52, 170);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(107, 21);
+            this.label14.Size = new System.Drawing.Size(109, 21);
             this.label14.TabIndex = 52;
             this.label14.Text = "Telefone(RES):";
             // 
@@ -242,7 +244,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(18, 194);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(141, 21);
+            this.label11.Size = new System.Drawing.Size(143, 21);
             this.label11.TabIndex = 50;
             this.label11.Text = "Telefone(RECADO):";
             // 
@@ -445,6 +447,8 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.txtrg);
             this.groupBox4.Controls.Add(this.mskRecado);
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Controls.Add(this.label2);
@@ -508,6 +512,22 @@
             this.label17.Size = new System.Drawing.Size(148, 25);
             this.label17.TabIndex = 69;
             this.label17.Text = "Cadastrar Aluno";
+            // 
+            // txtrg
+            // 
+            this.txtrg.AutoSize = true;
+            this.txtrg.Location = new System.Drawing.Point(131, 229);
+            this.txtrg.Name = "txtrg";
+            this.txtrg.Size = new System.Drawing.Size(23, 13);
+            this.txtrg.TabIndex = 69;
+            this.txtrg.Text = "RG";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(170, 225);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 70;
             // 
             // frmAlunoCadastro
             // 
@@ -579,5 +599,7 @@
         private System.Windows.Forms.ComboBox cboAnoEstudou;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label txtrg;
     }
 }

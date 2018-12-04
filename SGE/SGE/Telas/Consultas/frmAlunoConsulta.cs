@@ -24,7 +24,14 @@ namespace SGE.Telas.Consultas
         private void button1_Click(object sender, EventArgs e)
         {
             List<tb_alunos> alunos = db.tb_alunos.Where(a => a.nm_aluno.Contains(textBox1.Text)).ToList();
-                                                 
+
+
+            dgvAluno.DataSource(alunos);
+            dgvAluno.AutoGenerateColumns = false;
+           
+
+
+
         }
 
         private void dgvAluno_CellContentClick(object sender, DataGridViewCellEventArgs e)

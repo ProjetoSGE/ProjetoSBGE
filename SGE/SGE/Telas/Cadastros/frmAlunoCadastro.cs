@@ -35,17 +35,23 @@ namespace SGE.Telas.Cadastros
                 tb.ds_idade = Convert.ToInt32(txtIdade.Text);
                 tb.ds_numero = Convert.ToInt32(txtNumero.Text);
                 tb.ds_qualCurso = cboCurso.Text;
-                tb.ds_seEstuda = Convert.ToString(rdnSim.Checked);
-                tb.ds_seEstuda = Convert.ToString(rdbNao.Checked);
                 tb.ds_turno = cboTurno.Text;
                 tb.dt_nascimento = dtpDataNasc.Value;
                 tb.nm_aluno = txtNome.Text;
                 tb.nm_curso = cboSerie.Text;
                 tb.nr_celular = mskRecado.Text;
                 tb.nr_fixo = mskRes.Text;
+                tb.ds_rg = txtrg.Text;
 
+                if (rdnSim.Checked == true)
+                {
+                    tb.ds_seEstuda = "Sim";
+                }
 
-
+                if (rdbNao.Checked == true)
+                {
+                    tb.ds_seEstuda = "Não";
+                }
                 db.tb_alunos.Add(tb);
                 db.SaveChanges();
 

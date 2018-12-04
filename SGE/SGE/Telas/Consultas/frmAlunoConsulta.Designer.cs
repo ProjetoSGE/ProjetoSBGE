@@ -32,13 +32,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Pesquisar = new System.Windows.Forms.Label();
             this.dgvAluno = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAluno)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,8 +73,7 @@
             // 
             // dgvAluno
             // 
-            this.dgvAluno.AllowUserToAddRows = false;
-            this.dgvAluno.AllowUserToDeleteRows = false;
+            this.dgvAluno.AllowUserToOrderColumns = true;
             this.dgvAluno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAluno.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
@@ -85,10 +84,19 @@
             this.Column6});
             this.dgvAluno.Location = new System.Drawing.Point(15, 86);
             this.dgvAluno.Name = "dgvAluno";
-            this.dgvAluno.ReadOnly = true;
             this.dgvAluno.Size = new System.Drawing.Size(709, 400);
             this.dgvAluno.TabIndex = 8;
             this.dgvAluno.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAluno_CellContentClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 25);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Consultar Aluno";
             // 
             // Column2
             // 
@@ -99,6 +107,7 @@
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "nm_aluno";
             this.Column1.HeaderText = "Nome";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
@@ -135,16 +144,6 @@
             this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Column6.Width = 25;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 25);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Consultar Aluno";
-            // 
             // frmAlunoConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,12 +168,12 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Pesquisar;
         private System.Windows.Forms.DataGridView dgvAluno;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewImageColumn Column5;
         private System.Windows.Forms.DataGridViewImageColumn Column6;
-        private System.Windows.Forms.Label label1;
     }
 }
