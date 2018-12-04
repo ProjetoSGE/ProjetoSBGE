@@ -16,6 +16,7 @@ namespace SGE.Telas.Cadastros
         {
             InitializeComponent();
         }
+        SGEEntities db = new SGEEntities();
 
         private void btnsalvar_Click(object sender, EventArgs e)
         {
@@ -24,7 +25,7 @@ namespace SGE.Telas.Cadastros
 
         private void btnCadatrar_Click(object sender, EventArgs e)
         {
-            SGEEntities db = new SGEEntities();
+           
 
             tb_candidato dto = new tb_candidato();
             tb_alunos dto1 = CboStatus.SelectedItem as tb_alunos;
@@ -56,6 +57,32 @@ namespace SGE.Telas.Cadastros
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void cboAluno_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+           
+           
+
+                
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void cboCurso_Validated(object sender, EventArgs e)
+        {
+            List<tb_alunos> alunos = db.tb_alunos.Where(a => a.ds_qualCurso.Contains(cboCurso.Text)).ToList();
+
+
+
+
+            cboAluno.DisplayMember = nameof(tb_alunos.nm_aluno);
+            cboAluno.ValueMember = nameof(tb_alunos.id_aluno);
+            cboAluno.DataSource = alunos;
         }
     }
 }
