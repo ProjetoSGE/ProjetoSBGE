@@ -85,7 +85,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(628, 471);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 32);
-            this.btnCancelar.TabIndex = 75;
+            this.btnCancelar.TabIndex = 24;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -102,7 +102,7 @@
             this.groupBox4.Controls.Add(this.nudQtd);
             this.groupBox4.Controls.Add(this.txtArea);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(28, 311);
+            this.groupBox4.Location = new System.Drawing.Point(28, 300);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(675, 78);
             this.groupBox4.TabIndex = 81;
@@ -126,7 +126,7 @@
             this.txtNome.Location = new System.Drawing.Point(88, 14);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(121, 25);
-            this.txtNome.TabIndex = 60;
+            this.txtNome.TabIndex = 15;
             // 
             // cboEmpresa
             // 
@@ -134,7 +134,7 @@
             this.cboEmpresa.Location = new System.Drawing.Point(88, 43);
             this.cboEmpresa.Name = "cboEmpresa";
             this.cboEmpresa.Size = new System.Drawing.Size(121, 25);
-            this.cboEmpresa.TabIndex = 49;
+            this.cboEmpresa.TabIndex = 16;
             // 
             // label6
             // 
@@ -167,7 +167,7 @@
             this.cboSexo.Location = new System.Drawing.Point(314, 45);
             this.cboSexo.Name = "cboSexo";
             this.cboSexo.Size = new System.Drawing.Size(91, 25);
-            this.cboSexo.TabIndex = 58;
+            this.cboSexo.TabIndex = 18;
             // 
             // label3
             // 
@@ -197,7 +197,7 @@
             this.nudQtd.Location = new System.Drawing.Point(314, 17);
             this.nudQtd.Name = "nudQtd";
             this.nudQtd.Size = new System.Drawing.Size(91, 25);
-            this.nudQtd.TabIndex = 62;
+            this.nudQtd.TabIndex = 17;
             // 
             // txtArea
             // 
@@ -205,7 +205,7 @@
             this.txtArea.Location = new System.Drawing.Point(530, 14);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(100, 25);
-            this.txtArea.TabIndex = 61;
+            this.txtArea.TabIndex = 19;
             this.txtArea.TextChanged += new System.EventHandler(this.txtArea_TextChanged);
             // 
             // btnsalvar
@@ -215,7 +215,7 @@
             this.btnsalvar.Location = new System.Drawing.Point(544, 471);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(75, 32);
-            this.btnsalvar.TabIndex = 73;
+            this.btnsalvar.TabIndex = 23;
             this.btnsalvar.Text = "Cadastrar";
             this.btnsalvar.UseVisualStyleBackColor = true;
             this.btnsalvar.Click += new System.EventHandler(this.btnsalvar_Click);
@@ -231,7 +231,7 @@
             this.groupBox3.Controls.Add(this.mtkIntervalo);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(28, 48);
+            this.groupBox3.Location = new System.Drawing.Point(28, 37);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(676, 100);
             this.groupBox3.TabIndex = 80;
@@ -244,7 +244,7 @@
             this.dtInicioEstagio.Location = new System.Drawing.Point(111, 19);
             this.dtInicioEstagio.Name = "dtInicioEstagio";
             this.dtInicioEstagio.Size = new System.Drawing.Size(100, 25);
-            this.dtInicioEstagio.TabIndex = 48;
+            this.dtInicioEstagio.TabIndex = 0;
             // 
             // label4
             // 
@@ -264,7 +264,7 @@
             this.mtkInicio.Mask = "00:00";
             this.mtkInicio.Name = "mtkInicio";
             this.mtkInicio.Size = new System.Drawing.Size(33, 25);
-            this.mtkInicio.TabIndex = 50;
+            this.mtkInicio.TabIndex = 1;
             // 
             // label7
             // 
@@ -284,7 +284,7 @@
             this.mtkFim.Mask = "00:00";
             this.mtkFim.Name = "mtkFim";
             this.mtkFim.Size = new System.Drawing.Size(33, 25);
-            this.mtkFim.TabIndex = 55;
+            this.mtkFim.TabIndex = 2;
             // 
             // label16
             // 
@@ -304,7 +304,7 @@
             this.mtkIntervalo.Mask = "00:00";
             this.mtkIntervalo.Name = "mtkIntervalo";
             this.mtkIntervalo.Size = new System.Drawing.Size(33, 25);
-            this.mtkIntervalo.TabIndex = 57;
+            this.mtkIntervalo.TabIndex = 3;
             // 
             // label9
             // 
@@ -326,7 +326,7 @@
             this.groupBox2.Controls.Add(this.chkCorelDraw);
             this.groupBox2.Controls.Add(this.chkOutros);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(28, 163);
+            this.groupBox2.Location = new System.Drawing.Point(28, 152);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(312, 139);
             this.groupBox2.TabIndex = 79;
@@ -340,7 +340,7 @@
             this.chkAutoCad.Location = new System.Drawing.Point(8, 29);
             this.chkAutoCad.Name = "chkAutoCad";
             this.chkAutoCad.Size = new System.Drawing.Size(91, 25);
-            this.chkAutoCad.TabIndex = 36;
+            this.chkAutoCad.TabIndex = 5;
             this.chkAutoCad.Text = "autoCAD";
             this.chkAutoCad.UseVisualStyleBackColor = true;
             // 
@@ -352,7 +352,7 @@
             this.chkPhotoshop.Location = new System.Drawing.Point(8, 60);
             this.chkPhotoshop.Name = "chkPhotoshop";
             this.chkPhotoshop.Size = new System.Drawing.Size(106, 25);
-            this.chkPhotoshop.TabIndex = 39;
+            this.chkPhotoshop.TabIndex = 6;
             this.chkPhotoshop.Text = "PhotoShop";
             this.chkPhotoshop.UseVisualStyleBackColor = false;
             // 
@@ -363,7 +363,7 @@
             this.chkProgramacao.Location = new System.Drawing.Point(8, 91);
             this.chkProgramacao.Name = "chkProgramacao";
             this.chkProgramacao.Size = new System.Drawing.Size(122, 25);
-            this.chkProgramacao.TabIndex = 42;
+            this.chkProgramacao.TabIndex = 7;
             this.chkProgramacao.Text = "Programação";
             this.chkProgramacao.UseVisualStyleBackColor = true;
             // 
@@ -374,7 +374,7 @@
             this.chkPacoteOffice.Location = new System.Drawing.Point(134, 29);
             this.chkPacoteOffice.Name = "chkPacoteOffice";
             this.chkPacoteOffice.Size = new System.Drawing.Size(116, 25);
-            this.chkPacoteOffice.TabIndex = 38;
+            this.chkPacoteOffice.TabIndex = 8;
             this.chkPacoteOffice.Text = "Pacote office";
             this.chkPacoteOffice.UseVisualStyleBackColor = true;
             // 
@@ -385,7 +385,7 @@
             this.chkCorelDraw.Location = new System.Drawing.Point(134, 60);
             this.chkCorelDraw.Name = "chkCorelDraw";
             this.chkCorelDraw.Size = new System.Drawing.Size(103, 25);
-            this.chkCorelDraw.TabIndex = 37;
+            this.chkCorelDraw.TabIndex = 9;
             this.chkCorelDraw.Text = "CorelDraw";
             this.chkCorelDraw.UseVisualStyleBackColor = true;
             // 
@@ -396,7 +396,7 @@
             this.chkOutros.Location = new System.Drawing.Point(134, 91);
             this.chkOutros.Name = "chkOutros";
             this.chkOutros.Size = new System.Drawing.Size(77, 25);
-            this.chkOutros.TabIndex = 41;
+            this.chkOutros.TabIndex = 10;
             this.chkOutros.Text = "Outros";
             this.chkOutros.UseVisualStyleBackColor = true;
             // 
@@ -409,7 +409,7 @@
             this.groupBox1.Controls.Add(this.chkRefeitorioLocal);
             this.groupBox1.Controls.Add(this.chkCestaBasica);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(359, 163);
+            this.groupBox1.Location = new System.Drawing.Point(359, 152);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(345, 139);
             this.groupBox1.TabIndex = 78;
@@ -423,7 +423,7 @@
             this.chkAuxilioTrasporte.Location = new System.Drawing.Point(6, 19);
             this.chkAuxilioTrasporte.Name = "chkAuxilioTrasporte";
             this.chkAuxilioTrasporte.Size = new System.Drawing.Size(152, 25);
-            this.chkAuxilioTrasporte.TabIndex = 35;
+            this.chkAuxilioTrasporte.TabIndex = 11;
             this.chkAuxilioTrasporte.Text = "Auxilio transporte";
             this.chkAuxilioTrasporte.UseVisualStyleBackColor = true;
             // 
@@ -434,7 +434,7 @@
             this.chkRecessoRemuneracao.Location = new System.Drawing.Point(6, 50);
             this.chkRecessoRemuneracao.Name = "chkRecessoRemuneracao";
             this.chkRecessoRemuneracao.Size = new System.Drawing.Size(179, 25);
-            this.chkRecessoRemuneracao.TabIndex = 45;
+            this.chkRecessoRemuneracao.TabIndex = 12;
             this.chkRecessoRemuneracao.Text = "Recesso Remunerado";
             this.chkRecessoRemuneracao.UseVisualStyleBackColor = true;
             // 
@@ -445,7 +445,7 @@
             this.chkValeRef.Location = new System.Drawing.Point(6, 81);
             this.chkValeRef.Name = "chkValeRef";
             this.chkValeRef.Size = new System.Drawing.Size(121, 25);
-            this.chkValeRef.TabIndex = 43;
+            this.chkValeRef.TabIndex = 13;
             this.chkValeRef.Text = "Vale Refeição";
             this.chkValeRef.UseVisualStyleBackColor = true;
             // 
@@ -456,7 +456,7 @@
             this.chkSeguroVida.Location = new System.Drawing.Point(185, 19);
             this.chkSeguroVida.Name = "chkSeguroVida";
             this.chkSeguroVida.Size = new System.Drawing.Size(135, 25);
-            this.chkSeguroVida.TabIndex = 34;
+            this.chkSeguroVida.TabIndex = 12;
             this.chkSeguroVida.Text = "Seguro de Vida";
             this.chkSeguroVida.UseVisualStyleBackColor = true;
             // 
@@ -468,7 +468,7 @@
             this.chkRefeitorioLocal.Location = new System.Drawing.Point(185, 82);
             this.chkRefeitorioLocal.Name = "chkRefeitorioLocal";
             this.chkRefeitorioLocal.Size = new System.Drawing.Size(159, 25);
-            this.chkRefeitorioLocal.TabIndex = 40;
+            this.chkRefeitorioLocal.TabIndex = 14;
             this.chkRefeitorioLocal.Text = "Refeitório no Local";
             this.chkRefeitorioLocal.UseVisualStyleBackColor = false;
             // 
@@ -479,42 +479,42 @@
             this.chkCestaBasica.Location = new System.Drawing.Point(185, 50);
             this.chkCestaBasica.Name = "chkCestaBasica";
             this.chkCestaBasica.Size = new System.Drawing.Size(114, 25);
-            this.chkCestaBasica.TabIndex = 44;
+            this.chkCestaBasica.TabIndex = 13;
             this.chkCestaBasica.Text = "Cesta Básica";
             this.chkCestaBasica.UseVisualStyleBackColor = true;
             // 
             // txtCompetecias
             // 
             this.txtCompetecias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCompetecias.Location = new System.Drawing.Point(120, 392);
+            this.txtCompetecias.Location = new System.Drawing.Point(120, 381);
             this.txtCompetecias.Name = "txtCompetecias";
             this.txtCompetecias.Size = new System.Drawing.Size(226, 20);
-            this.txtCompetecias.TabIndex = 77;
+            this.txtCompetecias.TabIndex = 20;
             // 
             // txtTarefa
             // 
             this.txtTarefa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTarefa.Location = new System.Drawing.Point(475, 392);
+            this.txtTarefa.Location = new System.Drawing.Point(475, 381);
             this.txtTarefa.Multiline = true;
             this.txtTarefa.Name = "txtTarefa";
             this.txtTarefa.Size = new System.Drawing.Size(226, 73);
-            this.txtTarefa.TabIndex = 76;
+            this.txtTarefa.TabIndex = 22;
             // 
             // txtObs
             // 
             this.txtObs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtObs.Location = new System.Drawing.Point(120, 418);
+            this.txtObs.Location = new System.Drawing.Point(120, 407);
             this.txtObs.Multiline = true;
             this.txtObs.Name = "txtObs";
             this.txtObs.Size = new System.Drawing.Size(226, 47);
-            this.txtObs.TabIndex = 74;
+            this.txtObs.TabIndex = 21;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(54, 388);
+            this.label11.Location = new System.Drawing.Point(54, 377);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(58, 21);
             this.label11.TabIndex = 72;
@@ -525,7 +525,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(361, 392);
+            this.label8.Location = new System.Drawing.Point(361, 381);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 21);
             this.label8.TabIndex = 70;
@@ -536,7 +536,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(21, 418);
+            this.label10.Location = new System.Drawing.Point(21, 407);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 21);
             this.label10.TabIndex = 71;

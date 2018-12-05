@@ -92,7 +92,30 @@ namespace SGE.TelasDF
         {
             frmHome frm = new frmHome();
             tela(frm);
+
+
+         
+
         }
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.H)
+            {  
+                frmHome frm = new frmHome();
+                tela(frm);
+            }
+
+            if (e.Control && e.Shift && e.KeyCode == Keys.A)
+            {
+                frmAlunoCadastro frm = new frmAlunoCadastro();
+                tela(frm);
+
+            }
+
+          
+        }
+
+
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {

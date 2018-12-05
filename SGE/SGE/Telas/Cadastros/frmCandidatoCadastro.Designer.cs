@@ -42,19 +42,19 @@
             this.cboCurso = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblNomeAluno = new System.Windows.Forms.Label();
-            this.lblDataNasc = new System.Windows.Forms.Label();
-            this.lblIdade = new System.Windows.Forms.Label();
-            this.lblTelefone = new System.Windows.Forms.Label();
-            this.lblCurso = new System.Windows.Forms.Label();
-            this.lblRG = new System.Windows.Forms.Label();
-            this.lblCEP = new System.Windows.Forms.Label();
             this.lblObeservacoes = new System.Windows.Forms.Label();
             this.lblEmpresa = new System.Windows.Forms.Label();
             this.lblInicio = new System.Windows.Forms.Label();
             this.lblNomeVaga = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblCEP = new System.Windows.Forms.Label();
+            this.lblRG = new System.Windows.Forms.Label();
+            this.lblCurso = new System.Windows.Forms.Label();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.lblIdade = new System.Windows.Forms.Label();
+            this.lblDataNasc = new System.Windows.Forms.Label();
+            this.lblNomeAluno = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -73,7 +73,7 @@
             this.cboVaga.Location = new System.Drawing.Point(441, 100);
             this.cboVaga.Name = "cboVaga";
             this.cboVaga.Size = new System.Drawing.Size(222, 21);
-            this.cboVaga.TabIndex = 57;
+            this.cboVaga.TabIndex = 3;
             // 
             // label2
             // 
@@ -104,7 +104,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(403, 424);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(92, 28);
-            this.btnCancelar.TabIndex = 71;
+            this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -115,7 +115,7 @@
             this.btnCadatrar.Location = new System.Drawing.Point(273, 424);
             this.btnCadatrar.Name = "btnCadatrar";
             this.btnCadatrar.Size = new System.Drawing.Size(92, 28);
-            this.btnCadatrar.TabIndex = 70;
+            this.btnCadatrar.TabIndex = 5;
             this.btnCadatrar.Text = "Cadastrar";
             this.btnCadatrar.UseVisualStyleBackColor = true;
             this.btnCadatrar.Click += new System.EventHandler(this.btnCadatrar_Click);
@@ -137,7 +137,7 @@
             this.CboStatus.Location = new System.Drawing.Point(300, 369);
             this.CboStatus.Name = "CboStatus";
             this.CboStatus.Size = new System.Drawing.Size(220, 21);
-            this.CboStatus.TabIndex = 73;
+            this.CboStatus.TabIndex = 4;
             // 
             // label3
             // 
@@ -155,7 +155,7 @@
             this.cboAluno.Location = new System.Drawing.Point(146, 99);
             this.cboAluno.Name = "cboAluno";
             this.cboAluno.Size = new System.Drawing.Size(220, 21);
-            this.cboAluno.TabIndex = 0;
+            this.cboAluno.TabIndex = 1;
             // 
             // CboArea
             // 
@@ -171,7 +171,7 @@
             this.CboArea.Location = new System.Drawing.Point(441, 71);
             this.CboArea.Name = "CboArea";
             this.CboArea.Size = new System.Drawing.Size(222, 21);
-            this.CboArea.TabIndex = 75;
+            this.CboArea.TabIndex = 2;
             // 
             // label5
             // 
@@ -190,7 +190,7 @@
             this.cboCurso.Location = new System.Drawing.Point(146, 72);
             this.cboCurso.Name = "cboCurso";
             this.cboCurso.Size = new System.Drawing.Size(220, 21);
-            this.cboCurso.TabIndex = 77;
+            this.cboCurso.TabIndex = 0;
             // 
             // label6
             // 
@@ -214,100 +214,6 @@
             this.groupBox1.Size = new System.Drawing.Size(273, 224);
             this.groupBox1.TabIndex = 79;
             this.groupBox1.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lblCEP);
-            this.groupBox2.Controls.Add(this.lblRG);
-            this.groupBox2.Controls.Add(this.lblCurso);
-            this.groupBox2.Controls.Add(this.lblTelefone);
-            this.groupBox2.Controls.Add(this.lblIdade);
-            this.groupBox2.Controls.Add(this.lblDataNasc);
-            this.groupBox2.Controls.Add(this.lblNomeAluno);
-            this.groupBox2.Location = new System.Drawing.Point(93, 127);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(273, 224);
-            this.groupBox2.TabIndex = 80;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // lblNomeAluno
-            // 
-            this.lblNomeAluno.AutoSize = true;
-            this.lblNomeAluno.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeAluno.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeAluno.Location = new System.Drawing.Point(127, 10);
-            this.lblNomeAluno.Name = "lblNomeAluno";
-            this.lblNomeAluno.Size = new System.Drawing.Size(16, 21);
-            this.lblNomeAluno.TabIndex = 81;
-            this.lblNomeAluno.Text = "-";
-            this.lblNomeAluno.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // lblDataNasc
-            // 
-            this.lblDataNasc.AutoSize = true;
-            this.lblDataNasc.BackColor = System.Drawing.Color.Transparent;
-            this.lblDataNasc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataNasc.Location = new System.Drawing.Point(127, 73);
-            this.lblDataNasc.Name = "lblDataNasc";
-            this.lblDataNasc.Size = new System.Drawing.Size(16, 21);
-            this.lblDataNasc.TabIndex = 82;
-            this.lblDataNasc.Text = "-";
-            // 
-            // lblIdade
-            // 
-            this.lblIdade.AutoSize = true;
-            this.lblIdade.BackColor = System.Drawing.Color.Transparent;
-            this.lblIdade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdade.Location = new System.Drawing.Point(127, 43);
-            this.lblIdade.Name = "lblIdade";
-            this.lblIdade.Size = new System.Drawing.Size(16, 21);
-            this.lblIdade.TabIndex = 83;
-            this.lblIdade.Text = "-";
-            // 
-            // lblTelefone
-            // 
-            this.lblTelefone.AutoSize = true;
-            this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
-            this.lblTelefone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(127, 166);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(16, 21);
-            this.lblTelefone.TabIndex = 84;
-            this.lblTelefone.Text = "-";
-            // 
-            // lblCurso
-            // 
-            this.lblCurso.AutoSize = true;
-            this.lblCurso.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurso.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurso.Location = new System.Drawing.Point(127, 135);
-            this.lblCurso.Name = "lblCurso";
-            this.lblCurso.Size = new System.Drawing.Size(16, 21);
-            this.lblCurso.TabIndex = 85;
-            this.lblCurso.Text = "-";
-            // 
-            // lblRG
-            // 
-            this.lblRG.AutoSize = true;
-            this.lblRG.BackColor = System.Drawing.Color.Transparent;
-            this.lblRG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRG.Location = new System.Drawing.Point(127, 104);
-            this.lblRG.Name = "lblRG";
-            this.lblRG.Size = new System.Drawing.Size(16, 21);
-            this.lblRG.TabIndex = 86;
-            this.lblRG.Text = "-";
-            // 
-            // lblCEP
-            // 
-            this.lblCEP.AutoSize = true;
-            this.lblCEP.BackColor = System.Drawing.Color.Transparent;
-            this.lblCEP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCEP.Location = new System.Drawing.Point(127, 197);
-            this.lblCEP.Name = "lblCEP";
-            this.lblCEP.Size = new System.Drawing.Size(16, 21);
-            this.lblCEP.TabIndex = 87;
-            this.lblCEP.Text = "-";
             // 
             // lblObeservacoes
             // 
@@ -352,6 +258,100 @@
             this.lblNomeVaga.Size = new System.Drawing.Size(16, 21);
             this.lblNomeVaga.TabIndex = 87;
             this.lblNomeVaga.Text = "-";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lblCEP);
+            this.groupBox2.Controls.Add(this.lblRG);
+            this.groupBox2.Controls.Add(this.lblCurso);
+            this.groupBox2.Controls.Add(this.lblTelefone);
+            this.groupBox2.Controls.Add(this.lblIdade);
+            this.groupBox2.Controls.Add(this.lblDataNasc);
+            this.groupBox2.Controls.Add(this.lblNomeAluno);
+            this.groupBox2.Location = new System.Drawing.Point(93, 127);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(273, 224);
+            this.groupBox2.TabIndex = 80;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // lblCEP
+            // 
+            this.lblCEP.AutoSize = true;
+            this.lblCEP.BackColor = System.Drawing.Color.Transparent;
+            this.lblCEP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCEP.Location = new System.Drawing.Point(127, 197);
+            this.lblCEP.Name = "lblCEP";
+            this.lblCEP.Size = new System.Drawing.Size(16, 21);
+            this.lblCEP.TabIndex = 87;
+            this.lblCEP.Text = "-";
+            // 
+            // lblRG
+            // 
+            this.lblRG.AutoSize = true;
+            this.lblRG.BackColor = System.Drawing.Color.Transparent;
+            this.lblRG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRG.Location = new System.Drawing.Point(127, 104);
+            this.lblRG.Name = "lblRG";
+            this.lblRG.Size = new System.Drawing.Size(16, 21);
+            this.lblRG.TabIndex = 86;
+            this.lblRG.Text = "-";
+            // 
+            // lblCurso
+            // 
+            this.lblCurso.AutoSize = true;
+            this.lblCurso.BackColor = System.Drawing.Color.Transparent;
+            this.lblCurso.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurso.Location = new System.Drawing.Point(127, 135);
+            this.lblCurso.Name = "lblCurso";
+            this.lblCurso.Size = new System.Drawing.Size(16, 21);
+            this.lblCurso.TabIndex = 85;
+            this.lblCurso.Text = "-";
+            // 
+            // lblTelefone
+            // 
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.BackColor = System.Drawing.Color.Transparent;
+            this.lblTelefone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Location = new System.Drawing.Point(127, 166);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(16, 21);
+            this.lblTelefone.TabIndex = 84;
+            this.lblTelefone.Text = "-";
+            // 
+            // lblIdade
+            // 
+            this.lblIdade.AutoSize = true;
+            this.lblIdade.BackColor = System.Drawing.Color.Transparent;
+            this.lblIdade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdade.Location = new System.Drawing.Point(127, 43);
+            this.lblIdade.Name = "lblIdade";
+            this.lblIdade.Size = new System.Drawing.Size(16, 21);
+            this.lblIdade.TabIndex = 83;
+            this.lblIdade.Text = "-";
+            // 
+            // lblDataNasc
+            // 
+            this.lblDataNasc.AutoSize = true;
+            this.lblDataNasc.BackColor = System.Drawing.Color.Transparent;
+            this.lblDataNasc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataNasc.Location = new System.Drawing.Point(127, 73);
+            this.lblDataNasc.Name = "lblDataNasc";
+            this.lblDataNasc.Size = new System.Drawing.Size(16, 21);
+            this.lblDataNasc.TabIndex = 82;
+            this.lblDataNasc.Text = "-";
+            // 
+            // lblNomeAluno
+            // 
+            this.lblNomeAluno.AutoSize = true;
+            this.lblNomeAluno.BackColor = System.Drawing.Color.Transparent;
+            this.lblNomeAluno.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeAluno.Location = new System.Drawing.Point(127, 10);
+            this.lblNomeAluno.Name = "lblNomeAluno";
+            this.lblNomeAluno.Size = new System.Drawing.Size(16, 21);
+            this.lblNomeAluno.TabIndex = 81;
+            this.lblNomeAluno.Text = "-";
+            this.lblNomeAluno.Click += new System.EventHandler(this.label7_Click);
             // 
             // frmCandidatoCadastro
             // 

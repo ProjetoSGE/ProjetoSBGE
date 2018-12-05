@@ -84,7 +84,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(638, 473);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 32);
-            this.btnCancelar.TabIndex = 87;
+            this.btnCancelar.TabIndex = 25;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -125,7 +125,7 @@
             this.txtNome.Location = new System.Drawing.Point(88, 14);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(121, 25);
-            this.txtNome.TabIndex = 60;
+            this.txtNome.TabIndex = 16;
             // 
             // cboEmpresa
             // 
@@ -133,7 +133,7 @@
             this.cboEmpresa.Location = new System.Drawing.Point(88, 43);
             this.cboEmpresa.Name = "cboEmpresa";
             this.cboEmpresa.Size = new System.Drawing.Size(121, 25);
-            this.cboEmpresa.TabIndex = 49;
+            this.cboEmpresa.TabIndex = 17;
             // 
             // label6
             // 
@@ -166,7 +166,7 @@
             this.cboSexo.Location = new System.Drawing.Point(314, 45);
             this.cboSexo.Name = "cboSexo";
             this.cboSexo.Size = new System.Drawing.Size(91, 25);
-            this.cboSexo.TabIndex = 58;
+            this.cboSexo.TabIndex = 19;
             // 
             // label3
             // 
@@ -196,7 +196,7 @@
             this.nudQtd.Location = new System.Drawing.Point(314, 17);
             this.nudQtd.Name = "nudQtd";
             this.nudQtd.Size = new System.Drawing.Size(91, 25);
-            this.nudQtd.TabIndex = 62;
+            this.nudQtd.TabIndex = 18;
             // 
             // txtArea
             // 
@@ -204,7 +204,7 @@
             this.txtArea.Location = new System.Drawing.Point(530, 14);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(100, 25);
-            this.txtArea.TabIndex = 61;
+            this.txtArea.TabIndex = 20;
             // 
             // btnsalvar
             // 
@@ -213,7 +213,7 @@
             this.btnsalvar.Location = new System.Drawing.Point(553, 473);
             this.btnsalvar.Name = "btnsalvar";
             this.btnsalvar.Size = new System.Drawing.Size(75, 32);
-            this.btnsalvar.TabIndex = 85;
+            this.btnsalvar.TabIndex = 24;
             this.btnsalvar.Text = "Cadastrar";
             this.btnsalvar.UseVisualStyleBackColor = true;
             // 
@@ -241,7 +241,7 @@
             this.dtInicioEstagio.Location = new System.Drawing.Point(111, 19);
             this.dtInicioEstagio.Name = "dtInicioEstagio";
             this.dtInicioEstagio.Size = new System.Drawing.Size(100, 25);
-            this.dtInicioEstagio.TabIndex = 48;
+            this.dtInicioEstagio.TabIndex = 0;
             // 
             // label4
             // 
@@ -261,7 +261,7 @@
             this.mtkInicio.Mask = "00:00";
             this.mtkInicio.Name = "mtkInicio";
             this.mtkInicio.Size = new System.Drawing.Size(33, 25);
-            this.mtkInicio.TabIndex = 50;
+            this.mtkInicio.TabIndex = 1;
             // 
             // label7
             // 
@@ -281,7 +281,7 @@
             this.mtkFim.Mask = "00:00";
             this.mtkFim.Name = "mtkFim";
             this.mtkFim.Size = new System.Drawing.Size(33, 25);
-            this.mtkFim.TabIndex = 55;
+            this.mtkFim.TabIndex = 2;
             // 
             // label16
             // 
@@ -301,7 +301,7 @@
             this.mtkIntervalo.Mask = "00:00";
             this.mtkIntervalo.Name = "mtkIntervalo";
             this.mtkIntervalo.Size = new System.Drawing.Size(33, 25);
-            this.mtkIntervalo.TabIndex = 57;
+            this.mtkIntervalo.TabIndex = 3;
             // 
             // label9
             // 
@@ -337,7 +337,7 @@
             this.chkAutoCad.Location = new System.Drawing.Point(8, 29);
             this.chkAutoCad.Name = "chkAutoCad";
             this.chkAutoCad.Size = new System.Drawing.Size(91, 25);
-            this.chkAutoCad.TabIndex = 36;
+            this.chkAutoCad.TabIndex = 4;
             this.chkAutoCad.Text = "autoCAD";
             this.chkAutoCad.UseVisualStyleBackColor = true;
             // 
@@ -349,7 +349,7 @@
             this.chkPhotoshop.Location = new System.Drawing.Point(8, 60);
             this.chkPhotoshop.Name = "chkPhotoshop";
             this.chkPhotoshop.Size = new System.Drawing.Size(106, 25);
-            this.chkPhotoshop.TabIndex = 39;
+            this.chkPhotoshop.TabIndex = 5;
             this.chkPhotoshop.Text = "PhotoShop";
             this.chkPhotoshop.UseVisualStyleBackColor = false;
             // 
@@ -360,7 +360,7 @@
             this.chkProgramacao.Location = new System.Drawing.Point(8, 91);
             this.chkProgramacao.Name = "chkProgramacao";
             this.chkProgramacao.Size = new System.Drawing.Size(122, 25);
-            this.chkProgramacao.TabIndex = 42;
+            this.chkProgramacao.TabIndex = 6;
             this.chkProgramacao.Text = "Programação";
             this.chkProgramacao.UseVisualStyleBackColor = true;
             // 
@@ -371,7 +371,7 @@
             this.chkPacoteOffice.Location = new System.Drawing.Point(134, 29);
             this.chkPacoteOffice.Name = "chkPacoteOffice";
             this.chkPacoteOffice.Size = new System.Drawing.Size(116, 25);
-            this.chkPacoteOffice.TabIndex = 38;
+            this.chkPacoteOffice.TabIndex = 7;
             this.chkPacoteOffice.Text = "Pacote office";
             this.chkPacoteOffice.UseVisualStyleBackColor = true;
             // 
@@ -382,7 +382,7 @@
             this.chkCorelDraw.Location = new System.Drawing.Point(134, 60);
             this.chkCorelDraw.Name = "chkCorelDraw";
             this.chkCorelDraw.Size = new System.Drawing.Size(103, 25);
-            this.chkCorelDraw.TabIndex = 37;
+            this.chkCorelDraw.TabIndex = 8;
             this.chkCorelDraw.Text = "CorelDraw";
             this.chkCorelDraw.UseVisualStyleBackColor = true;
             // 
@@ -393,7 +393,7 @@
             this.chkOutros.Location = new System.Drawing.Point(134, 91);
             this.chkOutros.Name = "chkOutros";
             this.chkOutros.Size = new System.Drawing.Size(77, 25);
-            this.chkOutros.TabIndex = 41;
+            this.chkOutros.TabIndex = 9;
             this.chkOutros.Text = "Outros";
             this.chkOutros.UseVisualStyleBackColor = true;
             // 
@@ -420,7 +420,7 @@
             this.chkAuxilioTrasporte.Location = new System.Drawing.Point(6, 19);
             this.chkAuxilioTrasporte.Name = "chkAuxilioTrasporte";
             this.chkAuxilioTrasporte.Size = new System.Drawing.Size(152, 25);
-            this.chkAuxilioTrasporte.TabIndex = 35;
+            this.chkAuxilioTrasporte.TabIndex = 10;
             this.chkAuxilioTrasporte.Text = "Auxilio transporte";
             this.chkAuxilioTrasporte.UseVisualStyleBackColor = true;
             // 
@@ -431,7 +431,7 @@
             this.chkRecessoRemuneracao.Location = new System.Drawing.Point(6, 50);
             this.chkRecessoRemuneracao.Name = "chkRecessoRemuneracao";
             this.chkRecessoRemuneracao.Size = new System.Drawing.Size(179, 25);
-            this.chkRecessoRemuneracao.TabIndex = 45;
+            this.chkRecessoRemuneracao.TabIndex = 11;
             this.chkRecessoRemuneracao.Text = "Recesso Remunerado";
             this.chkRecessoRemuneracao.UseVisualStyleBackColor = true;
             // 
@@ -442,7 +442,7 @@
             this.chkValeRef.Location = new System.Drawing.Point(6, 81);
             this.chkValeRef.Name = "chkValeRef";
             this.chkValeRef.Size = new System.Drawing.Size(121, 25);
-            this.chkValeRef.TabIndex = 43;
+            this.chkValeRef.TabIndex = 12;
             this.chkValeRef.Text = "Vale Refeição";
             this.chkValeRef.UseVisualStyleBackColor = true;
             // 
@@ -453,7 +453,7 @@
             this.chkSeguroVida.Location = new System.Drawing.Point(185, 19);
             this.chkSeguroVida.Name = "chkSeguroVida";
             this.chkSeguroVida.Size = new System.Drawing.Size(135, 25);
-            this.chkSeguroVida.TabIndex = 34;
+            this.chkSeguroVida.TabIndex = 13;
             this.chkSeguroVida.Text = "Seguro de Vida";
             this.chkSeguroVida.UseVisualStyleBackColor = true;
             // 
@@ -465,7 +465,7 @@
             this.chkRefeitorioLocal.Location = new System.Drawing.Point(185, 82);
             this.chkRefeitorioLocal.Name = "chkRefeitorioLocal";
             this.chkRefeitorioLocal.Size = new System.Drawing.Size(159, 25);
-            this.chkRefeitorioLocal.TabIndex = 40;
+            this.chkRefeitorioLocal.TabIndex = 15;
             this.chkRefeitorioLocal.Text = "Refeitório no Local";
             this.chkRefeitorioLocal.UseVisualStyleBackColor = false;
             // 
@@ -476,7 +476,7 @@
             this.chkCestaBasica.Location = new System.Drawing.Point(185, 50);
             this.chkCestaBasica.Name = "chkCestaBasica";
             this.chkCestaBasica.Size = new System.Drawing.Size(114, 25);
-            this.chkCestaBasica.TabIndex = 44;
+            this.chkCestaBasica.TabIndex = 14;
             this.chkCestaBasica.Text = "Cesta Básica";
             this.chkCestaBasica.UseVisualStyleBackColor = true;
             // 
@@ -486,7 +486,7 @@
             this.txtCompetecias.Location = new System.Drawing.Point(132, 380);
             this.txtCompetecias.Name = "txtCompetecias";
             this.txtCompetecias.Size = new System.Drawing.Size(226, 20);
-            this.txtCompetecias.TabIndex = 89;
+            this.txtCompetecias.TabIndex = 21;
             // 
             // txtTarefa
             // 
@@ -495,7 +495,7 @@
             this.txtTarefa.Multiline = true;
             this.txtTarefa.Name = "txtTarefa";
             this.txtTarefa.Size = new System.Drawing.Size(226, 73);
-            this.txtTarefa.TabIndex = 88;
+            this.txtTarefa.TabIndex = 23;
             // 
             // txtObs
             // 
@@ -504,7 +504,7 @@
             this.txtObs.Multiline = true;
             this.txtObs.Name = "txtObs";
             this.txtObs.Size = new System.Drawing.Size(226, 47);
-            this.txtObs.TabIndex = 86;
+            this.txtObs.TabIndex = 22;
             // 
             // label11
             // 

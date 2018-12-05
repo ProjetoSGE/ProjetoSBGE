@@ -64,7 +64,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(371, 375);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(104, 45);
-            this.btnCancelar.TabIndex = 44;
+            this.btnCancelar.TabIndex = 12;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -94,7 +94,7 @@
             this.txtEmail.Location = new System.Drawing.Point(135, 171);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
-            this.txtEmail.TabIndex = 13;
+            this.txtEmail.TabIndex = 6;
             // 
             // mtkCNPJ
             // 
@@ -102,7 +102,7 @@
             this.mtkCNPJ.Mask = "99.999.999/9999-99";
             this.mtkCNPJ.Name = "mtkCNPJ";
             this.mtkCNPJ.Size = new System.Drawing.Size(100, 20);
-            this.mtkCNPJ.TabIndex = 33;
+            this.mtkCNPJ.TabIndex = 1;
             this.mtkCNPJ.ValidatingType = typeof(int);
             // 
             // label5
@@ -122,7 +122,7 @@
             this.mktTelefone.Mask = "0000-0000";
             this.mktTelefone.Name = "mktTelefone";
             this.mktTelefone.Size = new System.Drawing.Size(59, 20);
-            this.mktTelefone.TabIndex = 31;
+            this.mktTelefone.TabIndex = 5;
             // 
             // label2
             // 
@@ -141,7 +141,7 @@
             this.mktRegistroEstadual.Mask = "00000";
             this.mktRegistroEstadual.Name = "mktRegistroEstadual";
             this.mktRegistroEstadual.Size = new System.Drawing.Size(32, 20);
-            this.mktRegistroEstadual.TabIndex = 32;
+            this.mktRegistroEstadual.TabIndex = 4;
             this.mktRegistroEstadual.ValidatingType = typeof(int);
             // 
             // label11
@@ -193,14 +193,14 @@
             this.txtNomeFantasi.Location = new System.Drawing.Point(136, 49);
             this.txtNomeFantasi.Name = "txtNomeFantasi";
             this.txtNomeFantasi.Size = new System.Drawing.Size(100, 20);
-            this.txtNomeFantasi.TabIndex = 7;
+            this.txtNomeFantasi.TabIndex = 2;
             // 
             // txtRazaoSocial
             // 
             this.txtRazaoSocial.Location = new System.Drawing.Point(136, 82);
             this.txtRazaoSocial.Name = "txtRazaoSocial";
             this.txtRazaoSocial.Size = new System.Drawing.Size(100, 20);
-            this.txtRazaoSocial.TabIndex = 7;
+            this.txtRazaoSocial.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -225,7 +225,7 @@
             this.txtPontoRef.Multiline = true;
             this.txtPontoRef.Name = "txtPontoRef";
             this.txtPontoRef.Size = new System.Drawing.Size(138, 63);
-            this.txtPontoRef.TabIndex = 38;
+            this.txtPontoRef.TabIndex = 10;
             // 
             // label8
             // 
@@ -243,7 +243,7 @@
             this.txtBairro.Location = new System.Drawing.Point(93, 48);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(100, 20);
-            this.txtBairro.TabIndex = 36;
+            this.txtBairro.TabIndex = 8;
             // 
             // lblBairro
             // 
@@ -262,7 +262,7 @@
             this.mktCep.Mask = "00000-000";
             this.mktCep.Name = "mktCep";
             this.mktCep.Size = new System.Drawing.Size(59, 20);
-            this.mktCep.TabIndex = 17;
+            this.mktCep.TabIndex = 7;
             // 
             // label3
             // 
@@ -280,7 +280,7 @@
             this.txtEndereco.Location = new System.Drawing.Point(93, 75);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(100, 20);
-            this.txtEndereco.TabIndex = 30;
+            this.txtEndereco.TabIndex = 9;
             // 
             // label6
             // 
@@ -300,7 +300,7 @@
             this.btnAlterar.Location = new System.Drawing.Point(233, 375);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(104, 45);
-            this.btnAlterar.TabIndex = 41;
+            this.btnAlterar.TabIndex = 11;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
