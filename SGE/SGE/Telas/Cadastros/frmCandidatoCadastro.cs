@@ -49,35 +49,11 @@ namespace SGE.Telas.Cadastros
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboAluno_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-           
-           
-
-                
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-           
-        }
+        
 
         private void cboCurso_Validated(object sender, EventArgs e)
         {
             List<tb_alunos> alunos = db.tb_alunos.Where(a => a.ds_qualCurso.Contains(cboCurso.Text)).ToList();
-
-
 
 
             cboAluno.DisplayMember = nameof(tb_alunos.nm_aluno);

@@ -107,7 +107,7 @@
             this.btnCancelar.TabIndex = 71;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+           
             // 
             // btnCadatrar
             // 
@@ -157,7 +157,7 @@
             this.cboAluno.Name = "cboAluno";
             this.cboAluno.Size = new System.Drawing.Size(220, 21);
             this.cboAluno.TabIndex = 0;
-            this.cboAluno.SelectedIndexChanged += new System.EventHandler(this.cboAluno_SelectedIndexChanged);
+           
             // 
             // CboArea
             // 
@@ -278,7 +278,7 @@
             this.groupBox2.Size = new System.Drawing.Size(273, 224);
             this.groupBox2.TabIndex = 80;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            
             // 
             // lblCEP
             // 
@@ -356,7 +356,7 @@
             this.lblNomeAluno.Size = new System.Drawing.Size(16, 21);
             this.lblNomeAluno.TabIndex = 81;
             this.lblNomeAluno.Text = "-";
-            this.lblNomeAluno.Click += new System.EventHandler(this.label7_Click);
+            
             // 
             // frmCandidatoCadastro
             // 
