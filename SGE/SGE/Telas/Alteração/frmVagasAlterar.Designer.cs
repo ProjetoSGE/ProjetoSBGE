@@ -70,6 +70,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -229,7 +230,7 @@
             this.groupBox3.Controls.Add(this.mtkIntervalo);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(37, 20);
+            this.groupBox3.Location = new System.Drawing.Point(36, 41);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(676, 100);
             this.groupBox3.TabIndex = 92;
@@ -324,7 +325,7 @@
             this.groupBox2.Controls.Add(this.chkCorelDraw);
             this.groupBox2.Controls.Add(this.chkOutros);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(37, 135);
+            this.groupBox2.Location = new System.Drawing.Point(36, 138);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(312, 139);
             this.groupBox2.TabIndex = 91;
@@ -397,7 +398,6 @@
             this.chkOutros.TabIndex = 9;
             this.chkOutros.Text = "Outros";
             this.chkOutros.UseVisualStyleBackColor = true;
-            this.chkOutros.CheckedChanged += new System.EventHandler(this.chkOutros_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -408,7 +408,7 @@
             this.groupBox1.Controls.Add(this.chkRefeitorioLocal);
             this.groupBox1.Controls.Add(this.chkCestaBasica);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(368, 135);
+            this.groupBox1.Location = new System.Drawing.Point(368, 138);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(345, 139);
             this.groupBox1.TabIndex = 90;
@@ -541,11 +541,23 @@
             this.label10.TabIndex = 83;
             this.label10.Text = "Observações ";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(31, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(225, 25);
+            this.label12.TabIndex = 94;
+            this.label12.Text = "Alterar Registro de Vagas";
+            // 
             // frmVagasAlterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnsalvar);
@@ -618,5 +630,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
     }
 }

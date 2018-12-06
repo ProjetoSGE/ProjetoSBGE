@@ -266,7 +266,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(106, 29);
+            this.label12.Location = new System.Drawing.Point(112, 31);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 21);
             this.label12.TabIndex = 51;
@@ -433,7 +433,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(12, 194);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(141, 21);
+            this.label11.Size = new System.Drawing.Size(143, 21);
             this.label11.TabIndex = 50;
             this.label11.Text = "Telefone(RECADO):";
             // 
@@ -443,7 +443,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(52, 170);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(107, 21);
+            this.label14.Size = new System.Drawing.Size(109, 21);
             this.label14.TabIndex = 52;
             this.label14.Text = "Telefone(RES):";
             // 
@@ -498,7 +498,7 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(4, 2);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(224, 25);
+            this.label17.Size = new System.Drawing.Size(225, 25);
             this.label17.TabIndex = 69;
             this.label17.Text = "Alterar Regsitro do Aluno";
             // 
