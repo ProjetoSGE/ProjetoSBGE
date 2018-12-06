@@ -31,7 +31,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.mtkCNPJ = new System.Windows.Forms.MaskedTextBox();
+            this.mktCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.mktTelefone = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -72,7 +72,7 @@
             // 
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox2.Controls.Add(this.txtEmail);
-            this.groupBox2.Controls.Add(this.mtkCNPJ);
+            this.groupBox2.Controls.Add(this.mktCNPJ);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.mktTelefone);
             this.groupBox2.Controls.Add(this.label2);
@@ -96,14 +96,14 @@
             this.txtEmail.Size = new System.Drawing.Size(100, 20);
             this.txtEmail.TabIndex = 6;
             // 
-            // mtkCNPJ
+            // mktCNPJ
             // 
-            this.mtkCNPJ.Location = new System.Drawing.Point(136, 16);
-            this.mtkCNPJ.Mask = "99.999.999/9999-99";
-            this.mtkCNPJ.Name = "mtkCNPJ";
-            this.mtkCNPJ.Size = new System.Drawing.Size(100, 20);
-            this.mtkCNPJ.TabIndex = 1;
-            this.mtkCNPJ.ValidatingType = typeof(int);
+            this.mktCNPJ.Location = new System.Drawing.Point(136, 16);
+            this.mktCNPJ.Mask = "99.999.999/9999-99";
+            this.mktCNPJ.Name = "mktCNPJ";
+            this.mktCNPJ.Size = new System.Drawing.Size(100, 20);
+            this.mktCNPJ.TabIndex = 1;
+            this.mktCNPJ.ValidatingType = typeof(int);
             // 
             // label5
             // 
@@ -344,7 +344,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.MaskedTextBox mtkCNPJ;
+        private System.Windows.Forms.MaskedTextBox mktCNPJ;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox mktTelefone;
         private System.Windows.Forms.Label label2;

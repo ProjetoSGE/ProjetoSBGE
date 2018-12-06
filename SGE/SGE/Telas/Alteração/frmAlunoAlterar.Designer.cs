@@ -51,6 +51,8 @@
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.mskCEP = new System.Windows.Forms.MaskedTextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtrgg = new System.Windows.Forms.TextBox();
+            this.txtrg = new System.Windows.Forms.Label();
             this.mskRecado = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -68,8 +70,6 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.txtrgg = new System.Windows.Forms.TextBox();
-            this.txtrg = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -328,6 +328,23 @@
             this.groupBox4.TabIndex = 77;
             this.groupBox4.TabStop = false;
             // 
+            // txtrgg
+            // 
+            this.txtrgg.Location = new System.Drawing.Point(169, 222);
+            this.txtrgg.Name = "txtrgg";
+            this.txtrgg.Size = new System.Drawing.Size(100, 20);
+            this.txtrgg.TabIndex = 72;
+            this.txtrgg.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtrg
+            // 
+            this.txtrg.AutoSize = true;
+            this.txtrg.Location = new System.Drawing.Point(129, 229);
+            this.txtrg.Name = "txtrg";
+            this.txtrg.Size = new System.Drawing.Size(23, 13);
+            this.txtrg.TabIndex = 71;
+            this.txtrg.Text = "RG";
+            // 
             // mskRecado
             // 
             this.mskRecado.Location = new System.Drawing.Point(170, 197);
@@ -416,7 +433,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(12, 194);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(143, 21);
+            this.label11.Size = new System.Drawing.Size(141, 21);
             this.label11.TabIndex = 50;
             this.label11.Text = "Telefone(RECADO):";
             // 
@@ -426,7 +443,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(52, 170);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 21);
+            this.label14.Size = new System.Drawing.Size(107, 21);
             this.label14.TabIndex = 52;
             this.label14.Text = "Telefone(RES):";
             // 
@@ -481,26 +498,9 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(4, 2);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(225, 25);
+            this.label17.Size = new System.Drawing.Size(224, 25);
             this.label17.TabIndex = 69;
             this.label17.Text = "Alterar Regsitro do Aluno";
-            // 
-            // txtrgg
-            // 
-            this.txtrgg.Location = new System.Drawing.Point(169, 222);
-            this.txtrgg.Name = "txtrgg";
-            this.txtrgg.Size = new System.Drawing.Size(100, 20);
-            this.txtrgg.TabIndex = 72;
-            this.txtrgg.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txtrg
-            // 
-            this.txtrg.AutoSize = true;
-            this.txtrg.Location = new System.Drawing.Point(129, 229);
-            this.txtrg.Name = "txtrg";
-            this.txtrg.Size = new System.Drawing.Size(23, 13);
-            this.txtrg.TabIndex = 71;
-            this.txtrg.Text = "RG";
             // 
             // frmAlunoAlterar
             // 
@@ -518,6 +518,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAlunoAlterar";
             this.Text = "frmAlunoAlterar";
+            this.Load += new System.EventHandler(this.frmAlunoAlterar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
