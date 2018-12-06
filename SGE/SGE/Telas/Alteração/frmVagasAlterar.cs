@@ -46,14 +46,43 @@ namespace SGE.Telas.Alteração
             txtTarefa.Text = vaga.ds_tarefas;
             txtObs.Text = vaga.ds_observacao;
             txtCompetecias.Text = vaga.ds_compPessoal;
+
+            if(chkOutros)
+
         }
 
         private void btnsalvar_Click(object sender, EventArgs e)
         {
+            SGEEntities db = new SGEEntities();
+
             vaga.dt_inicioEstagio = Convert.ToDateTime(dtInicioEstagio.Text);
             //vaga.ds_horarioEntrada = Convert.To(mtkInicio.Text);
             //vaga.ds_horarioSaida =Convert.ToDateTime(mtkFim.Text);
             //vaga.ds_intervalo = Convert.ToDateTime(mtkIntervalo.Text);
+            vaga.op_infoAutoCAD = chkAutoCad.Checked;
+            vaga.op_infoPhotoShop = chkPhotoshop.Checked;
+            vaga.op_infoProgramacao = chkProgramacao.Checked;
+            vaga.op_infoOffice = chkPacoteOffice.Checked;
+            vaga.ds_outros = chkOutros.Checked;
+            vaga.op_auxTransporte = chkAuxilioTrasporte.Checked;
+            vaga.op_recRemunerado = chkRecessoRemuneracao.Checked;
+            vaga.op_valeRefeicao = chkValeRef.Checked;
+            vaga.op_seguroDeVida = chkSeguroVida.Checked;
+            vaga.op_cestaBasica = chkCestaBasica.Checked;
+            vaga.op_refLocal = chkRefeitorioLocal.Checked;
+            vaga.nm_vaga = txtNome.Text;
+            vaga.id_empresa = Convert.ToInt32(cboEmpresa.Text);
+            vaga.qtd_vaga = vaga.qtd_vaga;
+            vaga.ds_sexo = vaga.ds_sexo;
+            vaga.nm_area = vaga.nm_area;
+            vaga.ds_tarefas = vaga.ds_tarefas;
+            vaga.ds_observacao = vaga.ds_observacao;
+            vaga.ds_compPessoal = vaga.ds_compPessoal;
+
+            db.tb_alunos.Add(vaga);
+            db.SaveChanges();
+
+           MessageBox.Show("Salvo");
 
         }
     }
