@@ -30,7 +30,8 @@ namespace SGE.Telas.Cadastros
 
         private void txtArea_TextChanged(object sender, EventArgs e)
         {
-
+            chkOutros.Visible = false;
+            txtoutros.Visible = true;
         }
 
         private void btnsalvar_Click(object sender, EventArgs e)
@@ -52,7 +53,7 @@ namespace SGE.Telas.Cadastros
             vagas.op_infoProgramacao = chkProgramacao.Checked;
             vagas.op_infoOffice = chkPacoteOffice.Checked;
             vagas.op_infoCorel = chkCorelDraw.Checked;
-            vagas.ds_outros = Convert.ToString(chkOutros.Checked);
+            vagas.ds_outros = txtoutros.Text;
             vagas.op_auxTransporte = chkAuxilioTrasporte.Checked;
             vagas.op_recRemunerado = chkRecessoRemuneracao.Checked;
             vagas.op_valeRefeicao = chkValeRef.Checked;
@@ -66,6 +67,7 @@ namespace SGE.Telas.Cadastros
             vagas.ds_tarefas = txtCompetecias.Text;
             vagas.ds_observacao = txtObs.Text;
             vagas.ds_compPessoal = txtTarefa.Text;
+            vagas.nvl_ingles = textBox1.Text;
 
             db.tb_vagas.Add(vagas);
             db.SaveChanges();
