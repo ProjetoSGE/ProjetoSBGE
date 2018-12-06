@@ -9,11 +9,12 @@ namespace SGE.Telas.Alteração
         {
             InitializeComponent();
         }
-        public tb_alunos alunos;
+             private tb_alunos aluno;
+
 
         public void Loadscreen(tb_alunos alu)
         {
-            this.alunos = alu;
+            this.aluno = alu;
 
             cboAnoEstudou.Text = alu.ds_anoEstudo;
             txtPreferencia.Text = alu.ds_areaPreferencial ;
@@ -48,8 +49,7 @@ namespace SGE.Telas.Alteração
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             SGEEntities db = new SGEEntities();
-
-            
+            tb_alunos alunos = new tb_alunos();            
             alunos.ds_anoEstudo = cboAnoEstudou.Text;
             alunos.ds_areaPreferencial = txtPreferencia.Text;
             alunos.ds_bairro = txtBairro.Text;
@@ -78,7 +78,7 @@ namespace SGE.Telas.Alteração
             }
 
 
-            db.tb_alunos.Add(alunos);
+            //db.Entry(alunos).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
 
             MessageBox.Show("Salvo");

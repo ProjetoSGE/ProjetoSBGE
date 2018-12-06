@@ -25,7 +25,7 @@ namespace SGE.Telas.Alteração
             mktCNPJ.Text = emp.ds_cnpj;
             txtNomeFantasi.Text = emp.nm_fantasia;
             txtRazaoSocial.Text = emp.nm_razaoSocial;
-            txt
+            
             
 
         }

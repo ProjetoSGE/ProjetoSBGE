@@ -31,7 +31,7 @@ namespace SGE.Telas.Alteração
             chkProgramacao.Checked = vaga.op_infoProgramacao;
             chkPacoteOffice.Checked = vaga.op_infoOffice;
             chkCorelDraw.Checked = vaga.op_infoCorel;
-            chkOutros.Checked = vaga.ds_outros;
+          
             chkAuxilioTrasporte.Checked = vaga.op_auxTransporte;
             chkRecessoRemuneracao.Checked = vaga.op_recRemunerado;
             chkValeRef.Checked = vaga.op_valeRefeicao;

@@ -397,7 +397,7 @@
             this.chkOutros.TabIndex = 9;
             this.chkOutros.Text = "Outros";
             this.chkOutros.UseVisualStyleBackColor = true;
-            this.chkOutros.CheckedChanged += new System.EventHandler(this.chkOutros_CheckedChanged);
+           
             // 
             // groupBox1
             // 
