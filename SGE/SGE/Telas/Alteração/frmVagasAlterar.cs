@@ -15,6 +15,7 @@ namespace SGE.Telas.Alteração
         public frmVagasAlterar()
         {
             InitializeComponent();
+            textBox1.Visible = false;
         }
 
         public tb_vagas vaga;
@@ -46,8 +47,11 @@ namespace SGE.Telas.Alteração
             txtTarefa.Text = vaga.ds_tarefas;
             txtObs.Text = vaga.ds_observacao;
             txtCompetecias.Text = vaga.ds_compPessoal;
-
-            if(chkOutros)
+            if (chkOutros.Checked == true)
+            {
+                textBox1.Text = vaga.ds_outros;
+            }
+            
 
         }
 
@@ -63,7 +67,7 @@ namespace SGE.Telas.Alteração
             vaga.op_infoPhotoShop = chkPhotoshop.Checked;
             vaga.op_infoProgramacao = chkProgramacao.Checked;
             vaga.op_infoOffice = chkPacoteOffice.Checked;
-            vaga.ds_outros = chkOutros.Checked;
+            vaga.ds_outros = textBox1.Text;
             vaga.op_auxTransporte = chkAuxilioTrasporte.Checked;
             vaga.op_recRemunerado = chkRecessoRemuneracao.Checked;
             vaga.op_valeRefeicao = chkValeRef.Checked;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,6 +71,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -317,6 +320,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.chkAutoCad);
             this.groupBox2.Controls.Add(this.chkPhotoshop);
             this.groupBox2.Controls.Add(this.chkProgramacao);
@@ -397,7 +401,6 @@
             this.chkOutros.TabIndex = 9;
             this.chkOutros.Text = "Outros";
             this.chkOutros.UseVisualStyleBackColor = true;
-           
             // 
             // groupBox1
             // 
@@ -541,6 +544,19 @@
             this.label10.TabIndex = 83;
             this.label10.Text = "Observações ";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(134, 92);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(172, 41);
+            this.textBox1.TabIndex = 10;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 26);
+            // 
             // frmVagasAlterar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -618,5 +634,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
