@@ -16,5 +16,10 @@ namespace SGE.Telas.Alteração
         {
             InitializeComponent();
         }
+
+        private void chkOutros_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

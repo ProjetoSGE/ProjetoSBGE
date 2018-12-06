@@ -71,6 +71,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.txtoutros = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -91,6 +94,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label13);
+            this.groupBox4.Controls.Add(this.textBox1);
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Controls.Add(this.txtNome);
             this.groupBox4.Controls.Add(this.cboEmpresa);
@@ -319,6 +324,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtoutros);
             this.groupBox2.Controls.Add(this.chkAutoCad);
             this.groupBox2.Controls.Add(this.chkPhotoshop);
             this.groupBox2.Controls.Add(this.chkProgramacao);
@@ -373,7 +379,7 @@
             this.chkPacoteOffice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkPacoteOffice.Location = new System.Drawing.Point(134, 29);
             this.chkPacoteOffice.Name = "chkPacoteOffice";
-            this.chkPacoteOffice.Size = new System.Drawing.Size(116, 25);
+            this.chkPacoteOffice.Size = new System.Drawing.Size(117, 25);
             this.chkPacoteOffice.TabIndex = 8;
             this.chkPacoteOffice.Text = "Pacote office";
             this.chkPacoteOffice.UseVisualStyleBackColor = true;
@@ -444,7 +450,7 @@
             this.chkValeRef.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkValeRef.Location = new System.Drawing.Point(6, 81);
             this.chkValeRef.Name = "chkValeRef";
-            this.chkValeRef.Size = new System.Drawing.Size(121, 25);
+            this.chkValeRef.Size = new System.Drawing.Size(122, 25);
             this.chkValeRef.TabIndex = 13;
             this.chkValeRef.Text = "Vale Refeição";
             this.chkValeRef.UseVisualStyleBackColor = true;
@@ -516,7 +522,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(54, 377);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 21);
+            this.label11.Size = new System.Drawing.Size(60, 21);
             this.label11.TabIndex = 72;
             this.label11.Text = "Tarefas";
             // 
@@ -549,9 +555,33 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(140, 25);
+            this.label12.Size = new System.Drawing.Size(141, 25);
             this.label12.TabIndex = 58;
             this.label12.Text = "Cadastrar Vaga";
+            // 
+            // txtoutros
+            // 
+            this.txtoutros.Location = new System.Drawing.Point(134, 95);
+            this.txtoutros.Multiline = true;
+            this.txtoutros.Name = "txtoutros";
+            this.txtoutros.Size = new System.Drawing.Size(145, 38);
+            this.txtoutros.TabIndex = 11;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(530, 47);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 25);
+            this.textBox1.TabIndex = 27;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(474, 51);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(42, 17);
+            this.label13.TabIndex = 28;
+            this.label13.Text = "Ingles";
             // 
             // frmVagasCadastro
             // 
@@ -633,5 +663,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtoutros;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
