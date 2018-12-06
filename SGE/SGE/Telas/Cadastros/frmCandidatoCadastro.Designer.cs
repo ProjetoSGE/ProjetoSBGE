@@ -73,7 +73,7 @@
             this.cboVaga.Location = new System.Drawing.Point(441, 100);
             this.cboVaga.Name = "cboVaga";
             this.cboVaga.Size = new System.Drawing.Size(222, 21);
-            this.cboVaga.TabIndex = 3;
+            this.cboVaga.TabIndex = 57;
             // 
             // label2
             // 
@@ -82,7 +82,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(387, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 21);
+            this.label2.Size = new System.Drawing.Size(45, 21);
             this.label2.TabIndex = 58;
             this.label2.Text = "Vaga";
             // 
@@ -104,9 +104,10 @@
             this.btnCancelar.Location = new System.Drawing.Point(403, 424);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(92, 28);
-            this.btnCancelar.TabIndex = 6;
+            this.btnCancelar.TabIndex = 71;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+           
             // 
             // btnCadatrar
             // 
@@ -115,7 +116,7 @@
             this.btnCadatrar.Location = new System.Drawing.Point(273, 424);
             this.btnCadatrar.Name = "btnCadatrar";
             this.btnCadatrar.Size = new System.Drawing.Size(92, 28);
-            this.btnCadatrar.TabIndex = 5;
+            this.btnCadatrar.TabIndex = 70;
             this.btnCadatrar.Text = "Cadastrar";
             this.btnCadatrar.UseVisualStyleBackColor = true;
             this.btnCadatrar.Click += new System.EventHandler(this.btnCadatrar_Click);
@@ -137,7 +138,7 @@
             this.CboStatus.Location = new System.Drawing.Point(300, 369);
             this.CboStatus.Name = "CboStatus";
             this.CboStatus.Size = new System.Drawing.Size(220, 21);
-            this.CboStatus.TabIndex = 4;
+            this.CboStatus.TabIndex = 73;
             // 
             // label3
             // 
@@ -145,7 +146,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(242, 369);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 21);
+            this.label3.Size = new System.Drawing.Size(53, 21);
             this.label3.TabIndex = 74;
             this.label3.Text = "Status";
             // 
@@ -155,7 +156,8 @@
             this.cboAluno.Location = new System.Drawing.Point(146, 99);
             this.cboAluno.Name = "cboAluno";
             this.cboAluno.Size = new System.Drawing.Size(220, 21);
-            this.cboAluno.TabIndex = 1;
+            this.cboAluno.TabIndex = 0;
+           
             // 
             // CboArea
             // 
@@ -171,7 +173,7 @@
             this.CboArea.Location = new System.Drawing.Point(441, 71);
             this.CboArea.Name = "CboArea";
             this.CboArea.Size = new System.Drawing.Size(222, 21);
-            this.CboArea.TabIndex = 2;
+            this.CboArea.TabIndex = 75;
             // 
             // label5
             // 
@@ -187,10 +189,13 @@
             // cboCurso
             // 
             this.cboCurso.FormattingEnabled = true;
+            this.cboCurso.Items.AddRange(new object[] {
+            "Informatica"});
             this.cboCurso.Location = new System.Drawing.Point(146, 72);
             this.cboCurso.Name = "cboCurso";
             this.cboCurso.Size = new System.Drawing.Size(220, 21);
-            this.cboCurso.TabIndex = 0;
+            this.cboCurso.TabIndex = 77;
+            this.cboCurso.Validated += new System.EventHandler(this.cboCurso_Validated);
             // 
             // label6
             // 
@@ -273,7 +278,7 @@
             this.groupBox2.Size = new System.Drawing.Size(273, 224);
             this.groupBox2.TabIndex = 80;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            
             // 
             // lblCEP
             // 
@@ -351,7 +356,7 @@
             this.lblNomeAluno.Size = new System.Drawing.Size(16, 21);
             this.lblNomeAluno.TabIndex = 81;
             this.lblNomeAluno.Text = "-";
-            this.lblNomeAluno.Click += new System.EventHandler(this.label7_Click);
+            
             // 
             // frmCandidatoCadastro
             // 

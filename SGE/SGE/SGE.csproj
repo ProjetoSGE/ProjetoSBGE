@@ -84,6 +84,18 @@
     <Compile Include="tb_vagas.cs">
       <DependentUpon>sge.tt</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Adicionais\AlunoEmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Adicionais\AlunoEmail.Designer.cs">
+      <DependentUpon>AlunoEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Adicionais\emailempresa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Adicionais\emailempresa.Designer.cs">
+      <DependentUpon>emailempresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Alteração\frmAlunoAlterar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +174,7 @@
     <Compile Include="Telas\FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\plugin\Email.cs" />
     <Compile Include="vw_candidato.cs">
       <DependentUpon>sge.tt</DependentUpon>
     </Compile>
@@ -177,6 +190,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Adicionais\AlunoEmail.resx">
+      <DependentUpon>AlunoEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Adicionais\emailempresa.resx">
+      <DependentUpon>emailempresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Alteração\frmAlunoAlterar.resx">
       <DependentUpon>frmAlunoAlterar.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,6 +270,7 @@
       <DependentUpon>sge.edmx</DependentUpon>
       <LastGenOutput>sge.cs</LastGenOutput>
     </Content>
+    <Content Include="Telas\plugin\emaiHTML.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
