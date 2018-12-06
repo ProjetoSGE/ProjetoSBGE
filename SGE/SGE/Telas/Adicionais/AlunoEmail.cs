@@ -26,7 +26,7 @@ namespace SGE.Telas.Adicionais
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            tb_alunos 
+             
         }
     }
 }

@@ -24,5 +24,10 @@ namespace SGE.Telas.Adicionais
             email.Enviar(txEmail.Text, conteudo.Text);
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tb_empresas empresa = comboBox1.SelectedItem as tb_empresas;
+            txEmail.Text = empresa.ds_email;
+        }
     }
 }
