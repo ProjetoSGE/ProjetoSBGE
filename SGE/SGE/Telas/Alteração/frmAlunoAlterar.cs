@@ -11,7 +11,7 @@ namespace SGE.Telas.Alteração
         }
         public tb_alunos alunos;
 
-       public void Loadscreen(tb_alunos alu)
+        public void Loadscreen(tb_alunos alu)
         {
             this.alunos = alu;
 
@@ -81,10 +81,15 @@ namespace SGE.Telas.Alteração
             db.tb_alunos.Add(alunos);
             db.SaveChanges();
 
-            MessageBox.Show("solvo");
+            MessageBox.Show("Salvo");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmAlunoAlterar_Load(object sender, EventArgs e)
         {
 
         }

@@ -16,6 +16,19 @@ namespace SGE.Telas.Alteração
         {
             InitializeComponent();
         }
+        public tb_empresas empresa;
+
+        public void LoadScreen(tb_empresas emp)
+        {
+            this.empresa = emp;
+
+            mktCNPJ.Text = emp.ds_cnpj;
+            txtNomeFantasi.Text = emp.nm_fantasia;
+            txtRazaoSocial.Text = emp.nm_razaoSocial;
+            txt
+            
+
+        }
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {

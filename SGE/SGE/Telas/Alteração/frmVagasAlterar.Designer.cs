@@ -216,6 +216,7 @@
             this.btnsalvar.TabIndex = 24;
             this.btnsalvar.Text = "Cadastrar";
             this.btnsalvar.UseVisualStyleBackColor = true;
+            this.btnsalvar.Click += new System.EventHandler(this.btnsalvar_Click);
             // 
             // groupBox3
             // 
